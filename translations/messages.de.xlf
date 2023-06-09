@@ -8,7 +8,7 @@
     <body>
       <trans-unit id="b7327b21bc776ba5d03796403347a7f5738978be" resname="About this edition">
         <source>About this edition</source>
-        <target>Über diese Edition</target>
+        <target>Über</target>
         <jms:reference-file line="54">\..\..\..\..\..\D:/Daten/projects/juedische-geschichte/demo/src\Menu\Builder.php\</jms:reference-file>
         <jms:reference-file line="14">\..\..\..\..\..\D:/Daten/projects/juedische-geschichte/demo/templates\About\sitetext-about.html.twig\</jms:reference-file>
       </trans-unit>

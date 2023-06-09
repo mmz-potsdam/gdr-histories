@@ -6,18 +6,20 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title type="main">Über uns</title>
+                <title type="main">Über dieses Online-Angebot</title>
             </titleStmt>
             <publicationStmt>
                 <publisher>
-                    <orgName>Institut für die Geschichte der deutschen Juden</orgName>
+                    <orgName ref="http://d-nb.info/gnd/2130670-9">Moses Mendelssohn Zentrum für
+                        europäisch-jüdische Studien</orgName>
                     <email>redaktion@juedische-geschichte-online.net</email>
                     <address>
-                        <addrLine>Beim Schlump 83, 20144 Hamburg</addrLine>
+                        <addrLine>Am Neuen Markt 8, 14467 Potsdam</addrLine>
                     </address>
                 </publisher>
-                <pubPlace>Hamburg</pubPlace>
-                <date type="publication">2021-01-04</date>
+                <pubPlace>Potsdam</pubPlace>
+                <date type="publication">2023-09-06</date>
+                <!--
                 <availability>
                     <licence target="http://creativecommons.org/licenses/by-nc-nd/4.0/">
                         <p>Dieser Text unterliegt den Bedingungen der Creative Commons Namensnennung
@@ -26,6 +28,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                             Form für nicht-kommerzielle Zwecke nachgenutzt werden.</p>
                     </licence>
                 </availability>
+                -->
             </publicationStmt>
             <sourceDesc>
                 <p/>
@@ -40,14 +43,20 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
     <text>
         <body>
             <div n="2">
-                <p>Diese Anwendung demonstriert den Einsatz der für die Hamburger Schlüsseldokumente
-                    entwickelten nutzerfreundlichen Publikationsumgebung für <ref
-                        target="https://juedische-geschichte-online.net/ueber/technische-umsetzung"
-                        >TEI-basierte Quelleneditionen</ref>.</p>
-                <p>Der Quellcode steht <ref target="https://github.com/igdj/">auf GitHub</ref> zur Verfügung.</p>
-                <p>Die Entwicklung wurde von der <ref
-                        target="https://gepris.dfg.de/gepris/projekt/396810798?language=de"
-                        >Deutschen Forschungsgemeinschaft gefördert</ref>.</p>
+                <p>Dieses Angebot präsentiert die am Moses Mendelssohn Zentrum befindlichen Interviewsammlungen mit Jüdinnen und Juden aus der DDR.</p>
+
+                <p>Es handelt sich um folgende drei Sammlungen:</p>
+                <list>
+                    <item>Interviews zum Dokumentarfilm: „Sojourners“ (Martin Patek, Jeffrey M. Peck und John Bornemann; 1989–1991)</item>
+                    <item>Interviewsammlung: Zweite Generation/Westexil (Micha Brumlik und Irene Diekmann; 2011-2012)</item>
+                    <item>Interview-Sammlung Wolfgang Herzberg, die in den Jahren 2012 bis 2015 für das Leo Baeck Institut in New York durchgeführt wurde.</item>
+                </list>
+                <p>
+                    Ziel des Projekts ist der Versuch, anhand der Interviewsammlungen unter anderem folgende Fragen zu beantworten: Was hat Juden und Jüdinnen nach der Katastrophe des Holocaust zur Rückkehr in die DDR bewogen? Welche Hoffnungen und Erwartungen waren mit dem neuen Gemeinwesen verbunden? Und in welchem Maße entsprach die Rückkehr zugleich der Einwanderung in eine sozialistische Utopie, die als Reaktion auf die Gräuel der Vergangenheit Zukunft und Halt versprach? Mit der Frage nach den Hoffnungen und Erwartungen verbindet sich zugleich jene nach Enttäuschungen: Wie wurde der subkutane und gelegentlich offene Antisemitismus innerhalb der DDR erlebt und gedeutet; wie wurde das Ausweichen der DDR vor einer expliziten Thematisierung und Verantwortungsübernahme für den Holocaust wahrgenommen? Verbunden sind damit auch Fragen danach, wie sich das eigene Selbst- und Zugehörigkeitsverständnis der jüdischen Bevölkerung im Laufe der Zeit gewandelt hat. Sind hier historische Veränderungen wahrnehmbar, in denen sich zugleich das prekäre Verhältnis von Mehrheit und Minderheit und die Frage nach der Anerkennung der eigenen Geschichtserfahrungen spiegelt?
+                </p>
+                <p>
+                    Somit sollen insbesondere Gemeinsamkeiten, aber auch Unterschiede innerhalb der Interviewsammlungen aufgezeigt und bereitere biographische Bezüge, historische Zusammenhänge und anderweitige Referenzen sichtbar werden. Ziel des Online-Portals ist es, die Interviews sowohl für die Forschung als auch für eine breitere Öffentlichkeit langfristig zugänglich zu machen und historisch zu kontextualisieren.
+                </p>
             </div>
         </body>
     </text>

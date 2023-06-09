@@ -10,17 +10,22 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
             </titleStmt>
             <publicationStmt>
                 <publisher>
-                    <orgName>Institut für die Geschichte der deutschen Juden</orgName>
+                    <orgName ref="http://d-nb.info/gnd/2130670-9">Moses Mendelssohn Zentrum für
+                        europäisch-jüdische Studien</orgName>
                     <email>redaktion@juedische-geschichte-online.net</email>
-                    <address><addrLine>Beim Schlump 83, 20144 Hamburg</addrLine></address>
+                    <address>
+                        <addrLine>Am Neuen Markt 8, 14467 Potsdam</addrLine>
+                    </address>
                 </publisher>
-                <pubPlace>Hamburg</pubPlace>
-                <date type="publication">2020-12-04</date>
+                <pubPlace>Potsdam</pubPlace>
+                <date type="publication">2023-09-06</date>
+                <!--
                 <availability>
                     <licence target="https://creativecommons.org/licenses/by-nc/4.0/deed.de">
                         <p>Dieser Text darf gemäß den Bestimmungen der <ref target="https://creativecommons.org/licenses/by-nc/4.0/deed.de">CC-BY-NC 4.0</ref> für nicht-kommerzielle Zwecke in jedwedem Format oder Medium vervielfältigt und weiterverbreitet werden.</p>
                     </licence>
                 </availability>
+                -->
             </publicationStmt>
             <sourceDesc>
                 <p></p>
@@ -29,16 +34,14 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
     </teiHeader>
     <text>
         <body>
-            <p>Diese Demo-Anwendung wurde vom <ref target="http://igdj-hh.de/">Institut für die Geschichte der deutschen Juden
-                (IGdJ)</ref> entwickelt.
-            </p>
-            <p>Der Quellcode steht <ref target="https://github.com/igdj/">auf GitHub</ref> zur Verfügung.</p>
             <p>
-                Die Inhalte stammen aus den folgenden Open-Access Angeboten:
-                <list>
-                    <item><ref target="https://www.deutschestextarchiv.de/">Deutsches Textarchiv</ref> (<ref target="https://www.deutschestextarchiv.de/api/pnd/118559230">Suche nach Franz Kafka</ref>)</item>
-                    <item><ref target="https://de.wikisource.org/wiki/Franz_Kafka">Franz Kafka bei Wikisource, der freien Quellensammlung</ref></item>
-                </list>
+                Dieses Angebot wird vom Moses Mendelssohn Zentrum für
+                europäisch-jüdische Studien (MMZ) bereitgestellt, es versteht sich als ein Open-Access-Angebot
+                für die historisch-politische Forschung und Vermittlung.
+            </p>
+            <p>
+                Bei der Zitation orientieren Sie sich an den enstprechenden Angaben bei den jeweiligen Quellen.
+                Für alle weiteren, insbesondere kommerziellen, Verwendungen ist eine <ref target="kontakt">schriftliche Genehmigung</ref> einzuholen.
             </p>
         </body>
     </text>

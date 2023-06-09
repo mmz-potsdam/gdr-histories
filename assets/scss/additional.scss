@@ -286,18 +286,18 @@ footer {
 }
 
 /* don't show tei-license on about-pages */
-body[class^="route-about"] {
+body[class*="route-about"] {
     #license {
         display: none;
     }
 
-    .article > div.dta-list {
+    .article div.dta-list {
         margin-top: 0;
-    }
 
-    .dta-list-item {
-        display: inline-block;
-        &:before { content: "-"; padding-right:7px; }
+        .dta-list-item {
+            display: inline-block;
+            /* &:before { content: "-"; padding-right:7px; } */
+        }
     }
 }
 
