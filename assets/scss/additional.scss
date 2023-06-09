@@ -15,6 +15,15 @@ header {
     font-family: $font-stack-display-typeface;
     color: $color-color-dark;
 
+    a, a:visited {
+        color: $color-color-dark;
+        text-decoration: none;
+        &:hover, &:active {
+            color: $color-gray-light;
+            text-decoration: underline;
+        }
+    }
+
     h1 {
         margin-top: 23px;
         margin-bottom: 11px;
@@ -26,13 +35,11 @@ header {
            font-weight: normal;
            color: $color-gray-dark;
         }
-    }
 
-    a, a:visited {
-        color: $color-color-dark;
-        &:hover, &:active {
-            color: $color-gray-light;
-            text-decoration: none;
+        a, a:visited {
+            &:hover, &:active {
+                color: inherit;
+            }
         }
     }
 
@@ -108,6 +115,10 @@ header {
             a {
                 padding: 5px;
                 padding-right: 36px;
+                &:hover {
+                    color: white;
+                    text-decoration: none;
+                }
             }
         }
 

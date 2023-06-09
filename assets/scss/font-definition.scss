@@ -3,11 +3,12 @@
  * used defining text fonts
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import 'font/Silka';
 
-$font-stack-display-typeface: 'Noto Sans', serif;
-$font-stack-sans: 'Noto Sans', sans;
+$font-stack-display-typeface: 'Silka', Arial, sans-serif;
+$font-stack-sans: 'Silka', Arial, sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 $font-stack-book-typeface: 'Noto Serif', serif;
 $font-stack-serif: 'Noto Serif', serif;
