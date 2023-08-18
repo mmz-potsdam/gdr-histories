@@ -10,10 +10,16 @@
             {% endif %}
             <div id="footer-navigation" class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-3" style="z-index: 1">
+                    <div class="col-8" style="z-index: 1">
                         {% set menu = knp_menu_get('main', [], {'position': 'footer'}) %}
                         {{ knp_menu_render(menu) }}
                     </div>
+                    <div class="col-4 justify-content-end position-relative">
+                        <a href="https://www.mmz-potsdam.de/" target="_blank">
+                            <img src="{{ app.request.basepath }}/img/mmz-inverse.de.svg" class="img-fluid position-absolute" style="bottom: 16px; max-height: 80px" alt="Moses Mendelssohn Zentrum" />
+                        </a>
+                    </div>
+
                     {#
                     <div class="col-xs-6 col-sm-3" style="z-index: 1">
                         {% set menu = knp_menu_get('top', [], {'position': 'footer', 'part': 'left'}) %}
