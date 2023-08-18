@@ -286,7 +286,7 @@ footer {
 }
 
 /* don't show tei-license on about-pages */
-body[class*="route-about"] {
+body[class*="route-about"], body.route-terms {
     #license {
         display: none;
     }
@@ -298,12 +298,6 @@ body[class*="route-about"] {
             display: inline-block;
             /* &:before { content: "-"; padding-right:7px; } */
         }
-    }
-}
-
-body[class="route-terms"] {
-    #license {
-        margin-top: 1em;
     }
 }
 
