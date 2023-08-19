@@ -449,6 +449,12 @@ h3#citation {
     .editorial.foot {
         display: none;
     }
+
+    .editorial.inline {
+        color: $color-gray-dark;
+        &::before { content: '['; }
+        &::after { content: ']'; }
+    }
 }
 
 .author {
