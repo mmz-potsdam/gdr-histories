@@ -285,6 +285,22 @@ footer {
     background-color: $color-color-map;
 }
 
+/* since we moved the source description before the source */
+
+a[href="#description"]{
+    display: none;
+}
+
+#image-viewer-container {
+    #description {
+        display: none;
+    }
+
+    .source-description {
+        font-style: italic;
+    }
+}
+
 /* don't show tei-license on about-pages */
 body[class*="route-about"], body.route-terms {
     #license {
