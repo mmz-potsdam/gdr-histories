@@ -5,3 +5,11 @@ app_logout:
 tei-edition-bundle:
     resource: '@TeiEditionBundle/Controller/'
     type: annotation
+
+# redirecting the homepage
+jmb:
+    path: /jmb
+    controller: Symfony\Bundle\FrameworkBundle\Controller\RedirectController::urlRedirectAction
+    defaults:
+        path: /
+        permanent: false
