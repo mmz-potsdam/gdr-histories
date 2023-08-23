@@ -516,12 +516,13 @@ h3#citation {
 
             &.box-color-title {
                 border: none;
-                background-color: $color-color-dark;
+                background-color: $color-gray-medium;
 
                 h4 {
                     margin: 0;
                     color: white;
                     text-transform: uppercase;
+                    font-size: 1.3rem;
 
                     a {
                         color: $color-gray-light;
@@ -535,6 +536,10 @@ h3#citation {
                 a, a:visited {
                     color: white;
                 }
+            }
+
+            &.box-border-top {
+                border-top: 1px solid red;
             }
 
             a, a:visited {
