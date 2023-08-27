@@ -26,6 +26,14 @@ class AdminOrganizationType extends AbstractType
                 'label' => 'GND',
                 'required' => false,
             ])
+            ->add('foundingDate', TextType::class, [
+                'label' => 'Founding Date',
+                'required' => false,
+            ])
+            ->add('dissolutionDate', TextType::class, [
+                'label' => 'Dissolution Date',
+                'required' => false,
+            ])
             ->add('url', UrlType::class, [
                 'label' => 'URL',
                 'required' => false,
