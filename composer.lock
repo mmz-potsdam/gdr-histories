@@ -2688,12 +2688,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/burki/tei-edition-bundle.git",
-                "reference": "a9ebe561500241798f37bfc8afb29ccefe8e2735"
+                "reference": "ff63e8dab661c321500aed3595c0520abd5d8660"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/a9ebe561500241798f37bfc8afb29ccefe8e2735",
-                "reference": "a9ebe561500241798f37bfc8afb29ccefe8e2735",
+                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/ff63e8dab661c321500aed3595c0520abd5d8660",
+                "reference": "ff63e8dab661c321500aed3595c0520abd5d8660",
                 "shasum": ""
             },
             "require": {
@@ -2766,7 +2766,7 @@
             "support": {
                 "source": "https://github.com/burki/tei-edition-bundle/tree/solarium-6"
             },
-            "time": "2023-08-27T12:09:24+00:00"
+            "time": "2023-08-27T14:19:40+00:00"
         },
         {
             "name": "jms/i18n-routing-bundle",

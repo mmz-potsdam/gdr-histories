@@ -1,0 +1,33 @@
+{% extends '@TeiEdition/Default/base.html.twig' %}
+
+{% block title %}{{ place.nameLocalized(app.request.locale) }}{% endblock %}
+
+{% block body %}
+    <h1>
+        {{ place.nameLocalized(app.request.locale) }}
+        <a class="btn btn-sm btn-light" href="{{ path('app_admin_place_edit', {'id': place.id}) }}">
+            {{ 'Edit'|trans }}
+        </a>
+        {{ include('Admin/Place/_delete_form.html.twig') }}
+    </h1>
+
+    <dl>
+    {% if place.tgn is not empty %}
+        <dt>{{ 'TGN'|trans }}:</dt>
+        <dd>
+            <a href="https://vocab.getty.edu/page/tgn/{{ place.tgn }}" target="_blank">{{ place.tgn }}</a>
+        </dd>
+    {% endif %}
+
+    {% if place.description is defined and place.description[app.request.locale] is defined %}
+    <p>{{ place.description[app.request.locale]|converturls|nl2br  }}</p>
+    {% endif %}
+
+    </dl>
+
+    <div class="mt-4">
+        <a class="btn btn-sm btn-light" href="{{ path('app_admin_place_index') }}">
+            {{ 'Back to overview'|trans }}
+        </a>
+    </div>
+{% endblock %}

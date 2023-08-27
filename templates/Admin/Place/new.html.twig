@@ -1,0 +1,15 @@
+{% extends '@TeiEdition/Default/base.html.twig' %}
+
+{% block title %}{{ 'New Place'|trans }}{% endblock %}
+
+{% block body %}
+    <h1>{{ 'Add Place'|trans }}</h1>
+
+    {{ include('Admin/Place/_form.html.twig') }}
+
+    <div class="mt-4">
+        <a class="btn btn-sm btn-light" href="{{ path('app_admin_place_index') }}">
+            {{ 'Back to overview'|trans }}
+        </a>
+    </div>
+{% endblock %}

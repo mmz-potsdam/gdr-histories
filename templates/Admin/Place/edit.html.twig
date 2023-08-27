@@ -1,0 +1,13 @@
+{% extends '@TeiEdition/Default/base.html.twig' %}
+
+{% block title %}{{ 'Edit Place'|trans }}{% endblock %}
+
+{% block body %}
+    <h1>
+        <a href="{{ path('app_admin_place_show', {'id': place.id}) }}">
+            {{ place.nameLocalized(app.request.locale) -}}
+        </a> {{ include('Admin/Place/_delete_form.html.twig') }}
+    </h1>
+
+    {{ include('Admin/Place/_form.html.twig', {'button_label': 'Update'|trans}) }}
+{% endblock %}

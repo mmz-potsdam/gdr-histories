@@ -1,0 +1,4 @@
+<form style="display: inline-block" method="post" action="{{ path('app_admin_place_delete', {'id': place.id}) }}" onsubmit="return confirm('{% trans %}Are you sure that you want to delete this entry?{% endtrans %}');">
+    <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ place.id) }}">
+    <button class="btn btn-sm btn-light">{{ 'Delete'|trans }}</button>
+</form>
