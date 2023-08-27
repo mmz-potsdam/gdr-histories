@@ -38,13 +38,17 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                 Dieses Angebot wird vom Moses Mendelssohn Zentrum für europäisch-jüdische Studien (MMZ) bereitgestellt und betreut. Es versteht sich als ein Open-Access-Angebot für Bildungs- und Forschungszwecke sowie zur historisch-politischen Vermittlung.
             </p>
             <p>
-                Bei der Zitation orientieren Sie sich an den entsprechenden Angaben bei den jeweiligen Quellen. Für alle weiteren Verwendungen ist eine <ref target="kontakt">schriftliche Genehmigung</ref> einzuholen. Eine kommerzielle Verwendung oder eine Nutzung aus sonstigen Werbezwecken (bspw. Wahlkampfzwecke) ist ausgeschlossen. Wenn Sie dieses Angebot nutzen, beachten Sie die folgenden Bedingungen:
+                Bei der Zitation orientieren Sie sich an den entsprechenden Angaben bei den jeweiligen Quellen.
+            </p>
+            <p>
+                Alle weiteren Verwendungen, insbesondere eine kommerzielle Verwendung oder eine Nutzung zu Werbezwecken, bedürfen der vorherigen schriftlichen Zustimmung durch das MMZ. Wenn Sie dieses Angebot nutzen, beachten Sie die folgenden Bedingungen:
             </p>
             <list>
-                <item>Das  Portal „Jüdische Geschichte[n] in der DDR“ beinhaltet lebensgeschichtliche Interviews. Alle Interviews wurden vom Moses Mendelssohn Zentrum inhaltlich ausgewertet.</item>
-                <item>Wir bitten die Nutzer:innen des Online-Portals eindringlich die Persönlichkeitsrechte der Interviewten zu beachten. Eine Vervielfältigung oder Verwendung von Videos bzw. Videosequenzen, Texten, Transkriptionen, Übersetzungen, Bildern und Grafiken in anderen elektronischen oder gedruckten Publikationen ist ohne ausdrückliche Zustimmung des Moses Mendelssohn Zentrums nicht gestattet. Für die Verwendung von in den Filmen gezeigten Dokumenten, Bildern, Texten und Grafiken von anderen Rechteinhabern übernimmt das Moses Mendelssohn Zentrum keine Haftung. Sollten Sie dennoch eine Darstellung finden, die Ihres Empfinden nach nicht rechtmäßig genutzt wird, kontaktieren Sie uns bitte.</item>
-                <item>Eine Bearbeitung der Inhalte ist unzulässig. </item>
-                <item>Das Material und die Inhalte der Seite dürfen nur innerhalb dieser Nutzungsbedingungen verwendet werden. Es muss gewährleistet werden, dass eine missbräuchliche Verwendung durch Dritte zu verhindert wird.</item>
+                <item>Das Portal „Jüdische Geschichte[n] in der DDR“ beinhaltet lebensgeschichtliche Interviews. Alle Interviews wurden vom MMZ inhaltlich aufbereitet. Bei der Nutzung der Interviews können Urheber- und Persönlichkeitsrechte sowie anderweitige schutzwürdige Belange berührt werden. Die Nutzer:innen des Online-Portals haben diese zu beachten und gegebenenfalls Verletzungen solcher Rechte gegenüber den Berechtigten selbst zu vertreten.</item>
+                <item>Eine Vervielfältigung oder Verwendung von Videos bzw. Videosequenzen, Texten, Transkriptionen, Übersetzungen, Bildern und Grafiken in anderen elektronischen oder gedruckten Publikationen, die nicht vom Zitatrecht gedeckt ist, ist ohne ausdrückliche Zustimmung des MMZ nicht gestattet.</item>
+                <item>Eine Bearbeitung der Inhalte ist unzulässig.</item>
+                <!--
+                <item>Das Material und die Inhalte der Seite dürfen nur innerhalb dieser Nutzungsbedingungen verwendet werden. Nutzer:innen gewährleisten, dass eine missbräuchliche Verwendung durch Dritte verhindert wird.</item>-->
             </list>
         </body>
     </text>
