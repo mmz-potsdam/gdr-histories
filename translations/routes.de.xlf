@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
-  <file date="2023-08-27T08:44:26Z" source-language="en" target-language="de" datatype="plaintext" original="not.available">
+  <file date="2023-08-27T12:01:35Z" source-language="en" target-language="de" datatype="plaintext" original="not.available">
     <header>
       <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
       <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
@@ -13,6 +13,26 @@
       <trans-unit id="b6b434b53b030e922ed702e63c4631ac577e71c3" resname="about-authors">
         <source>/about/authors</source>
         <target>/ueber/autorinnen</target>
+      </trans-unit>
+      <trans-unit id="36fce355865a381e0efe7bc29b2d716a6be2120f" resname="app_admin_event_delete">
+        <source>/admin/event/{id}</source>
+        <target>/admin/ereignis/{id}</target>
+      </trans-unit>
+      <trans-unit id="3a651f14d0adebd3b6bd2e173c4e7a72225c7378" resname="app_admin_event_edit">
+        <source>/admin/event/{id}/edit</source>
+        <target>/admin/ereignis/{id}/bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="598bd5bf1be1e383c71e93761cc81961fb1a5823" resname="app_admin_event_index">
+        <source>/admin/event/</source>
+        <target>/admin/ereignis/</target>
+      </trans-unit>
+      <trans-unit id="8ffdfa2613a441b71bbacbc61e1c9af0f8a367a7" resname="app_admin_event_new">
+        <source>/admin/event/new</source>
+        <target>/admin/ereignis/neu</target>
+      </trans-unit>
+      <trans-unit id="5ddad5449a96cca42bcd19147de9173ed7028bd6" resname="app_admin_event_show">
+        <source>/admin/event/{id}</source>
+        <target>/admin/event/{id}</target>
       </trans-unit>
       <trans-unit id="a909828d4a3418abe410c7777286cb6f643e0e96" resname="app_admin_organization_delete">
         <source>/admin/organization/{id}</source>
@@ -288,7 +308,7 @@
       </trans-unit>
       <trans-unit id="3120194e376ccff4923c97786898a450e4b078cd" resname="source-tei">
         <source>/source/{uid}.tei.xml</source>
-        <target>/source/{uid}.tei.xml</target>
+        <target>/quelle/{uid}.tei.xml</target>
       </trans-unit>
       <trans-unit id="e05e7bf953c24ee7391d7bc744869c9f769e23d4" resname="tei2html">
         <source>/source/tei2html/{path}</source>

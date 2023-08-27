@@ -1,0 +1,46 @@
+{% extends '@TeiEdition/Default/base.html.twig' %}
+
+{% block title %}{{ event.name }}{% endblock %}
+
+{% block body %}
+    <h1>
+        {{ event.name }}
+        <a class="btn btn-sm btn-light" href="{{ path('app_admin_event_edit', {'id': event.id}) }}">
+            {{ 'Edit'|trans }}
+        </a>
+        {{ include('Admin/Event/_delete_form.html.twig') }}
+    </h1>
+
+    <dl>
+    {% if event.startDate is not empty %}
+        <dt>{{ 'Start Date'|trans }}:</dt>
+        <dd>
+            {{ event.startDate|dateincomplete -}}
+        </dd>
+    {% endif %}
+    {% if event.endDate is not empty %}
+        <dt>{{ 'End Date'|trans }}:</dt>
+        <dd>
+            {{ event.endDate|dateincomplete -}}
+        </dd>
+    {% endif %}
+
+    {% if event.gnd is not empty %}
+        <dt>{{ 'GND'|trans }}:</dt>
+        <dd>
+            <a href="https://d-nb.info/gnd/{{ event.gnd }}" target="_blank">{{ event.gnd }}</a>
+        </dd>
+    {% endif %}
+
+    {% if event.description is defined and event.description[app.request.locale] is defined %}
+    <p>{{ event.description[app.request.locale]|converturls|nl2br  }}</p>
+    {% endif %}
+
+    </dl>
+
+    <div class="mt-4">
+        <a class="btn btn-sm btn-light" href="{{ path('app_admin_event_index') }}">
+            {{ 'Back to overview'|trans }}
+        </a>
+    </div>
+{% endblock %}

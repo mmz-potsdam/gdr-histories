@@ -1,0 +1,25 @@
+{% extends '@TeiEdition/Default/base.html.twig' %}
+
+{% block title %}{{ 'Epochs and Events'|trans }}{% endblock %}
+
+{% block body %}
+    <h1>{{ 'Epochs and Events'|trans }}</h1>
+
+    <a class="btn btn-sm btn-light" href="{{ path('app_admin_event_new') }}">
+        {{ 'Add Event'|trans }}
+    </a>
+
+    {% if results is not empty %}
+        <ul class="list-unstyled mt-2">
+        {% for event in results %}
+            <li>
+                <a href="{{ path('app_admin_event_show', {'id': event.id}) }}">
+                    {{ event.name }}
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <div class="alert alert-info">{{ 'No events could be found'|trans }}</div>
+    {% endif %}
+{% endblock %}

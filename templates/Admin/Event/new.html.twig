@@ -1,0 +1,15 @@
+{% extends '@TeiEdition/Default/base.html.twig' %}
+
+{% block title %}{{ 'New Event'|trans }}{% endblock %}
+
+{% block body %}
+    <h1>{{ 'Add Event'|trans }}</h1>
+
+    {{ include('Admin/Event/_form.html.twig') }}
+
+    <div class="mt-4">
+        <a class="btn btn-sm btn-light" href="{{ path('app_admin_event_index') }}">
+            {{ 'Back to overview'|trans }}
+        </a>
+    </div>
+{% endblock %}

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
-  <file date="2023-08-27T11:54:55Z" source-language="en" target-language="de" datatype="plaintext" original="not.available">
+  <file date="2023-08-27T12:01:35Z" source-language="en" target-language="de" datatype="plaintext" original="not.available">
     <header>
       <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
       <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
@@ -20,6 +20,7 @@
         <source>Add Event</source>
         <target>Ereignis hinzufügen</target>
         <jms:reference-file line="9">\..\..\..\..\..\..\./templates\Admin\Event\index.html.twig\</jms:reference-file>
+        <jms:reference-file line="6">\..\..\..\..\..\..\./templates\Admin\Event\new.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="f19e8962987e780131be0a22235d1501abb6a995" resname="Add Organization">
         <source>Add Organization</source>
@@ -255,9 +256,14 @@
         <jms:reference-file line="22">\..\..\..\..\..\..\./src\Form\AdminEventType.php\</jms:reference-file>
         <jms:reference-file line="22">\..\..\..\..\..\..\./src\Form\AdminOrganizationType.php\</jms:reference-file>
       </trans-unit>
+      <trans-unit id="6396b65c4ecf46057f4fc66f1040f1f9e114d8ee" resname="New Event">
+        <source>New Event</source>
+        <target>Neues Ereignis</target>
+        <jms:reference-file line="3">\..\..\..\..\..\..\./templates\Admin\Event\new.html.twig\</jms:reference-file>
+      </trans-unit>
       <trans-unit id="c1cb93c0da93c10f5342fd62e821b5973e1c95a4" resname="New Organization">
         <source>New Organization</source>
-        <target state="new">Neue Organisation</target>
+        <target>Neue Organisation</target>
         <jms:reference-file line="3">\..\..\..\..\..\..\./templates\Admin\Organization\new.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="5e55a0c59e89d18f0f1358c3271997adecaaeea4" resname="New Person">
@@ -312,7 +318,7 @@
       </trans-unit>
       <trans-unit id="efc007a393f66cdb14d57d385822a3d9e36ef873" resname="Save">
         <source>Save</source>
-        <target state="new">Speichern</target>
+        <target>Speichern</target>
         <jms:reference-file line="3">\..\..\..\..\..\..\./templates\Admin\Event\_form.html.twig\</jms:reference-file>
         <jms:reference-file line="3">\..\..\..\..\..\..\./templates\Admin\Organization\_form.html.twig\</jms:reference-file>
         <jms:reference-file line="3">\..\..\..\..\..\..\./templates\Admin\Person\_form.html.twig\</jms:reference-file>

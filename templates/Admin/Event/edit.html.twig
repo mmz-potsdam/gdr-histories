@@ -1,0 +1,13 @@
+{% extends '@TeiEdition/Default/base.html.twig' %}
+
+{% block title %}{{ 'Edit Event'|trans }}{% endblock %}
+
+{% block body %}
+    <h1>
+        <a href="{{ path('app_admin_event_show', {'id': event.id}) }}">
+            {{ event.name -}}
+        </a> {{ include('Admin/Event/_delete_form.html.twig') }}
+    </h1>
+
+    {{ include('Admin/Event/_form.html.twig', {'button_label': 'Update'|trans}) }}
+{% endblock %}
