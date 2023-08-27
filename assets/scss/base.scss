@@ -466,6 +466,7 @@ h3#citation {
     max-width: 640px;
 
     .panel-heading {
+        padding: 2px 8px 2px 8px;
         color: white;
         a {
             color: $color-gray-light;
@@ -473,6 +474,7 @@ h3#citation {
         background-color: $color-color-dark;
     }
 
+    margin-bottom: 32px;
     /*
     &:last-of-type {
         margin-bottom: 0;
