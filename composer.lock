@@ -2688,12 +2688,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/burki/tei-edition-bundle.git",
-                "reference": "ff63e8dab661c321500aed3595c0520abd5d8660"
+                "reference": "71c58babf0a7ff85121c25703e4faeeded8454e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/ff63e8dab661c321500aed3595c0520abd5d8660",
-                "reference": "ff63e8dab661c321500aed3595c0520abd5d8660",
+                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/71c58babf0a7ff85121c25703e4faeeded8454e0",
+                "reference": "71c58babf0a7ff85121c25703e4faeeded8454e0",
                 "shasum": ""
             },
             "require": {
@@ -2725,6 +2725,7 @@
                 "phpoffice/phpexcel": "1.8.*",
                 "sabre/xml": "^2.2",
                 "saidatom/oai-pmh": "0.1",
+                "scienta/doctrine-json-functions": "^5.3",
                 "seboettg/citeproc-php": "^2.6",
                 "servo/fluidxml": "^1.21",
                 "stof/doctrine-extensions-bundle": "^1.7",
@@ -2766,7 +2767,7 @@
             "support": {
                 "source": "https://github.com/burki/tei-edition-bundle/tree/solarium-6"
             },
-            "time": "2023-08-27T14:19:40+00:00"
+            "time": "2023-08-27T15:04:21+00:00"
         },
         {
             "name": "jms/i18n-routing-bundle",
@@ -5047,6 +5048,74 @@
                 "source": "https://github.com/burki/OaiPmh/tree/master"
             },
             "time": "2023-07-29T15:34:13+00:00"
+        },
+        {
+            "name": "scienta/doctrine-json-functions",
+            "version": "5.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ScientaNL/DoctrineJsonFunctions.git",
+                "reference": "0c1aa4f8ecd96608ee5f4c9cbb33f687d15c6b8c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ScientaNL/DoctrineJsonFunctions/zipball/0c1aa4f8ecd96608ee5f4c9cbb33f687d15c6b8c",
+                "reference": "0c1aa4f8ecd96608ee5f4c9cbb33f687d15c6b8c",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/dbal": "^3.0",
+                "doctrine/orm": "^2.0",
+                "ext-pdo": "*",
+                "php": "^7.3 || ^8.0"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^1.13",
+                "doctrine/coding-standard": "^8.0 || ^9.0",
+                "phpunit/phpunit": "^8.0 || ^9.0"
+            },
+            "suggest": {
+                "dunglas/doctrine-json-odm": "To serialize / deserialize objects as JSON documents."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Scienta\\DoctrineJsonFunctions\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Doctrine Json Functions Contributors",
+                    "homepage": "https://github.com/ScientaNL/DoctrineJsonFunctions/contributors"
+                }
+            ],
+            "description": "A set of extensions to Doctrine 2 that add support for json query functions.",
+            "keywords": [
+                "database",
+                "doctrine",
+                "dql",
+                "json",
+                "mariadb",
+                "mysql",
+                "orm",
+                "postgres",
+                "postgresql",
+                "sqlite"
+            ],
+            "support": {
+                "issues": "https://github.com/ScientaNL/DoctrineJsonFunctions/issues",
+                "source": "https://github.com/ScientaNL/DoctrineJsonFunctions/tree/5.3.0"
+            },
+            "time": "2023-03-20T12:05:26+00:00"
         },
         {
             "name": "scssphp/scssphp",
