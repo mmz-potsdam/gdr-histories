@@ -1,0 +1,25 @@
+{% extends '@TeiEdition/Default/base.html.twig' %}
+
+{% block title %}{{ 'Organizations'|trans }}{% endblock %}
+
+{% block body %}
+    <h1>{{ 'Organizations'|trans }}</h1>
+
+    <a class="btn btn-sm btn-light" href="{{ path('app_admin_organization_new') }}">
+        {{ 'Add Organization'|trans }}
+    </a>
+
+    {% if results is not empty %}
+        <ul class="list-unstyled mt-2">
+        {% for organization in results %}
+            <li>
+                <a href="{{ path('app_admin_organization_show', {'id': organization.id}) }}">
+                    {{ organization.name }}
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <div class="alert alert-info">{{ 'No organizations could be found'|trans }}</div>
+    {% endif %}
+{% endblock %}

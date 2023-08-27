@@ -1,0 +1,25 @@
+{% extends '@TeiEdition/Default/base.html.twig' %}
+
+{% block title %}{{ 'Persons'|trans }}{% endblock %}
+
+{% block body %}
+    <h1>{{ 'Persons'|trans }}</h1>
+
+    <a class="btn btn-sm btn-light" href="{{ path('app_admin_person_new') }}">
+        {{ 'Add Person'|trans }}
+    </a>
+
+    {% if people is not empty %}
+        <ul class="list-unstyled mt-2">
+        {% for person in people %}
+            <li>
+                <a href="{{ path('app_admin_person_show', {'id': person.id}) }}">
+                    {{ person.fullname }}
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <div class="alert alert-info">{{ 'No persons could be found'|trans }}</div>
+    {% endif %}
+{% endblock %}
