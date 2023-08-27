@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
-  <file date="2023-08-27T08:44:26Z" source-language="en" target-language="de" datatype="plaintext" original="not.available">
+  <file date="2023-08-27T11:54:55Z" source-language="en" target-language="de" datatype="plaintext" original="not.available">
     <header>
       <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
       <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
@@ -16,10 +16,16 @@
         <target>Über</target>
         <jms:reference-file line="54">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
       </trans-unit>
+      <trans-unit id="f5be6c975275e337598bdb5c9b394e8de20becd7" resname="Add Event">
+        <source>Add Event</source>
+        <target>Ereignis hinzufügen</target>
+        <jms:reference-file line="9">\..\..\..\..\..\..\./templates\Admin\Event\index.html.twig\</jms:reference-file>
+      </trans-unit>
       <trans-unit id="f19e8962987e780131be0a22235d1501abb6a995" resname="Add Organization">
         <source>Add Organization</source>
         <target>Organisation hinzufügen</target>
         <jms:reference-file line="9">\..\..\..\..\..\..\./templates\Admin\Organization\index.html.twig\</jms:reference-file>
+        <jms:reference-file line="6">\..\..\..\..\..\..\./templates\Admin\Organization\new.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="26b953711187a41842ce9535b12ead1119838f0b" resname="Add Person">
         <source>Add Person</source>
@@ -37,6 +43,13 @@
         <target>Alle erwähnten Orte</target>
         <jms:reference-file line="13">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Place\map.html.twig\</jms:reference-file>
       </trans-unit>
+      <trans-unit id="a82dcea210b7638fb800b942dfe731eb305f622d" resname="Are you sure that you want to delete this entry?">
+        <source>Are you sure that you want to delete this entry?</source>
+        <target>Sind Sie sicher, dass Sie diesen Eintrag löschen wollen?</target>
+        <jms:reference-file line="1">\..\..\..\..\..\..\./templates\Admin\Event\_delete_form.html.twig\</jms:reference-file>
+        <jms:reference-file line="1">\..\..\..\..\..\..\./templates\Admin\Organization\_delete_form.html.twig\</jms:reference-file>
+        <jms:reference-file line="1">\..\..\..\..\..\..\./templates\Admin\Person\_delete_form.html.twig\</jms:reference-file>
+      </trans-unit>
       <trans-unit id="4360c2dcd4af965377499b10a52640af435c9258" resname="Article">
         <source>Article</source>
         <target>Beitrag</target>
@@ -45,6 +58,8 @@
       <trans-unit id="ec986cba31619fb19066dd74ae8bf9bd62e63ad5" resname="Back to overview">
         <source>Back to overview</source>
         <target>Zurück zur Übersicht</target>
+        <jms:reference-file line="12">\..\..\..\..\..\..\./templates\Admin\Event\new.html.twig\</jms:reference-file>
+        <jms:reference-file line="43">\..\..\..\..\..\..\./templates\Admin\Event\show.html.twig\</jms:reference-file>
         <jms:reference-file line="12">\..\..\..\..\..\..\./templates\Admin\Organization\new.html.twig\</jms:reference-file>
         <jms:reference-file line="50">\..\..\..\..\..\..\./templates\Admin\Organization\show.html.twig\</jms:reference-file>
         <jms:reference-file line="12">\..\..\..\..\..\..\./templates\Admin\Person\new.html.twig\</jms:reference-file>
@@ -81,9 +96,17 @@
         <target>Sterbedatum</target>
         <jms:reference-file line="51">\..\..\..\..\..\..\./src\Form\AdminPersonType.php\</jms:reference-file>
       </trans-unit>
+      <trans-unit id="f6fdbe48dc54dd86f63097a03bd24094dedd713a" resname="Delete">
+        <source>Delete</source>
+        <target>Löschen</target>
+        <jms:reference-file line="3">\..\..\..\..\..\..\./templates\Admin\Event\_delete_form.html.twig\</jms:reference-file>
+        <jms:reference-file line="3">\..\..\..\..\..\..\./templates\Admin\Organization\_delete_form.html.twig\</jms:reference-file>
+        <jms:reference-file line="3">\..\..\..\..\..\..\./templates\Admin\Person\_delete_form.html.twig\</jms:reference-file>
+      </trans-unit>
       <trans-unit id="7929038bab1d99f570fa9cb0b0b6e15ad592edf6" resname="Description (German)">
         <source>Description (German)</source>
         <target>Beschreibung (Deutsch)</target>
+        <jms:reference-file line="38">\..\..\..\..\..\..\./src\Form\AdminEventType.php\</jms:reference-file>
         <jms:reference-file line="42">\..\..\..\..\..\..\./src\Form\AdminOrganizationType.php\</jms:reference-file>
         <jms:reference-file line="60">\..\..\..\..\..\..\./src\Form\AdminPersonType.php\</jms:reference-file>
       </trans-unit>
@@ -120,8 +143,14 @@
       <trans-unit id="5301648dcf6b53cefc9ed52999aaa92d4603cae0" resname="Edit">
         <source>Edit</source>
         <target>Bearbeiten</target>
+        <jms:reference-file line="9">\..\..\..\..\..\..\./templates\Admin\Event\show.html.twig\</jms:reference-file>
         <jms:reference-file line="9">\..\..\..\..\..\..\./templates\Admin\Organization\show.html.twig\</jms:reference-file>
         <jms:reference-file line="9">\..\..\..\..\..\..\./templates\Admin\Person\show.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="2b10388fce63a2a6dcec75ad35b5928b31d0aac6" resname="Edit Event">
+        <source>Edit Event</source>
+        <target>Ereignis bearbeiten</target>
+        <jms:reference-file line="3">\..\..\..\..\..\..\./templates\Admin\Event\edit.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="8733c2c023d192e95b461baa611d90e27397a075" resname="Edit Organization">
         <source>Edit Organization</source>
@@ -133,10 +162,18 @@
         <target>Person bearbeiten</target>
         <jms:reference-file line="3">\..\..\..\..\..\..\./templates\Admin\Person\edit.html.twig\</jms:reference-file>
       </trans-unit>
+      <trans-unit id="84b1478125890bad1cc4b36d6d3781773b3fde5a" resname="End Date">
+        <source>End Date</source>
+        <target>Enddatum</target>
+        <jms:reference-file line="34">\..\..\..\..\..\..\./src\Form\AdminEventType.php\</jms:reference-file>
+        <jms:reference-file line="22">\..\..\..\..\..\..\./templates\Admin\Event\show.html.twig\</jms:reference-file>
+      </trans-unit>
       <trans-unit id="c3e98f7507fced38ed5c711c203cece4e0b10851" resname="Epochs and Events">
         <source>Epochs and Events</source>
         <target>Epochen und Ereignisse</target>
         <jms:reference-file line="124">\..\..\..\..\..\..\./src\Menu\Builder.php\</jms:reference-file>
+        <jms:reference-file line="3">\..\..\..\..\..\..\./templates\Admin\Event\index.html.twig\</jms:reference-file>
+        <jms:reference-file line="6">\..\..\..\..\..\..\./templates\Admin\Event\index.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="5678489184de27a0fbf7bf33023aded4af57df35" resname="Exit Fullscreen Mode">
         <source>Exit Fullscreen Mode</source>
@@ -162,8 +199,10 @@
       <trans-unit id="904e2710786395c68f3992cd52a092b41e4beb2a" resname="GND">
         <source>GND</source>
         <target>GND</target>
+        <jms:reference-file line="26">\..\..\..\..\..\..\./src\Form\AdminEventType.php\</jms:reference-file>
         <jms:reference-file line="26">\..\..\..\..\..\..\./src\Form\AdminOrganizationType.php\</jms:reference-file>
         <jms:reference-file line="43">\..\..\..\..\..\..\./src\Form\AdminPersonType.php\</jms:reference-file>
+        <jms:reference-file line="29">\..\..\..\..\..\..\./templates\Admin\Event\show.html.twig\</jms:reference-file>
         <jms:reference-file line="36">\..\..\..\..\..\..\./templates\Admin\Organization\show.html.twig\</jms:reference-file>
         <jms:reference-file line="56">\..\..\..\..\..\..\./templates\Admin\Person\show.html.twig\</jms:reference-file>
       </trans-unit>
@@ -213,12 +252,23 @@
       <trans-unit id="709a23220f2c3d64d1e1d6d18c4d5280f8d82fca" resname="Name">
         <source>Name</source>
         <target>Name</target>
+        <jms:reference-file line="22">\..\..\..\..\..\..\./src\Form\AdminEventType.php\</jms:reference-file>
         <jms:reference-file line="22">\..\..\..\..\..\..\./src\Form\AdminOrganizationType.php\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="c1cb93c0da93c10f5342fd62e821b5973e1c95a4" resname="New Organization">
+        <source>New Organization</source>
+        <target state="new">Neue Organisation</target>
+        <jms:reference-file line="3">\..\..\..\..\..\..\./templates\Admin\Organization\new.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="5e55a0c59e89d18f0f1358c3271997adecaaeea4" resname="New Person">
         <source>New Person</source>
         <target>Neue Person</target>
         <jms:reference-file line="3">\..\..\..\..\..\..\./templates\Admin\Person\new.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="1bc7efe45add6277f566749bab2b037d11e1a535" resname="No events could be found">
+        <source>No events could be found</source>
+        <target>Es wurden keine Ereignisse gefunden</target>
+        <jms:reference-file line="23">\..\..\..\..\..\..\./templates\Admin\Event\index.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="421dcd748025c02f4daff5c5bbd13fdd5b4dbbe6" resname="No organizations could be found">
         <source>No organizations could be found</source>
@@ -260,6 +310,13 @@
         <jms:reference-file line="126">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Article\viewer-layers.html.twig\</jms:reference-file>
         <jms:reference-file line="187">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Article\viewer.html.twig\</jms:reference-file>
       </trans-unit>
+      <trans-unit id="efc007a393f66cdb14d57d385822a3d9e36ef873" resname="Save">
+        <source>Save</source>
+        <target state="new">Speichern</target>
+        <jms:reference-file line="3">\..\..\..\..\..\..\./templates\Admin\Event\_form.html.twig\</jms:reference-file>
+        <jms:reference-file line="3">\..\..\..\..\..\..\./templates\Admin\Organization\_form.html.twig\</jms:reference-file>
+        <jms:reference-file line="3">\..\..\..\..\..\..\./templates\Admin\Person\_form.html.twig\</jms:reference-file>
+      </trans-unit>
       <trans-unit id="bce06414177f72ab70e6387b6af9f8ceef0d6049" resname="Search">
         <source>Search</source>
         <target>Suche</target>
@@ -275,6 +332,12 @@
         <source>Sources by primary Place</source>
         <target>Quellen nach primärem Ort</target>
         <jms:reference-file line="12">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Place\map.html.twig\</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="9d7ab1a557965be0eae6205c2d860c45a3eafc11" resname="Start Date">
+        <source>Start Date</source>
+        <target>Anfangsdatum</target>
+        <jms:reference-file line="30">\..\..\..\..\..\..\./src\Form\AdminEventType.php\</jms:reference-file>
+        <jms:reference-file line="16">\..\..\..\..\..\..\./templates\Admin\Event\show.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="894031ed8d341b5ecab5e23002585055f0b7ee4d" resname="Terms and Conditions">
         <source>Terms and Conditions</source>
@@ -297,8 +360,9 @@
       <trans-unit id="fb91e24fa52d8d2b32937bf04d843f730319a902" resname="Update">
         <source>Update</source>
         <target>Aktualisieren</target>
-        <jms:reference-file line="13">\..\..\..\..\..\..\./templates\Admin\Organization\edit.html.twig\</jms:reference-file>
-        <jms:reference-file line="13">\..\..\..\..\..\..\./templates\Admin\Person\edit.html.twig\</jms:reference-file>
+        <jms:reference-file line="12">\..\..\..\..\..\..\./templates\Admin\Event\edit.html.twig\</jms:reference-file>
+        <jms:reference-file line="12">\..\..\..\..\..\..\./templates\Admin\Organization\edit.html.twig\</jms:reference-file>
+        <jms:reference-file line="12">\..\..\..\..\..\..\./templates\Admin\Person\edit.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="02a46dd8b4f86ba87d571007f77a384df3bbb4eb" resname="View Fullscreen">
         <source>View Fullscreen</source>

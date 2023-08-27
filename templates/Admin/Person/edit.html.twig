@@ -3,7 +3,6 @@
 {% block title %}{{ 'Edit Person'|trans }}{% endblock %}
 
 {% block body %}
-
     <h1>
         <a href="{{ path('app_admin_person_show', {'id': person.id}) }}">
             {{ person.fullName(true) -}}

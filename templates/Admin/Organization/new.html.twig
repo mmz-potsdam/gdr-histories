@@ -1,14 +1,14 @@
-{% extends 'base.html.twig' %}
+{% extends '@TeiEdition/Default/base.html.twig' %}
 
-{% block title %}Neue Organisation{% endblock %}
+{% block title %}{{ 'New Organization'|trans }}{% endblock %}
 
 {% block body %}
-    <h1>Organisation hinzufügen</h1>
+    <h1>{{ 'Add Organization'|trans }}</h1>
 
     {{ include('Admin/Organization/_form.html.twig') }}
 
     <div class="mt-4">
-        <a class="btn btn-sm btn-light" href="{{ path('app_admin_organisation_index') }}">
+        <a class="btn btn-sm btn-light" href="{{ path('app_admin_organization_index') }}">
             {{ 'Back to overview'|trans }}
         </a>
     </div>
