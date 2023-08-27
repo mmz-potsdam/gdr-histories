@@ -12,6 +12,19 @@
     </h1>
 
     <dl>
+    {% if organization.foundingDate is not empty %}
+        <dt>{{ 'Founding Date'|trans }}:</dt>
+        <dd>
+            {{ organization.foundingDate|dateincomplete -}}
+        </dd>
+    {% endif %}
+    {% if organization.dissolutionDate is not empty %}
+        <dt>{{ 'Dissolution Date'|trans }}:</dt>
+        <dd>
+            {{ organization.dissolutionDate|dateincomplete -}}
+        </dd>
+    {% endif %}
+
     {% if organization.url is not empty %}
         <dt>{{ 'URL'|trans }}:</dt>
         <dd>
