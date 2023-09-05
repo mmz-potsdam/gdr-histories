@@ -1,9 +1,9 @@
-# the following are from config.yaml
-# twig.globals.siteName
-kafka_ed: kafka_ed
-# twig.globals.siteTagline
-A Demo Edition: Eine Beispiel-Edition
+# the following are from services.yaml
+# app.site.name
+"Jüdische Geschichte[n] in der DDR": "Jüdische Geschichte[n] in der DDR"
+# app.site.byline
+"Ein Interview-Portal": Ein Interview-Portal
 # eko_feed.feeds.article.title
-"kafka_ed - Articles": kafka_ed - Beiträge
+"Jüdische Geschichte[n] in der DDR - Articles": Jüdische Geschichte[n] in der DDR - Beiträge
 # eko_feed.feeds.article.description
-Latest Articles from the Demo Edition: Neuste Artikel in der Beispiel-Edition
+"Latest Articles from Jüdische Geschichte[n] in der DDR": "Neuste Artikel in Jüdische Geschichte[n] in der DDR"
