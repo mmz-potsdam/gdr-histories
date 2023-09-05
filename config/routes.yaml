@@ -7,7 +7,7 @@ tei-edition-bundle:
     type: annotation
 
 # redirecting the homepage
-jmb:
+app_jmb:
     path: /jmb
     controller: Symfony\Bundle\FrameworkBundle\Controller\RedirectController::urlRedirectAction
     defaults:
