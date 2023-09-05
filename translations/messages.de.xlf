@@ -393,7 +393,7 @@
       </trans-unit>
       <trans-unit id="25a4f31eea22a1d1e9f6426d12d1da1357d418a8" resname="Thank you very much for your interest in our project. We will get back to you as soon as possible.">
         <source>Thank you very much for your interest in our project. We will get back to you as soon as possible.</source>
-        <target>Besten Dank für Ihr Interesse an unserem Projekt. Wir melden uns zeitnah bei Ihnen.</target>
+        <target>Besten Dank für Ihr Interesse an unserem Projekt. Wir beantworten Ihre Anfrage so bald als möglich.</target>
         <jms:reference-file line="8">\..\..\..\..\..\..\./templates\About\contact-sent.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="0e2d9b0777a485c1276de0803c12a7d76fbc5c39" resname="URL">
@@ -419,7 +419,7 @@
       </trans-unit>
       <trans-unit id="60fec3e8a77dfaa4c3660e74846536f6e74f5812" resname="We are very sorry: There was a technical problem delivering your message. Please contact us at &lt;a href=&quot;mailto:info@juedische-geschichte-online.net&quot;&gt;info@juedische-geschichte-online.net&lt;/a&gt;.">
         <source><![CDATA[We are very sorry: There was a technical problem delivering your message. Please contact us at <a href="mailto:info@juedische-geschichte-online.net">info@juedische-geschichte-online.net</a>.]]></source>
-        <target><![CDATA[Wir entschuldigen uns: Beim Versand der Nachricht ist ein technisches Problem aufgetreten. Bitte kontaktieren Sie uns unter <a href="mailto:info@juedische-geschichte-online.net">info@juedische-geschichte-online.net</a>.]]></target>
+        <target><![CDATA[Beim Versand Ihrer Nachricht ist ein Fehler aufgetreten. Bitte kontaktieren Sie uns unter <a href="mailto:info@juedische-geschichte-online.net">info@juedische-geschichte-online.net</a>.]]></target>
         <jms:reference-file line="10">\..\..\..\..\..\..\./templates\About\contact-sent.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="ca4f9dcf204e2037bfe5884867bead98bd9cbaf8" resname="Welcome">
