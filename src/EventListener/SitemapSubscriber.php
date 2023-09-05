@@ -119,7 +119,7 @@ implements EventSubscriberInterface
 
             if (!array_key_exists('_controller', $defaults)
                 || !($this->startsWith($defaults['_controller'], 'TeiEditionBundle')
-                    || !$this->startsWith($defaults['_controller'], 'App')))
+                    || $this->startsWith($defaults['_controller'], 'App')))
             {
                 // skip routes from other bundles
                 continue;
