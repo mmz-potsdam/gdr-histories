@@ -1,10 +1,16 @@
-app_logout:
-    path: /logout
-    methods: GET
-
 tei-edition-bundle:
     resource: '@TeiEditionBundle/Controller/'
     type: annotation
+
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+app_logout:
+    path: /logout
+    methods: GET
 
 # redirecting the homepage
 app_jmb:
