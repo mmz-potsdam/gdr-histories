@@ -8,9 +8,10 @@ parameters:
     locales: [de]        # without app. prefix for TeiEditionBundle
     app.default_locale: 'de'
     default_locale: 'de' # without app. prefix for TeiEditionBundle
-    app.site.name: "Jüdische Geschichte[n] in der DDR"
-    app.site.byline: "Ein Interview-Portal"
-    app.site.publisher: "Moses Mendelssohn Zentrum für europäisch-jüdische Studien"
+
+    app.site.name: 'Jüdische Geschichte[n] in der DDR'
+    app.site.byline: 'Ein Interview-Portal'
+    app.site.publisher: 'Moses Mendelssohn Zentrum für europäisch-jüdische Studien'
     app.site.email: 'info@juedische-geschichte-online.net'
     app.site.matomo.id: "%env(string:SITE_MATOMO_ID)%"
     app.site_theme: null
@@ -36,12 +37,12 @@ parameters:
                 I: 'NotoSerif-Italic.ttf'
                 BI: 'NotoSerif-BoldItalic.ttf'
         default_font: book_typeface
-    # for testing (https://doi.test.datacite.org/), use
-    app.datacite.url: "https://mds.test.datacite.org/" # see https://support.datacite.org/docs/testing-guide
-    # app.datacite.url: " https://mds.datacite.org/" # production
+    app.datacite.url: "%env(string:DATACITE_URL)%"
     app.datacite.user: SUBGOE.IGDJ
-    app.datacite.password: ~
+    app.datacite.password: "%env(string:DATACITE_PASSWORD)%"
     app.datacite.prefix: 10.23691
+    app.datacite.funding: ~
+    app.datacite.url_production_adjust: '%env(json:DATACITE_URL_PRODUCTION_ADJUST)%'
 
     #app.wordpress.url: 'https://ddr.juedische-geschichte-online.net/cms/'
 
