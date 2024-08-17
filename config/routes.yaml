@@ -1,6 +1,6 @@
 tei-edition-bundle:
     resource: '@TeiEditionBundle/Controller/'
-    type: annotation
+    type: attribute
 
 controllers:
     resource:

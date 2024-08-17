@@ -10,14 +10,10 @@ use Symfony\Component\Routing\Annotation\Route;
 use TeiEditionBundle\Entity\Event;
 use App\Form\AdminEventType;
 
-/**
- * @Route("/admin/event")
- */
+#[Route(path: '/admin/event')]
 class AdminEventController extends AbstractController
 {
-    /**
-     * @Route("/", name="app_admin_event_index", methods={"GET"})
-     */
+    #[Route(path: '/', name: 'app_admin_event_index', methods: ['GET'])]
     public function index(EntityManagerInterface $entityManager): Response
     {
         $results = $entityManager
@@ -31,9 +27,7 @@ class AdminEventController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/new", name="app_admin_event_new", methods={"GET", "POST"})
-     */
+    #[Route(path: '/new', name: 'app_admin_event_new', methods: ['GET', 'POST'])]
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
         $event = new Event();
@@ -55,9 +49,7 @@ class AdminEventController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/{id}", name="app_admin_event_show", methods={"GET"})
-     */
+    #[Route(path: '/{id}', name: 'app_admin_event_show', methods: ['GET'])]
     public function show(Event $event): Response
     {
         return $this->render('Admin/Event/show.html.twig', [
@@ -65,9 +57,7 @@ class AdminEventController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/{id}/edit", name="app_admin_event_edit", methods={"GET", "POST"})
-     */
+    #[Route(path: '/{id}/edit', name: 'app_admin_event_edit', methods: ['GET', 'POST'])]
     public function edit(Request $request, Event $event, EntityManagerInterface $entityManager): Response
     {
         $form = $this->createForm(AdminEventType::class, $event);
@@ -87,9 +77,7 @@ class AdminEventController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/{id}", name="app_admin_event_delete", methods={"POST"})
-     */
+    #[Route(path: '/{id}', name: 'app_admin_event_delete', methods: ['POST'])]
     public function delete(Request $request, Event $event, EntityManagerInterface $entityManager): Response
     {
         if ($this->isCsrfTokenValid('delete'.$event->getId(), $request->request->get('_token'))) {

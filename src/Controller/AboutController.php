@@ -63,11 +63,9 @@ extends \TeiEditionBundle\Controller\RenderTeiController
         ]);
     }
 
-    /**
-     * @Route("/about", name="about")
-     * @Route("/terms", name="terms")
-     * @Route("/contact", name="contact")
-     */
+    #[Route(path: '/about', name: 'about')]
+    #[Route(path: '/terms', name: 'terms')]
+    #[Route(path: '/contact', name: 'contact')]
     public function renderAbout(Request $request,
                                 TranslatorInterface $translator,
                                 $title = null)

@@ -10,14 +10,10 @@ use Symfony\Component\Routing\Annotation\Route;
 use TeiEditionBundle\Entity\Place;
 use App\Form\AdminPlaceType;
 
-/**
- * @Route("/admin/place")
- */
+#[Route(path: '/admin/place')]
 class AdminPlaceController extends AbstractController
 {
-    /**
-     * @Route("/", name="app_admin_place_index", methods={"GET"})
-     */
+    #[Route(path: '/', name: 'app_admin_place_index', methods: ['GET'])]
     public function index(EntityManagerInterface $entityManager): Response
     {
         $results = $entityManager
@@ -31,9 +27,7 @@ class AdminPlaceController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/new", name="app_admin_place_new", methods={"GET", "POST"})
-     */
+    #[Route(path: '/new', name: 'app_admin_place_new', methods: ['GET', 'POST'])]
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
         $place = new Place();
@@ -55,9 +49,7 @@ class AdminPlaceController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/{id}", name="app_admin_place_show", methods={"GET"})
-     */
+    #[Route(path: '/{id}', name: 'app_admin_place_show', methods: ['GET'])]
     public function show(Place $place): Response
     {
         return $this->render('Admin/Place/show.html.twig', [
@@ -65,9 +57,7 @@ class AdminPlaceController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/{id}/edit", name="app_admin_place_edit", methods={"GET", "POST"})
-     */
+    #[Route(path: '/{id}/edit', name: 'app_admin_place_edit', methods: ['GET', 'POST'])]
     public function edit(Request $request, Place $place, EntityManagerInterface $entityManager): Response
     {
         $form = $this->createForm(AdminPlaceType::class, $place);
@@ -87,9 +77,7 @@ class AdminPlaceController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/{id}", name="app_admin_place_delete", methods={"POST"})
-     */
+    #[Route(path: '/{id}', name: 'app_admin_place_delete', methods: ['POST'])]
     public function delete(Request $request, Place $place, EntityManagerInterface $entityManager): Response
     {
         if ($this->isCsrfTokenValid('delete'.$place->getId(), $request->request->get('_token'))) {

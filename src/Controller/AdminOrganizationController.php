@@ -10,14 +10,10 @@ use Symfony\Component\Routing\Annotation\Route;
 use TeiEditionBundle\Entity\Organization;
 use App\Form\AdminOrganizationType;
 
-/**
- * @Route("/admin/organization")
- */
+#[Route(path: '/admin/organization')]
 class AdminOrganizationController extends AbstractController
 {
-    /**
-     * @Route("/", name="app_admin_organization_index", methods={"GET"})
-     */
+    #[Route(path: '/', name: 'app_admin_organization_index', methods: ['GET'])]
     public function index(EntityManagerInterface $entityManager): Response
     {
         $results = $entityManager
@@ -31,9 +27,7 @@ class AdminOrganizationController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/new", name="app_admin_organization_new", methods={"GET", "POST"})
-     */
+    #[Route(path: '/new', name: 'app_admin_organization_new', methods: ['GET', 'POST'])]
     public function new(Request $request, EntityManagerInterface $entityManager): Response
     {
         $organization = new Organization();
@@ -55,9 +49,7 @@ class AdminOrganizationController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/{id}", name="app_admin_organization_show", methods={"GET"})
-     */
+    #[Route(path: '/{id}', name: 'app_admin_organization_show', methods: ['GET'])]
     public function show(Organization $organization): Response
     {
         return $this->render('Admin/Organization/show.html.twig', [
@@ -65,9 +57,7 @@ class AdminOrganizationController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/{id}/edit", name="app_admin_organization_edit", methods={"GET", "POST"})
-     */
+    #[Route(path: '/{id}/edit', name: 'app_admin_organization_edit', methods: ['GET', 'POST'])]
     public function edit(Request $request, Organization $organization, EntityManagerInterface $entityManager): Response
     {
         $form = $this->createForm(AdminOrganizationType::class, $organization);
@@ -87,9 +77,7 @@ class AdminOrganizationController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/{id}", name="app_admin_organization_delete", methods={"POST"})
-     */
+    #[Route(path: '/{id}', name: 'app_admin_organization_delete', methods: ['POST'])]
     public function delete(Request $request, Organization $organization, EntityManagerInterface $entityManager): Response
     {
         if ($this->isCsrfTokenValid('delete'.$organization->getId(), $request->request->get('_token'))) {

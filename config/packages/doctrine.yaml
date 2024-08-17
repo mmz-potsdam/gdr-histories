@@ -14,10 +14,12 @@ doctrine:
         report_fields_where_declared: true
         validate_xml_mapping: true
         naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
+        controller_resolver:
+            auto_mapping: false
         auto_mapping: true
         mappings:
             App:
-                type: annotation # TODO: switch to attribute
+                type: attribute
                 is_bundle: false
                 dir: '%kernel.project_dir%/src/Entity'
                 prefix: 'App\Entity'
@@ -25,13 +27,13 @@ doctrine:
         dql:
             string_functions:
                 REPLACE: DoctrineExtensions\Query\Mysql\Replace
-                CAST:       Oro\ORM\Query\AST\Functions\Cast
+                CAST: Oro\ORM\Query\AST\Functions\Cast
                 # https://packagist.org/packages/scienta/doctrine-json-functions
                 JSON_EXTRACT: Scienta\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonExtract
                 JSON_CONTAINS: Scienta\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonContains
                 JSON_UNQUOTE: Scienta\DoctrineJsonFunctions\Query\AST\Functions\Mysql\JsonUnquote
             datetime_functions:
-                YEAR:       DoctrineExtensions\Query\Mysql\Year
+                YEAR: DoctrineExtensions\Query\Mysql\Year
 
 when@test:
     doctrine:
