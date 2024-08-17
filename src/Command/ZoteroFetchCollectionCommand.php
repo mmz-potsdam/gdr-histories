@@ -28,7 +28,7 @@ extends Command
         $this->zoteroApiService = $zoteroApiService;
     }
 
-    protected function configure()
+    protected function configure(): void
     {
         $this
             ->setName('zotero:fetch-collection')
