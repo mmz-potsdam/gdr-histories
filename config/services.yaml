@@ -9,6 +9,8 @@ parameters:
     app.default_locale: 'de'
     default_locale: 'de' # without app. prefix for TeiEditionBundle
 
+    app.site.key: 'gdr'
+
     app.site.name: 'Jüdische Geschichte[n] in der DDR'
     app.site.byline: 'Ein Interview-Portal'
     app.site.publisher: 'Moses Mendelssohn Zentrum für europäisch-jüdische Studien'
