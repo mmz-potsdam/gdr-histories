@@ -39,8 +39,8 @@ class AdminEventController extends AbstractController
             $entityManager->flush();
 
             return $this->redirectToRoute('app_admin_event_show', [
-                    'id' => $event->getId(),
-                ], Response::HTTP_SEE_OTHER);
+                'id' => $event->getId(),
+            ], Response::HTTP_SEE_OTHER);
         }
 
         return $this->renderForm('Admin/Event/new.html.twig', [
@@ -67,8 +67,8 @@ class AdminEventController extends AbstractController
             $entityManager->flush();
 
             return $this->redirectToRoute('app_admin_event_show', [
-                    'id' => $event->getId(),
-                ], Response::HTTP_SEE_OTHER);
+                'id' => $event->getId(),
+            ], Response::HTTP_SEE_OTHER);
         }
 
         return $this->renderForm('Admin/Event/edit.html.twig', [
@@ -80,7 +80,7 @@ class AdminEventController extends AbstractController
     #[Route(path: '/{id}', name: 'app_admin_event_delete', methods: ['POST'])]
     public function delete(Request $request, Event $event, EntityManagerInterface $entityManager): Response
     {
-        if ($this->isCsrfTokenValid('delete'.$event->getId(), $request->request->get('_token'))) {
+        if ($this->isCsrfTokenValid('delete' . $event->getId(), $request->request->get('_token'))) {
             $entityManager->remove($event);
             $entityManager->flush();
         }

@@ -39,8 +39,8 @@ class AdminOrganizationController extends AbstractController
             $entityManager->flush();
 
             return $this->redirectToRoute('app_admin_organization_show', [
-                    'id' => $organization->getId(),
-                ], Response::HTTP_SEE_OTHER);
+                'id' => $organization->getId(),
+            ], Response::HTTP_SEE_OTHER);
         }
 
         return $this->renderForm('Admin/Organization/new.html.twig', [
@@ -67,8 +67,8 @@ class AdminOrganizationController extends AbstractController
             $entityManager->flush();
 
             return $this->redirectToRoute('app_admin_organization_show', [
-                    'id' => $organization->getId(),
-                ], Response::HTTP_SEE_OTHER);
+                'id' => $organization->getId(),
+            ], Response::HTTP_SEE_OTHER);
         }
 
         return $this->renderForm('Admin/Organization/edit.html.twig', [
@@ -80,7 +80,7 @@ class AdminOrganizationController extends AbstractController
     #[Route(path: '/{id}', name: 'app_admin_organization_delete', methods: ['POST'])]
     public function delete(Request $request, Organization $organization, EntityManagerInterface $entityManager): Response
     {
-        if ($this->isCsrfTokenValid('delete'.$organization->getId(), $request->request->get('_token'))) {
+        if ($this->isCsrfTokenValid('delete' . $organization->getId(), $request->request->get('_token'))) {
             $entityManager->remove($organization);
             $entityManager->flush();
         }

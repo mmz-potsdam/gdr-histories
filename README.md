@@ -5,7 +5,7 @@ License
 -------
     Code for the Front-end of ddr.juedische-geschichte-online.net
 
-    (C) 2023-2024 Moses Mendelssohn Center for European-Jewish Studies (MMZ)
+    (C) 2023-2025 Moses Mendelssohn Center for European-Jewish Studies (MMZ)
         Daniel Burckhardt
 
 

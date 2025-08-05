@@ -39,8 +39,8 @@ class AdminPlaceController extends AbstractController
             $entityManager->flush();
 
             return $this->redirectToRoute('app_admin_place_show', [
-                    'id' => $place->getId(),
-                ], Response::HTTP_SEE_OTHER);
+                'id' => $place->getId(),
+            ], Response::HTTP_SEE_OTHER);
         }
 
         return $this->renderForm('Admin/Place/new.html.twig', [
@@ -67,8 +67,8 @@ class AdminPlaceController extends AbstractController
             $entityManager->flush();
 
             return $this->redirectToRoute('app_admin_place_show', [
-                    'id' => $place->getId(),
-                ], Response::HTTP_SEE_OTHER);
+                'id' => $place->getId(),
+            ], Response::HTTP_SEE_OTHER);
         }
 
         return $this->renderForm('Admin/Place/edit.html.twig', [
@@ -80,7 +80,7 @@ class AdminPlaceController extends AbstractController
     #[Route(path: '/{id}', name: 'app_admin_place_delete', methods: ['POST'])]
     public function delete(Request $request, Place $place, EntityManagerInterface $entityManager): Response
     {
-        if ($this->isCsrfTokenValid('delete'.$place->getId(), $request->request->get('_token'))) {
+        if ($this->isCsrfTokenValid('delete' . $place->getId(), $request->request->get('_token'))) {
             $entityManager->remove($place);
             $entityManager->flush();
         }
