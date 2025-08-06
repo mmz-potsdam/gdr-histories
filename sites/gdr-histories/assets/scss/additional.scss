@@ -435,6 +435,7 @@ a[href="#description"]{
                 h4 {
                     margin: 0;
                     color: $color-gray-medium;
+                    text-transform: none;
 
                     a {
                         color: $color-gray-dark;
@@ -534,6 +535,16 @@ body.route-source {
                 .col-1 {
                     border-left: 1px solid $color-color-spot;
                 }
+            }
+        }
+    }
+
+    .mycoreViewer {
+        .dta-time {
+            color: $color-color-spot;
+            span.entity-ref {
+                font-weight: 600;
+                color: $color-color-spot;
             }
         }
     }
