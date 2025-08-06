@@ -34,11 +34,15 @@ parameters:
         tempDir: "%kernel.project_dir%/var/cache/mpdf"
         fontDir: [ "%kernel.project_dir%/data/font" ]
         fontdata:
-            book_typeface:
+            header_typeface:
                 R: 'NotoSerif-Regular.ttf'
                 B: 'NotoSerif-Bold.ttf'
                 I: 'NotoSerif-Italic.ttf'
                 BI: 'NotoSerif-BoldItalic.ttf'
+            book_typeface:
+                R: 'InterVariable.ttf'
+                I: 'InterVariable-Italic.ttf'
+                otl: true
         default_font: book_typeface
     app.datacite.url: "%env(string:DATACITE_URL)%"
     app.datacite.user: SUBGOE.IGDJ

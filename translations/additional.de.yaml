@@ -7,3 +7,6 @@
 "Jüdische Geschichte[n] in der DDR - Articles": Jüdische Geschichte[n] in der DDR - Beiträge
 # eko_feed.feeds.article.description
 "Latest Articles from Jüdische Geschichte[n] in der DDR": "Neuste Artikel in Jüdische Geschichte[n] in der DDR"
+
+# template overrides
+'Collection': Sammlung
