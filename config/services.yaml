@@ -49,6 +49,9 @@ parameters:
 
     #app.wordpress.url: 'https://ddr.juedische-geschichte-online.net/cms/'
 
+    env(FEATURE_PREVIEW_ENV): false  # default to regular display
+    app.preview: '%env(bool:FEATURE_PREVIEW_ENV)%'
+
     jms_i18n_routing.hosts.de: "%env(string:SITE_HOST)%"
 
 services:

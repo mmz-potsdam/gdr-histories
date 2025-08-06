@@ -93,6 +93,9 @@
     "liip/url-auto-converter-bundle": {
         "version": "dev-master"
     },
+    "novaway/feature-flag-bundle": {
+        "version": "2.7.1"
+    },
     "phpstan/phpstan": {
         "version": "2.1",
         "recipe": {
