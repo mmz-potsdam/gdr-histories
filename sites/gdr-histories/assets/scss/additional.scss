@@ -362,6 +362,11 @@ footer {
         border-left: 2px solid $color-color-spot;
     }
 
+
+    #epoch-navigation h5.active a {
+        color: $color-color-spot;
+    }
+
     .sidebar .box .row.box-color-title {
         background-color: $color-gray-light;
     }
@@ -502,6 +507,30 @@ body.route-home {
         background-color: $color-gray-light;
         .news-item {
             background-color: $color-gray-light;
+        }
+    }
+}
+
+body[class*="route-person"],
+body[class*="route-organization"],
+body[class*="route-place"],
+body[class*="route-date"],
+body[class*="route-event"],
+body[class*="route-about"], body.route-terms, body.route-contact
+{
+    > .jumbotron {
+        background-color: $color-gray-light;
+        padding-left: 0;
+        padding-right: 0;
+        h4 > a {
+            color: $color-color-spot;
+            text-decoration: none;
+            &:hover {
+                /*
+                color: $color-color-dark;
+                */
+                text-decoration: underline;
+            }
         }
     }
 }

@@ -5,6 +5,7 @@
         <div class="container">
             <div class="row">
                 <div class="col offset-md-2 col-md-9">
+                    <h4>{{ 'Look-up'|trans }}</h4>
                     <h1>{{ pageTitle }}</h1>
                 </div>
             </div>
@@ -13,9 +14,9 @@
 {% endblock %}
 
 {% block body %}
-<div class="row">
-    <div class="col offset-md-2 col-md-9">
-        {{ content|raw }}
-    </div>
-</div>
+    {#<h1>{{ pageTitle }}</h1>#}
+    <div class="row">
+        {% embed '@TeiEdition/Person/index-listing.html.twig' %}{% endembed %}
+        {% embed '@TeiEdition/Person/index-sidebar.html.twig' %}{% endembed %}
+    </div><!-- .row -->
 {% endblock %}

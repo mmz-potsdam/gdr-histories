@@ -1,0 +1,47 @@
+{% extends '@TeiEdition/Default/base.html.twig' %}
+
+{% block contenttop %}
+    <div class="jumbotron pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col offset-md-2 col-md-9">
+                    <h4>{{ 'Look-up'|trans }}</h4>
+                    <h1>{{ pageTitle }}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block body %}
+    {#
+    <h1>{{ 'Organizations' | trans }}</h1>
+    #}
+    <div class="row">
+        <div class="col offset-md-2 col-md-9">
+        {% if organizations is not empty %}
+        {% set last_initial = '' %}
+        {% for organization in organizations %}
+            {% set name = organization.nameLocalized(app.request.locale) %}
+            {% set initial = slugify.slugify(name)|first|upper %}
+            {% if initial != last_initial %}
+                {% if last_initial != '' %}
+            </ul>
+                {% endif %}
+            <h2>{{ initial }}</h2>
+            {% set last_initial = initial %}
+            <ul class="list-unstyled">
+            {% endif %}
+            <li>
+                <a href="{% if organization.gnd is not empty %}{{ path('organization-by-gnd', { 'gnd' : organization.gnd }) }}{% else %}{{ path('organization', { 'id' : organization.id }) }}{% endif %}">
+                {{ name }}
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
+        {% else %}
+            {{ 'No organizations could be found'|trans }}
+        {% endif %}
+        </div>
+    </div><!-- .row -->
+{% endblock %}
