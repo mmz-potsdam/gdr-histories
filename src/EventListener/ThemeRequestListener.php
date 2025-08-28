@@ -4,7 +4,6 @@
 
 namespace App\EventListener;
 
-use Novaway\Bundle\FeatureFlagBundle\Manager\FeatureManager;
 use Symfony\Component\HttpKernel\Event\RequestEvent;
 use Sylius\Bundle\ThemeBundle\Context\SettableThemeContext;
 use Sylius\Bundle\ThemeBundle\Repository\ThemeRepositoryInterface;
@@ -17,19 +16,17 @@ class ThemeRequestListener
     /** @var SettableThemeContext */
     private $themeContext;
 
-    /** @var FeatureManager|null */
-    private $featureManager;
-
-    private $siteTheme = 'mmz-potsdam/gdr-histories';
+    /** @var string|null */
+    private $siteTheme;
 
     public function __construct(
         ThemeRepositoryInterface $themeRepository,
         SettableThemeContext $themeContext,
-        ?FeatureManager $featureManager = null
+        ?string $siteTheme
     ) {
         $this->themeRepository = $themeRepository;
         $this->themeContext = $themeContext;
-        $this->featureManager = $featureManager;
+        $this->siteTheme = $siteTheme;
     }
 
     public function onKernelRequest(RequestEvent $event): void
@@ -39,7 +36,7 @@ class ThemeRequestListener
             return;
         }
 
-        if (is_null($this->featureManager) || !$this->featureManager->isEnabled('preview')) {
+        if (is_null($this->siteTheme)) {
             // go with the default theme
             return;
         }

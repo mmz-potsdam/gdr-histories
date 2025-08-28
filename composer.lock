@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b3f5c67afa092d707870c0cc8dd6d452",
+    "content-hash": "8133c4b704559cd60914f8374ff7abfd",
     "packages": [
         {
             "name": "armin/scssphp-bundle",
@@ -2800,7 +2800,7 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v12.26.2",
+            "version": "v12.26.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
@@ -2859,7 +2859,7 @@
         },
         {
             "name": "illuminate/conditionable",
-            "version": "v12.26.2",
+            "version": "v12.26.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/conditionable.git",
@@ -2905,7 +2905,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v12.26.2",
+            "version": "v12.26.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -2953,7 +2953,7 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v12.26.2",
+            "version": "v12.26.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -2999,7 +2999,7 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v12.26.2",
+            "version": "v12.26.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
@@ -4623,74 +4623,6 @@
                 "source": "https://github.com/nikic/PHP-Parser/tree/v5.6.1"
             },
             "time": "2025-08-13T20:13:15+00:00"
-        },
-        {
-            "name": "novaway/feature-flag-bundle",
-            "version": "2.8.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/novaway/NovawayFeatureFlagBundle.git",
-                "reference": "b2f3380cd4a24c4209ece589b0d07ee83817e826"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/novaway/NovawayFeatureFlagBundle/zipball/b2f3380cd4a24c4209ece589b0d07ee83817e826",
-                "reference": "b2f3380cd4a24c4209ece589b0d07ee83817e826",
-                "shasum": ""
-            },
-            "require": {
-                "doctrine/annotations": "^1.12|^2.0",
-                "ext-json": "*",
-                "php": ">= 7.3",
-                "symfony/framework-bundle": "~4.4|~5.0|~6.0|~7.0",
-                "symfony/yaml": "~4.4|~5.0|~6.0|~7.0"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.0",
-                "phpstan/extension-installer": "^1.1",
-                "phpstan/phpstan": "^1.7",
-                "phpunit/phpunit": "^9.5",
-                "symfony/asset": "~3.0|~4.0|~5.0|~6.0|~7.0",
-                "symfony/browser-kit": "~4.0|~5.0|~6.0|~7.0",
-                "symfony/css-selector": "~4.0|~5.0|~6.0|~7.0",
-                "symfony/expression-language": "~4.0|~5.0|~6.0|~7.0",
-                "symfony/templating": "~4.0|~5.0|~6.0|~7.0",
-                "symfony/twig-bundle": "~4.0|~5.0|~6.0|~7.0",
-                "twig/twig": "^2.15|^3.0"
-            },
-            "suggest": {
-                "twig/twig": "To check feature in your Twig templates"
-            },
-            "type": "symfony-bundle",
-            "autoload": {
-                "psr-4": {
-                    "Novaway\\Bundle\\FeatureFlagBundle\\": "src/"
-                },
-                "exclude-from-classmap": [
-                    "src/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jérémy DECOOL",
-                    "email": "jeremy@novaway.fr"
-                }
-            ],
-            "description": "Very KISS bundle to manage features flag",
-            "keywords": [
-                "feature",
-                "flag",
-                "symfony"
-            ],
-            "support": {
-                "issues": "https://github.com/novaway/NovawayFeatureFlagBundle/issues",
-                "source": "https://github.com/novaway/NovawayFeatureFlagBundle/tree/2.8.0"
-            },
-            "time": "2025-08-19T09:04:48+00:00"
         },
         {
             "name": "openspout/openspout",
