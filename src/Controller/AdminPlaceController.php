@@ -43,7 +43,7 @@ class AdminPlaceController extends AbstractController
             ], Response::HTTP_SEE_OTHER);
         }
 
-        return $this->renderForm('Admin/Place/new.html.twig', [
+        return $this->render('Admin/Place/new.html.twig', [
             'place' => $place,
             'form' => $form,
         ]);
@@ -71,7 +71,7 @@ class AdminPlaceController extends AbstractController
             ], Response::HTTP_SEE_OTHER);
         }
 
-        return $this->renderForm('Admin/Place/edit.html.twig', [
+        return $this->render('Admin/Place/edit.html.twig', [
             'place' => $place,
             'form' => $form,
         ]);

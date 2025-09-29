@@ -43,7 +43,7 @@ class AdminEventController extends AbstractController
             ], Response::HTTP_SEE_OTHER);
         }
 
-        return $this->renderForm('Admin/Event/new.html.twig', [
+        return $this->render('Admin/Event/new.html.twig', [
             'event' => $event,
             'form' => $form,
         ]);
@@ -71,7 +71,7 @@ class AdminEventController extends AbstractController
             ], Response::HTTP_SEE_OTHER);
         }
 
-        return $this->renderForm('Admin/Event/edit.html.twig', [
+        return $this->render('Admin/Event/edit.html.twig', [
             'event' => $event,
             'form' => $form,
         ]);

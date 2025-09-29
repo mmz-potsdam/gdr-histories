@@ -43,7 +43,7 @@ class AdminOrganizationController extends AbstractController
             ], Response::HTTP_SEE_OTHER);
         }
 
-        return $this->renderForm('Admin/Organization/new.html.twig', [
+        return $this->render('Admin/Organization/new.html.twig', [
             'organization' => $organization,
             'form' => $form,
         ]);
@@ -71,7 +71,7 @@ class AdminOrganizationController extends AbstractController
             ], Response::HTTP_SEE_OTHER);
         }
 
-        return $this->renderForm('Admin/Organization/edit.html.twig', [
+        return $this->render('Admin/Organization/edit.html.twig', [
             'organization' => $organization,
             'form' => $form,
         ]);
