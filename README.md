@@ -37,7 +37,7 @@ Installation
 ------------
 ### Requirements
 
-- PHP >= 8.1 (check with `php -v`)
+- PHP >= 8.2 (check with `php -v`)
 - composer (check with `composer -v`; if it is missing, see https://getcomposer.org/)
 - `convert` (for image tiles, check with `which convert`; if it is missing, install e.g. with `sudo apt-get install imagemagick`)
 - Java 1.11 (for XSLT and Solr, check with `java -version`; if it is missing, install e.g. with `sudo apt-get install openjdk-11-jdk`)
@@ -45,7 +45,7 @@ Installation
 
 In a fitting directory (e.g. `/var/www`), clone the project
 
-    git clone https://github.com/burki/gdr-histories.git
+    git clone https://github.com/mmz-potsdam/gdr-histories.git
 
 If you don't have `git` installed, you can also download the project as ZIP-file
 and extract it manually.
