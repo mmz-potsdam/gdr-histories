@@ -26,9 +26,14 @@
                     <div class="col-md-4" id="site-name">
                         <h1>
                             <a href="{{ path('home') }}">
+                                <img src="{{ app.request.basepath }}/img/ade/logo.svg" style="width: 220px; height: auto; margin-bottom: 5px;" alt="{{ siteName|trans({}, 'additional') }}"/>
+                            </a>
+                            {#
+                            <a href="{{ path('home') }}">
                                 {{ siteName|trans({}, 'additional') }}
                             </a>
                             <br /><a href="{{ path('home') }}" id="site-tagline">{{ siteTagline|trans({}, 'additional') }}</a>
+                            #}
                         </h1>
                     </div>
                     <div class="col-md-7 offset-md-1">
