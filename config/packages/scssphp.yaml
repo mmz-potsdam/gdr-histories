@@ -18,3 +18,11 @@ scssphp:
             importPaths:
                 - "sites/gdr-histories/assets/scss"    # theme-specific settings come first
                 - "assets/scss"                        # main directory
+        # for the ade theme
+        "css/ade.css":
+            src: "sites/ade/assets/scss/base.scss"
+            sourceMap: true
+            # Array of import paths, relative to Symfony's project directory.
+            importPaths:
+                - "sites/ade/assets/scss"              # theme-specific settings come first
+                - "assets/scss"                        # main directory

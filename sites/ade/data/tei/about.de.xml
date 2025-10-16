@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.deutschestextarchiv.de/basisformat.rng"
+type="application/xml"
+schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dtabf">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Über dieses Online-Angebot</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <orgName ref="http://d-nb.info/gnd/2130670-9">Moses Mendelssohn Zentrum für
+                        europäisch-jüdische Studien</orgName>
+                    <email>redaktion@juedische-geschichte-online.net</email>
+                    <address>
+                        <addrLine>Am Neuen Markt 8, 14467 Potsdam</addrLine>
+                    </address>
+                </publisher>
+                <pubPlace>Potsdam</pubPlace>
+                <date type="publication">2023-09-06</date>
+                <!--
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+                        <p>Dieser Text unterliegt den Bedingungen der Creative Commons Namensnennung
+                            - Nicht kommerziell - Keine Bearbeitungen 4.0 International Lizenz.
+                            Unter Namensnenung gemäß dem Zitationshinweis darf er in unveränderter
+                            Form für nicht-kommerzielle Zwecke nachgenutzt werden.</p>
+                    </licence>
+                </availability>
+                -->
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div n="2">
+                <p>Das Interview- und Forschungsprojekt „Archiv der Erinnerung. Interviews mit
+                    Überlebenden der Shoah“ wurde von 1995 bis 1997 als internationale Kooperation
+                    zwischen dem Moses Mendelssohn Zentrum für europäisch-jüdische Studien und dem
+                    Fortunoff Video Archive for Holocaust Testimonies (Yale University) durchgeführt
+                    und von der VolkswagenStiftung gefördert.</p>
+
+                <p>Die Interviews entstanden aufgrund verschiedener Arbeitsschwerpunkte der beiden
+                    Institutionen in einem interdisziplinären Team. Die Interviewer:innengruppe
+                    stammte vor allem aus dem universitären Bereich, unter anderem der Geschichts-
+                    und Literaturforschung sowie der Jüdischen Studien und dem Bereich der
+                    therapeutischen Arbeit. Geleitet wurde das Projekt von den damaligen Direktoren
+                    beider Einrichtungen, Prof. Dr. Julius H. Schoeps und Prof. Dr. Geoffrey H.
+                    Hartman. Hauptsächlich in den Jahren 1995 und 1996 wurden im Rahmen des „Archivs
+                    der Erinnerung“ 78 zumeist in der Region Berlin-Brandenburg lebende jüdische
+                    Zeitzeug:innen vor der Kamera interviewt. Thematisch wird eine Zeitspanne vom
+                    19. Jahrhundert über die NS-Zeit abgedeckt, die Zeitzeug:innen sprechen aber
+                    auch über die DDR-Zeit. Koordinatorinnen waren Dr. Cathy Gelbin und Eva
+                    Lezzi.</p>
+                <p> Die vollständige und ungeschnittene Sammlung des „Archiv der Erinnerung“ kann an
+                    der Yale University recherchiert und nach einer Registrierung auch online
+                    eingesehen werden: <ref
+                        target="https://fortunoff.aviaryplatform.com/collections/1468"
+                        >https://fortunoff.aviaryplatform.com/collections/1468</ref><lb/>
+                    Ebenso besteht in der <ref target="https://www.mmz-potsdam.de/bibliothek">Bibliothek des Moses Mendelssohn Zentrums</ref> und in der
+                    Berliner Gedenkstätte Haus der Wannsee-Konferenz die Möglichkeit, Einsicht in
+                    die Videos zu bekommen. </p>
+                <p> Von Anfang an war auch die pädagogische Verwendung der Interviews in Schule,
+                    Erwachsenenbildung und Universität ein integraler Teil der Konzeption des
+                    „Archivs der Erinnerung“. Zu diesem Zweck wurden sechs exemplarische Interviews
+                    auf eine jeweils halbstündige Länge ediert. Wir danken allen
+                    Interviewpartner:innen und insbesondere denjenigen, die ihr Interview
+                    stellvertretend für alle für die vorliegenden Unterrichtsmaterialien zur
+                    Verfügung gestellt haben. </p>
+                <p> Für die Gesamtkonzeption der Video-Edition waren Dr. Irene Diekmann, Dr. Cathy
+                    Gelbin und Eva Lezzi (alle Moses Mendelssohn Zentrum) sowie Dr. Michael Kaden
+                    (Medienpädagogisches Zentrum des Landes Brandenburgs) verantwortlich. Den
+                    Schnitt und die künstlerische Realisation der Edition besorgten
+                    dankenswerterweise Ulrike Hemberger und Rainer Hällfritzsch. </p>
+                <p> Zeitgleich mit der Video-Edition für den pädagogischen Gebrauch erschien ein
+                    wissenschaftlicher Auswertungsband zum „Archiv der Erinnerung“, der Analysen
+                    einiger für die Unterrichtsmaterialien ausgewählten Interviews enthält, sowie
+                    ein kommentierter Katalog mit biographischen Angaben zu den
+                    Interviewpartner:innen und ein Schlagwort- und Ortsregister. </p>
+                <p>
+                    <lb/>
+                     Projektleitung: Prof. Dr. Julius H. Schoeps und Prof. Dr. Geoffrey H. Hartman<lb/>
+                     Projektkoordination: Dr. Cathy Gelbin und Eva Lezzi<lb/>
+                     Gesamtkonzeption der Video-Edition: Dr. Irene Diekmann, Dr. Cathy Gelbin und
+                    Eva Lezzi (alle Moses Mendelssohn Zentrum) sowie Dr. Michael Kaden
+                    (Medienpädagogisches Zentrum des Landes Brandenburgs). Schnitt und künstlerische
+                    Realisation der Edition: Ulrike Hemberger und Rainer Hällfritzsch.<lb/>
+                     Online-Edition: Nina Zellerhoff und Daniel Burckhardt </p>
+            </div>
+        </body>
+    </text>
+</TEI>

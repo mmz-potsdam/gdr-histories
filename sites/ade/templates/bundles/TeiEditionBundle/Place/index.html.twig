@@ -1,0 +1,55 @@
+{% extends '@TeiEdition/Default/base.html.twig' %}
+
+{% block contenttop %}
+    <div class="jumbotron pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col offset-md-2 col-md-9">
+                    <h4>{{ 'Look-up'|trans }}</h4>
+                    <h1>{{ pageTitle }}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block body %}
+    {#
+    <h1>{{ 'Places' | trans }}</h1>
+    #}
+    <div class="row">
+        <div class="col offset-md-2 col-md-9">
+        {% if places is not empty %}
+        {% set last_initial = '' %}
+        {% for place in places %}
+            {% set initial = slugify.slugify(place.nameLocalized(app.request.locale)|first)|upper %}
+            {% if initial != last_initial %}
+                {% if last_initial != '' %}
+            </ul>
+                {% endif %}
+            <h2>{{ initial }} </h2>
+            {% set last_initial = initial %}
+            <ul class="list-unstyled">
+            {% endif %}
+            <li>
+                <a href="{% if place.tgn is not empty %}{{ path('place-by-tgn', { 'tgn' : place.tgn }) }}{% else %}{{ path('person', { 'id' : person.id }) }}{% endif %}">
+                    {{ place.nameLocalized(app.request.locale) }}
+                </a>
+                {% if place.children|length > 0 %}
+                    <ul>
+                        {% for child in place.children %}
+                        <li><a href="{% if child.tgn is not empty %}{{ path('place-by-tgn', { 'tgn' : child.tgn }) }}{% else %}{{ path('place', { 'id' : child.id }) }}{% endif %}">
+                            {{ child.name }}
+                        </a></li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </li>
+        {% endfor %}
+        </ul>
+        {% else %}
+            {{ 'No places could be found'|trans }}
+        {% endif %}
+        </div>
+    </div><!-- .row -->
+{% endblock %}

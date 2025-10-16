@@ -1,0 +1,162 @@
+{% extends '@TeiEdition/Default/base.html.twig' %}
+
+{% import '@TeiEdition/Shared/map-leaflet.html.twig' as map %}
+
+{% block head %}
+    {{ map.head() }}
+    {{ map.head_markercluster() }}
+
+    <script src="{{ app.request.basepath }}/js/blazy.min.js"></script>
+{% endblock %}
+
+{% block contenttop %}
+{% embed '@TeiEdition/Default/contenttop_skeleton.html.twig' %}
+    {% block carousel %}
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+    {#
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+    #}
+        <div class="carousel-inner">
+            <div class="carousel-item active d-flex" style="height: 360px; background-image: url('{{ app.request.basepath }}/viewer/home/banner-archiv-der-erinnerung.png'); background-position: center center; background-size: cover; background-repeat: no-repeat;">
+                <div class="container align-self-end">
+                    {#
+                    <blockquote class"blockquote">
+                        <p>
+                        „Für mich war vor allen Dingen auch ausschlaggebend,
+                        dass ich mich befreunden konnte mit dem Gedanken,
+                        wieder in Deutschland zu sein“
+                        </p>
+                        <footer class="blockquote-footer">
+                            <a href="{{ path('source', { 'uid': 'source-31' }) }}">Hilde Eisler, Interview vom 31.08.1989</a>
+                        </footer>
+                    </blockquote>
+                    #}
+                </div>
+            </div>
+            {#
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+            </div>
+            #}
+        </div>
+        {#
+        <button class="carousel-control-prev" type="button" data-target="#carousel" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carousel" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+        </button>
+        #}
+    </div><!-- #carousel -->
+    {% endblock %}
+{% endembed %}
+{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div id="col-main" class="col-12 offset-md-2 col-md-8">
+            <h4>{{ 'Welcome'|trans }}</h4>
+            <h2>{{ siteName|trans({}, 'additional') }}</h2>
+            <div class="two-columns-disabled justify-hyphens">
+                {% if 'en' == app.request.locale %}
+                    <p class="dta-p"><a href="{{ path('about') }}">read on...</a></p>
+                {% else %}
+                    <p class="dta-p">
+                        Das Interview- und Forschungsprojekt „Archiv der Erinnerung. Interviews mit Überlebenden der Shoah“ wurde von 1995 bis 1997 als internationale Kooperation zwischen dem Moses Mendelssohn Zentrum für europäisch-jüdische Studien und dem Fortunoff Video Archive for Holocaust Testimonies (Yale University) durchgeführt und von der VolkswagenStiftung gefördert.</p>
+                    </p>
+                    <p>
+                        Von Anfang an war auch die pädagogische Verwendung der Interviews in Schule, Erwachsenenbildung und Universität ein integraler Teil der Konzeption des „Archivs der Erinnerung“. Zu diesem Zweck wurden sechs exemplarische Interviews auf eine jeweils halbstündige Länge ediert. Wir danken allen Interviewpartner:innen und insbesondere denjenigen, die ihr Interview stellvertretend für alle für das hier vorliegende Bildungs- und Vermittlungsangebot zur Verfügung gestellt haben.
+                    <p>
+                        <a href="{{ path('about') }}">Mehr...</a>
+                    </p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div><!-- .container.wrapper -->
+<!--
+<div id="news" class="jumbotron jumbotron-fluid mt-2 p-0">
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-8 offset-md-2 bg-white">
+                <div class="news-item ps-4 py-3 pe-3">
+                    <h4>Aktuelles</h4>
+                </div>
+            </div>
+            {#
+            <div class="col col-5 col-md-4">
+                <div class="news-item pr-1 py-3 pr-3">
+                    Second Item
+                </div>
+            </div>
+            <div class="col col-md-2 d-none d-md-block" style="border-left: 15px solid white">
+            </div>
+            #}
+        </div>
+    </div>
+</div>
+-->
+<div class="container wrapper">
+    <div class="row">
+        <div class="col-12 offset-md-2 col-md-8">
+            {#
+            <div class="container-fluid box">
+                <div class="row box-header map">
+                    <div class="col-sm-12">
+                        <h4><a href="{{ path('place-map') }}">{{ 'Map'|trans }}</a></h4>
+                    </div>
+                </div>
+                <div class="row box-content">
+                    <div class="col-sm-12">
+                        <div id="map-container">
+                            <div id="map" style="width: 100%; min-height: 320px"></div>
+                            <script>
+                            $( document).ready(function () {
+                                showMap();
+                            });
+
+                            {{ map.showMap(bounds, markers) }}
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            #}
+
+            <h4 class="mt-2">{{ 'Interviews'|trans }}</h4>
+            <h2><a href="{{ path('date-chronology') }}">{{ 'Chronology'|trans }}</a></h2>
+            <div class="container-fluid box mb-4">
+                <div class="row box-content">
+                    <div id="chronology" data-url="{{ path('date-chronology-partial') }}" style="max-height: 960px; overflow-y: scroll; overflow-x: hidden; width: 100%;">
+                        {# The content will be loaded via AJAX #}
+                        {{ 'Loading...' | trans }}
+                        <script>
+                            var chronologyLoaded = false;
+
+                            $( document).ready(function () {
+                                if (!chronologyLoaded) {
+                                    var pane = $( '#chronology' );
+                                    var url = pane.attr("data-url");
+
+                                    // ajax load from data-url
+                                    $( pane ).load(url,function(result){
+                                        chronologyLoaded = true;
+                                    });
+                                }
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

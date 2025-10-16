@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.deutschestextarchiv.de/basisformat.rng"
+type="application/xml"
+schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dtabf" xml:lang="de">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Nutzungsbedingungen</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <orgName ref="http://d-nb.info/gnd/2130670-9">Moses Mendelssohn Zentrum für
+                        europäisch-jüdische Studien</orgName>
+                    <email>redaktion@juedische-geschichte-online.net</email>
+                    <address>
+                        <addrLine>Am Neuen Markt 8, 14467 Potsdam</addrLine>
+                    </address>
+                </publisher>
+                <pubPlace>Potsdam</pubPlace>
+                <date type="publication">2023-09-06</date>
+                <!--
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by-nc/4.0/deed.de">
+                        <p>Dieser Text darf gemäß den Bestimmungen der <ref target="https://creativecommons.org/licenses/by-nc/4.0/deed.de">CC-BY-NC 4.0</ref> für nicht-kommerzielle Zwecke in jedwedem Format oder Medium vervielfältigt und weiterverbreitet werden.</p>
+                    </licence>
+                </availability>
+                -->
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p> Dieses Angebot wird vom Moses Mendelssohn Zentrum für europäisch-jüdische Studien
+                (MMZ) bereitgestellt und betreut. Es versteht sich als ein Open-Access-Angebot für
+                Bildungs- und Forschungszwecke sowie zur historisch-politischen Vermittlung. </p>
+            <p> Bei der Zitation orientieren Sie sich an den entsprechenden Angaben bei den
+                jeweiligen Quellen. </p>
+            <p> Alle weiteren Verwendungen, insbesondere eine kommerzielle Verwendung oder eine
+                Nutzung zu Werbezwecken, bedürfen der vorherigen schriftlichen Zustimmung durch das
+                MMZ. Wenn Sie dieses Angebot nutzen, beachten Sie die folgenden Bedingungen: </p>
+            <list>
+                <item>Das Portal „Archiv der Erinnerung“ beinhaltet lebensgeschichtliche
+                    Interviews. Alle Interviews wurden vom MMZ inhaltlich aufbereitet. Bei der
+                    Nutzung der Interviews können Urheber- und Persönlichkeitsrechte sowie
+                    anderweitige schutzwürdige Belange berührt werden. Die Nutzer:innen des
+                    Online-Portals haben diese zu beachten und gegebenenfalls Verletzungen solcher
+                    Rechte gegenüber den Berechtigten selbst zu vertreten.</item>
+                <item>Eine Vervielfältigung oder Verwendung von Videos bzw. Videosequenzen, Texten,
+                    Transkriptionen, Übersetzungen, Bildern und Grafiken in anderen elektronischen
+                    oder gedruckten Publikationen, die nicht vom Zitatrecht gedeckt ist, ist ohne
+                    ausdrückliche Zustimmung des MMZ nicht gestattet.</item>
+                <item>Eine Bearbeitung der Inhalte ist unzulässig.</item>
+            </list>
+        </body>
+    </text>
+</TEI>

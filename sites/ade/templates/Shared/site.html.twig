@@ -1,0 +1,79 @@
+{% macro collection_linked() %}
+    <a href="{{ path('about') }}#SOJ">Sojourners 1989-1991</a>
+{% endmacro %}
+
+{% macro source_sidebar(meta, description, interpretations, related, mets) %}
+    {% import '@TeiEdition/Shared/helper.html.twig' as helper %}
+    {% import '@TeiEdition/Shared/map-leaflet.html.twig' as map %}
+            <div class="container-fluid box">
+                <div class="row box-color-title">
+                    <div class="col-sm-12">
+                        <h4>{{ 'Source'|trans }}</h4>
+                    </div>
+                </div>
+                <div class="row box-color-content">
+                    <div class="col-sm-12">
+                        <a href="{{ path(app.request.attributes.get('_route') ~ '-pdf', app.request.attributes.get('_route_params')) }}">{{ 'Print Version'|trans }}</a>
+                    </div>
+                </div>
+                <div class="row box-color-content">
+                    <div class="col-sm-12">
+                        {{ helper.source_meta(meta, description, mets) }}
+                    </div>
+                </div>
+            </div>
+
+    {% if interpretations is not empty %}
+            <div class="container-fluid box top-buffer">
+                <div class="row box-color-title">
+                    <div class="col-sm-12">
+                        <h4>{{ 'interpretation.oneormany'|trans({ 'count': interpretations|length }, 'additional') }}</h4>
+                    </div>
+                </div>
+        {% for article in interpretations %}
+                <div class="row box-color-content-inverse">
+                    <div class="col-sm-12">
+                        <b>{{ helper.article_linked(article) }}</b>
+                    </div>
+                </div>
+            {% if article.keywords is not empty %}
+                <div class="row box-color-content-inverse">
+                {% for topic in article.keywords %}
+                    {% set img_slug = slugify.slugify(topic|lookupLocalizedTopic) %}
+                    {% set slug = slugify.slugify(topic) %}
+                    {% if loop.first %}
+                    <div class="col-sm-4">
+                        <a href="{{ path('topic-background', { 'slug' : slug }) }}"><img src="{{ asset('img/topic/' ~ img_slug ~ '.jpg') }}" style="width: 100%; height: auto" /></a>
+                    </div>
+                    <div class="col-sm-8">
+                    {% endif %}
+                            <p><a href="{{ path('topic-background', { 'slug' : slug }) }}">{{ topic }}</a></p>
+                    {% if loop.last %}
+                    </div>
+                    {% endif %}
+                {% endfor %}
+                </div>
+            {% endif %}
+        {% endfor %}
+            </div>
+    {% endif %}
+
+    {% if related|length >= 1 %}
+            <div class="container-fluid box top-buffer">
+                <div class="row box-color-title">
+                    <div class="col-sm-12">
+                        <h4>{{ 'additionalsource.oneormany'|trans({ 'count': related|length }, 'additional') }}</h4>
+                    </div>
+                </div>
+        {% for source in related  %}
+            {% if source.id != meta.id %}
+                <div class="row box-color-content-inverse">
+                    <div class="col-sm-12">
+                        {{ helper.article_linked(source) }}
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+            </div>
+    {% endif %}
+{% endmacro %}
