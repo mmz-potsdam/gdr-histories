@@ -15,6 +15,34 @@ class DefaultController extends \TeiEditionBundle\Controller\TopicController
     /* shared code with PlaceController */
     use \TeiEditionBundle\Controller\MapHelperTrait;
 
+    /* TODO: share with DateController */
+    protected function fetchSources($entityManager, $locale)
+    {
+        $criteria = [ 'status' => [ 1 ] ];
+
+        if (!empty($locale)) {
+            $criteria['language'] = \TeiEditionBundle\Utils\Iso639::code1to3($locale);
+        }
+
+        $queryBuilder = $entityManager
+                ->createQueryBuilder()
+                ->select('S, A')
+                ->from('\TeiEditionBundle\Entity\SourceArticle', 'S')
+                ->leftJoin('S.isPartOf', 'A')
+                ->orderBy('S.dateCreated', 'ASC')
+                ;
+
+        foreach ($criteria as $field => $cond) {
+            $queryBuilder->andWhere('S.' . $field
+                                    . (is_array($cond)
+                                       ? ' IN (:' . $field . ')'
+                                       : '= :' . $field))
+                ->setParameter($field, $cond);
+        }
+
+        return $queryBuilder->getQuery()->getResult();
+    }
+
     #[Route(path: '/', name: 'home')]
     public function indexAction(
         Request $request,
@@ -63,7 +91,8 @@ class DefaultController extends \TeiEditionBundle\Controller\TopicController
 
         return $this->render('Default/home.html.twig', [
             'pageTitle' => $translator->trans('Welcome'),
-            'topics' => $this->buildTopicsDescriptions($translator, $request->getLocale()),
+            // 'topics' => $this->buildTopicsDescriptions($translator, $request->getLocale()),
+            'sourcesTimeline' => $this->fetchSources($entityManager, $request->getLocale()),
             'markers' => $markers,
             'bounds' => $bounds,
             'news' => $news,

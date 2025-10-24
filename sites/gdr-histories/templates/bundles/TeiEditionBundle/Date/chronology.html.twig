@@ -89,7 +89,7 @@
             <div class="row">
                 <div class="col offset-md-2 col-md-9">
                     <h4><a href="{{ path('place-map') }}">{{ 'Sources by primary Place'|trans }}</a> | <a href="{{ path('place-map-mentioned') }}">{{ 'All Places mentioned'|trans }}</a></h4>
-                    <h1>{{ pageTitle }}</h1>
+                    <h2>{{ pageTitle }}</h2>
                 </div>
             </div>
         </div>
@@ -97,67 +97,5 @@
 {% endblock %}
 
 {% block body %}
-    {% if not embedded %}
-    {#
-        <h1>{{ 'Chronology'|trans }}</h1>
-    #}
-    {% endif %}
-    <div class="row stickem-container"{% if not embedded %} style="overflow: hidden"{% endif %}>
-        <div class="col col-12 {% if not embedded %}col-md-8{% endif %}">
-        {# styles: see http://stackoverflow.com/questions/19089384/twitter-bootstrap-3-two-columns-full-height #}
-            <div id="timeline" class="container-fluid">
-    {% if articles is not empty %}
-        {% set last_epoch = '' %}
-        {% set epochs = [] %}
-        {% for source in articles %}
-            {% set epochLabel = source.epochLabel %}
-            {% if epochLabel[0] != last_epoch %}
-                {% if last_epoch != '' %}
-                    </div>
-                </div>
-                {% endif %}
-                <div class="row">
-                    <div class="col-sm-2 hidden-xs epoch-label">
-                        <h4 id="{{ epochLabel[0] }}">{{ epochLabel[0]|epoch(epochLabel[1]) }}</h4>
-                    </div>
-                    <div class="col-xs-12 col-sm-10 epoch-content">
-                {% set last_epoch = epochLabel[0] %}
-                {% set epochs = epochs|merge([epochLabel])%}
-            {% endif %}
-            {{ helper.source_box(source, embedded) }}
-        {% endfor %}
-                    </div>
-                </div><!-- .row -->
-    {% else %}
-            {{ 'No sources could be found'|trans }}
-    {% endif %}
-            </div><!-- #timeline -->
-        </div><!-- .col-xs-12 col-md-8 -->
-        <div class="col col-md-4 col-lg-3 hidden-sm hidden-xs sidebar">
-    {% if not embedded and epochs is defined and epochs is not empty %}
-            <div id="epoch-navigation" class="container-fluid box" style="background-color: white;  z-index: 1">
-                <div class="row box-color-title">
-                    <div class="col-sm-12">
-                        <h4>{{ 'Go to'|trans }}</h4>
-                    </div>
-                </div>
-                <div class="row box-color-content">
-                    <div class="col-sm-12">
-        {% for epochLabel in epochs %}
-                <h5><a href="#{{ epochLabel[0] }}">{{ epochLabel[0]|epoch(epochLabel[1]) }}</a></h5>
-        {% endfor %}
-                    </div>
-                </div>
-            </div>
-    {% endif %}
-        </div>
-    </div><!-- .row -->
-    {% if embedded %}
-    <script>
-        // on-demand image loading for chronology
-        var bLazy = new Blazy({
-            container: '#chronology'
-        });
-    </script>
-    {% endif %}
+    {{ helper.source_timeline(articles, embedded) }}
 {% endblock %}

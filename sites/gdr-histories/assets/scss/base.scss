@@ -786,7 +786,7 @@ h2 {
         position: relative;
         h4 {
             text-align: center;
-            min-width: 140px;
+            /* min-width: 140px; */
             padding: 5px;
             color: white;
             background-color: $color-color-chronology;
@@ -797,7 +797,7 @@ h2 {
         h4 {
             font-size: 14px;
             text-align: center;
-            min-width: 140px;
+            /* min-width: 140px; */
             padding: 5px;
             color: white;
             background-color: $color-gray-medium;
@@ -805,7 +805,7 @@ h2 {
     }
 
     .epoch-label:after {
-        content:"";
+        content: "";
         position: absolute;
         z-index: -1;
         top: 0;

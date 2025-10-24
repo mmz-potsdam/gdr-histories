@@ -82,11 +82,11 @@
             <div class="row">
                 <div id="image-viewer-header" class="col offset-md-2 col-md-9">
                     <h4>{{ 'Interview'|trans }} | {{ article.sourceType }}</h4>
-                    <h1>{{ name }}</h1>
+                    <h2>{{ name }}</h2>
 
                     {{ helper.source_description(description) }}
 
-                    <b>{{ 'Collection'|trans({}, 'additional') }}</b>: {{ site.collection_linked(article) }}
+                    <div class="small"><b>{{ 'Collection'|trans({}, 'additional') }}</b>: {{ site.collection_linked(article) }}</div>
                 </div>
             </div>
             {% if article.dateCreated is not empty %}

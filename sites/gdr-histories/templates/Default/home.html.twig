@@ -1,6 +1,7 @@
 {% extends '@TeiEdition/Default/base.html.twig' %}
 
 {% import '@TeiEdition/Shared/map-leaflet.html.twig' as map %}
+{% import '@TeiEdition/Shared/helper.html.twig' as helper %}
 
 {% block head %}
     {{ map.head() }}
@@ -21,8 +22,8 @@
         </ol>
     #}
         <div class="carousel-inner">
-            <div class="carousel-item active d-flex" style="height: 360px; background-image: url('{{ app.request.basepath }}/viewer/home/banner-hilde-eisler.jpg'); background-position: center center; background-size: cover; background-repeat: no-repeat;">
-                <div class="container align-self-end">
+            <div class="carousel-item active d-flex" style="background-image: url('{{ app.request.basepath }}/viewer/home/banner-hilde-eisler.jpg');">
+                <div class="container">
                 <blockquote class"blockquote">
                     <p>
                     „Für mich war vor allen Dingen auch ausschlaggebend,
@@ -64,13 +65,13 @@
         <div id="col-main" class="col-12 offset-md-2 col-md-8">
             <h4>{{ 'Welcome'|trans }}</h4>
             <h2>{{ siteName|trans({}, 'additional') }}</h2>
-            <div class="two-columns-disabled justify-hyphens">
+            <div class="intro two-columns-disabled justify-hyphens">
                 {% if 'en' == app.request.locale %}
                     <p class="dta-p"><a href="{{ path('about') }}">read on...</a></p>
                 {% else %}
                     <p class="dta-p">
                         Das Moses Mendelssohn Zentrum für europäisch-jüdische Studien in Potsdam präsentiert auf dieser Website eine erste Auswahl aus seinen umfangreichen Interview-Sammlungen mit Jüdinnen und Juden aus der DDR.
-                        <a href="{{ path('about') }}">Mehr...</a>
+                        <a href="{{ path('about') }}">mehr...</a>
                     </p>
                 {% endif %}
             </div>
@@ -81,19 +82,21 @@
     <div class="container">
         <div class="row">
             <div class="col col-md-8 offset-md-2 bg-white">
-                <div class="news-item pl-4 py-3 pr-3">
+                <div class="news-item pl-4 pt-4 pb-5 pr-3">
                 <h4>Aktuelles</h4>
+                <h3>Überlebt – und nun?</h3>
+                <b>Jüdisches Leben in Ostdeutschland nach 1945/89</b><br/>
                 11. November 2025, 18:00 Uhr<br/>
                 Ort: Brandenburg Museum, Am Neuen Markt 9, Potsdam<br/>
-                <b>Überlebt – und nun? Jüdisches Leben in Ostdeutschland nach 1945/89</b><br/>
                 Lutz Fiedler im Gespräch mit Annette Leo und Jalda Rebling über ein neues Zeitzeugenportal<br/>
-                Organisation: MMZ und Brandenburg Museum
+                Organisation: MMZ und Brandenburg Museum <a href="https://gesellschaft-kultur-geschichte.de/veranstaltungen/ueberlebt-und-nun-juedisches-leben-in-ostdeutschland-nach-1945-89/" target="_blank">mehr...</a>
                 </div>
             </div>
             {#
             <div class="col col-5 col-md-4">
-                <div class="news-item pr-1 py-3 pr-3">
-                Second Item</div>
+                <div class="news-item pl-1 pt-4 pb-5 pr-3">
+                Second Item
+                </div>
             </div>
             <div class="col col-md-2 d-none d-md-block" style="border-left: 15px solid white">
             </div>
@@ -101,6 +104,7 @@
         </div>
     </div>
 </div>
+
 <div class="container wrapper">
     <div class="row">
         <div class="col-12 offset-md-2 col-md-8">
@@ -128,13 +132,15 @@
             </div>
             #}
 
+        {% if sourcesTimeline is not empty %}
             <h4 class="mt-2">{{ 'Interviews'|trans }}</h4>
             <h2><a href="{{ path('date-chronology') }}">{{ 'Chronology'|trans }}</a></h2>
-            <div class="container-fluid box mb-4">
+            <div class="container-fluid box mb-4 route-date-chronology-partial">
+                {{ helper.source_timeline(sourcesTimeline, true) }}
+                {#
                 <div class="row box-content">
                     <div id="chronology" data-url="{{ path('date-chronology-partial') }}" style="max-height: 960px; overflow-y: scroll; overflow-x: hidden; width: 100%;">
-                        {# The content will be loaded via AJAX #}
-                        {{ 'Loading...' | trans }}
+                        {{ 'Loading...'|trans }}
                         <script>
                             var chronologyLoaded = false;
 
@@ -152,7 +158,9 @@
                         </script>
                     </div>
                 </div>
+                #}
             </div>
+        {% endif %}
         </div>
     </div>
 {% endblock %}

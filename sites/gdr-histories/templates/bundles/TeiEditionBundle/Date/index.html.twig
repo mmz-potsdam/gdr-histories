@@ -27,10 +27,12 @@
             top: 0;
         }
 
+        /*
         h2 {
             margin-left: 4em;
             font-size: 14px;
         }
+        */
     </style>
 {% endblock %}
 
@@ -40,7 +42,7 @@
             <div class="row">
                 <div class="col offset-md-2 col-md-9">
                     <h4>{{ 'Look-up'|trans }}</h4>
-                    <h1>{{ pageTitle }}</h1>
+                    <h2>{{ pageTitle }}</h2>
                 </div>
             </div>
         </div>
@@ -49,7 +51,6 @@
 
 {% block body %}
     {% set embedded = false %}
-    {#<h1>{{ pageTitle }}</h1>#}
     <div class="row stickem-container">
         <div class="col-xs-12 {% if not embedded %}col-md-8{% endif %}">
         {# styles: see http://stackoverflow.com/questions/19089384/twitter-bootstrap-3-two-columns-full-height #}
