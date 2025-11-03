@@ -10,14 +10,14 @@
             {% endif %}
             <div id="footer-navigation" class="container">
                 <div class="row">
-                    <div class="col-4">
+                    <div id="footer-logo" class="col-6 col-md-8">
                         <a href="https://www.mmz-potsdam.de/" target="_blank">
                             <img src="{{ app.request.basepath }}/img/mmz-inverse.de.svg" class="img-fluid position-absolute" style="max-height: 100px" alt="Moses Mendelssohn Zentrum" />
                         </a>
                     </div>
 
-                    <div class="col-8">
-                        {% set menu = knp_menu_get('main', [], {'position': 'footer'}) %}
+                    <div id="footer-menu" class="col-6 col-md-4">
+                        {% set menu = knp_menu_get('top', [], {'position': 'footer'}) %}
                         {{ knp_menu_render(menu) }}
                     </div>
 

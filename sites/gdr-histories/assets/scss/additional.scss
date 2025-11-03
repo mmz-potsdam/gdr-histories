@@ -387,6 +387,19 @@ footer {
     #footer-navigation {
         padding-top: 2rem;
         padding-bottom: 1rem;
+
+        #footer-logo {
+            min-height: 120px;
+        }
+
+        #footer-menu {
+            /* text-align: right; */
+
+            #menu-top-footer {
+                display: inline-block;
+                text-align: left;
+            }
+        }
     }
 
     ul {

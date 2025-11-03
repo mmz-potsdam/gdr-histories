@@ -42,30 +42,39 @@ class Builder
     public function createTopMenu(array $options): ItemInterface
     {
         $menu = $this->factory->createItem('root');
+
+        $inline = false;
         if (array_key_exists('position', $options) && 'footer' == $options['position']) {
             $menu->setChildrenAttributes([ 'id' => 'menu-top-footer', 'class' => 'small' ]);
         }
         else {
+            $inline = true;
             $menu->setChildrenAttributes([ 'id' => 'menu-top', 'class' => 'list-inline' ]);
         }
 
         // add menu items
         if (!array_key_exists('part', $options) || 'left' == $options['part']) {
-            $menu->addChild('about', [
+            $child = $menu->addChild('about', [
                 'label' => 'About this edition',
                 'route' => 'about',
-            ])
-                ->setAttribute('class', 'list-inline-item');
+            ]);
+            if ($inline) {
+                $child->setAttribute('class', 'list-inline-item');
+            }
 
-            $menu->addChild('terms', [
+            $child = $menu->addChild('terms', [
                 'label' => 'Terms and Conditions', 'route' => 'terms',
-            ])
-                ->setAttribute('class', 'list-inline-item');
+            ]);
+            if ($inline) {
+                $child->setAttribute('class', 'list-inline-item');
+            }
 
-            $menu->addChild('contact', [
+            $child = $menu->addChild('contact', [
                 'label' => 'Contact', 'route' => 'contact',
-            ])
-                ->setAttribute('class', 'list-inline-item');
+            ]);
+            if ($inline) {
+                $child->setAttribute('class', 'list-inline-item');
+            }
         }
 
         return $menu;
