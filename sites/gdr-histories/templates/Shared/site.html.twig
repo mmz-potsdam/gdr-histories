@@ -13,7 +13,10 @@
                 </div>
                 <div class="row box-color-content">
                     <div class="col-sm-12">
-                        <a href="{{ path(app.request.attributes.get('_route') ~ '-pdf', app.request.attributes.get('_route_params')) }}">{{ 'Print Version'|trans }}</a>
+                        <a href="{{ path(app.request.attributes.get('_route') ~ '-pdf', app.request.attributes.get('_route_params')) }}">
+                            <img src="{{ app.request.basepath }}/img/icon/pdf.svg" alt="PDF" style="display: block; max-height: 3.5rem; margin-bottom: 0.4rem;" />
+                            <b>{{ 'Print Version'|trans }}</b>
+                        </a>
                     </div>
                 </div>
                 <div class="row box-color-content">
