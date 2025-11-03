@@ -114,7 +114,7 @@
 {% macro source_box(source, delayLoad=false) %}
     {% set path = path('source', { 'uid' : source.uid }) %}
     <div class="panel panel-default source-box">
-        <div class="panel-heading  sourcetype-icon {% if source.sourceType is not empty %}sourcetype-{{ source.sourceType|lower }}{% endif %}">
+        <div class="panel-heading sourcetype-icon {% if source.sourceType is not empty %}sourcetype-{{ source.sourceType|lower }}{% endif %}">
             <h5><a href="{{ path }}">{{ source.creator }}</a></h5>
             <span class="small">
         {% if source.dateCreated is not empty %}
@@ -148,11 +148,14 @@
 
                     <div class="{{ firstColClass }}" style="overflow: hidden;">
         {% if file_exists(webDir ~ thumb) %}
+                        <a href="{{ path }}" class="play-icon {% if source.sourceType is not empty %}sourcetype-{{ source.sourceType|lower }}{% endif %}">
             {% if delayLoad %}
-                        <a href="{{ path }}"><img class="b-lazy img-fluid" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ app.request.basepath }}{{ thumb }}" alt=""></a>
+                            <img class="b-lazy img-fluid" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ app.request.basepath }}{{ thumb }}" alt="">
             {% else %}
-                        <a href="{{ path }}"><img class="img-fluid" src="{{ app.request.basepath }}{{ thumb }}" alt=""></a>
+                            <img class="img-fluid" src="{{ app.request.basepath }}{{ thumb }}" alt="">
             {% endif %}
+                            <div class="play-icon-overlay">Video</div>
+                        </a>
         {% else %}
                         &nbsp;
         {% endif %}

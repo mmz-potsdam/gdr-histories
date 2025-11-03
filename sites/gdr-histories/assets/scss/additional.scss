@@ -482,6 +482,31 @@ footer {
                 background-image: none;
             }
         }
+
+        a.play-icon {
+            display: block;
+            position: relative;
+            &.sourcetype-video {
+                .play-icon-overlay {
+                    font-weight: regular;
+                    position: absolute;
+                    bottom: 8%;
+                    left: 8%;
+                    background-color: rgba(255, 255, 255, 0.6);
+                    color: $color-gray-dark;
+                    padding: 3px 15px 3px 10px;
+                    font-size: 12px;
+                    border-radius: 15%/50%;
+                    &::before {
+                        vertical-align: -5%;
+                        content: '\25BA';
+                        padding-left: 6px;
+                        padding-right: 6px;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
     }
 }
 
