@@ -246,6 +246,11 @@ header {
 }
 
 @media (min-height: 720px) {
+    html {
+        /* space for sticky header when linking to id */
+        scroll-padding-top: 8rem;
+    }
+
     header {
         position: sticky;
         top: 0;
