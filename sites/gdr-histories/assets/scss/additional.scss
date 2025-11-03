@@ -245,6 +245,15 @@ header {
     }
 }
 
+@media (min-height: 720px) {
+    header {
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 1030;
+    }
+}
+
 @media (max-width: $screen-sm-max) {
     #menu-lang {
         /* language selector on small screens */
