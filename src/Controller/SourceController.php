@@ -71,7 +71,7 @@ class SourceController extends \TeiEditionBundle\Controller\SourceController
                 // use strip_tags so : doesn't match attributes with http: or other content with colon
                 $rest_plain = strip_tags($matches[3]);
 
-                if (preg_match('/(\:.)/s', $rest_plain, $matches_rest)) {
+                if (preg_match('/(\:.)/s', $rest_plain, $matches_rest) && !preg_match('/\[.*\d[\d\:]+\d\]/', $rest_plain)) {
                     $pos = strpos($matches[3], $matches_rest[1]);
 
                     // with colon sign after time code

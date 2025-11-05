@@ -118,7 +118,7 @@
             <h5><a href="{{ path }}">{{ source.creator }}</a></h5>
             <span class="small">
         {% if source.dateCreated is not empty %}
-            {% if source.dateCreatedDisplay is not empty %}Interview vom {{ source.dateCreatedDisplay }}{% else %}{{ source.dateCreated|dateincomplete }}{% endif %}
+            {% if source.dateCreatedDisplay is not empty %}Interview {% if '-' in source.dateCreatedDisplay  %}({{ source.dateCreatedDisplay }}){% else %}vom {{ source.dateCreatedDisplay }}{% endif -%}{% else %}{{ source.dateCreated|dateincomplete }}{% endif %}
             {%- if source.contentLocation is not empty %}, {% endif %}
         {% endif %}
         {% if source.contentLocation is not empty %}

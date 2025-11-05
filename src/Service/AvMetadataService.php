@@ -15,8 +15,15 @@ class AvMetadataService
 
     public function getAspectRatio(string $fname): string|false
     {
-        // currently hardwired for GDR-Site
-        // if there are multipe aspect-ratios within a site, use php-ffmpeg/php-ffmpeg
+        // currently hardwired for SOJ and HER Collection
+        // if there are multiple aspect-ratios within a site, use php-ffmpeg/php-ffmpeg
+        $basename = basename($fname, '.mp4');
+
+        if ($basename >= 100 and $basename < 200) {
+            // HER
+            return '16x9';
+        }
+
         return '4x3';
     }
 }
