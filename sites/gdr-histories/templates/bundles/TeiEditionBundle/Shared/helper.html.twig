@@ -154,7 +154,9 @@
             {% else %}
                             <img class="img-fluid" src="{{ app.request.basepath }}{{ thumb }}" alt="">
             {% endif %}
-                            <div class="play-icon-overlay">Video</div>
+                        {% if source.sourceType is not empty %}
+                            <div class="play-icon-overlay">{{ source.sourceType|capitalize }}</div>
+                        {% endif %}
                         </a>
         {% else %}
                         &nbsp;
