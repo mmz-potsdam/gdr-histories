@@ -1,6 +1,8 @@
 {% macro collection_linked(article) %}
     {% if article.providerIdno is defined and 'HER' in article.providerIdno %}
         <a href="{{ path('about') }}#HER">Wolfgang Herzberg 2012–2015</a>
+    {% elseif article.providerIdno is defined and 'SON' in article.providerIdno %}
+        Sonstige
     {% else %}
         <a href="{{ path('about') }}#SOJ">Sojourners 1989-1991</a>
     {% endif %}
