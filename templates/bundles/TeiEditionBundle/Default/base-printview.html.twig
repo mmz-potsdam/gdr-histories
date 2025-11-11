@@ -19,7 +19,7 @@
             and doesn't prepend $this->getBasePath().ltrim($versionedPath, '/')
             as in Symfony\Component\Asset\PathPackage
         #}
-        <link href="{{ app.request.basepath }}{{ asset('css/base.css') }}" rel="stylesheet">
+        <link href="{{ app.request.basepath }}{{ asset('css/gdr-histories.css') }}" rel="stylesheet">
 
         <style>
         @media print {
@@ -102,10 +102,11 @@
         }
 
         header {
+            box-shadow: none;
             color: inherit;
             background-color: inherit;
             margin-top: 0;
-            margin-bottom: 36px;
+            margin-bottom: 24px;
         }
 
         header h1 {
@@ -114,9 +115,12 @@
         }
 
         h1#title {
+            font-family: header_typeface;
             margin-top: 4px;
+            /*
             border-top: 1px solid black;
             border-bottom: 1px solid black;
+            */
             font-size: 24px;
             font-weight: bold;
             padding-top: 16px;
@@ -125,11 +129,13 @@
 
         h2 {
             clear: left;
+            font-family: header_typeface;
             font-weight: bold;
             font-size: 20px;
         }
 
         h3 {
+            font-family: header_typeface;
             font-weight: bold;
             font-size: 16px;
         }

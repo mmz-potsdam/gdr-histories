@@ -1,4 +1,4 @@
-        <header style="background-image: url('{{ app.request.basepath }}/img/beta.svg'); background-size: auto 100%; background-repeat: no-repeat; background-position: right">
+        <header>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12" style="position: relative">
@@ -21,16 +21,22 @@
                             {% block header_institution %}{% endblock %}
                         </div>
                     </div>
-                    <div class="col-md-12" id="site-name">
+                </div>
+                <div class="row align-items-end">
+                    <div class="col-md-4" id="site-name">
                         <h1>
-                            <a href="{{ path('home') }}">{{ siteName|trans({}, 'additional') }}</a><br />
-                            <a href="{{ path('home') }}" id="site-tagline">{{ siteTagline|trans({}, 'additional') }}</a>
+                            <a href="{{ path('home') }}">
+                                {#{ siteName|trans({}, 'additional') }#}
+                                Jüdische Geschichte[n]<br />
+                                in der DDR
+                            </a>
+                            <br /><a href="{{ path('home') }}" id="site-tagline">{{ siteTagline|trans({}, 'additional') }}</a>
                         </h1>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-7 offset-md-1">
                         {{ knp_menu_render('main') }}
                     </div>
-                    <div id="header-search-wrapper" class="col-md-3 hidden-xsd-none d-sm-block">
+                    <div id="header-search-wrapper" class="hidden-xsd-none d-sm-block">
                         <form action="{{ path('search-index') }}" method="post">
                             <div class="form-group has-feedback" style="margin-bottom: 0">
                             <input autocomplete="off" id="header-search" name="q" type="text" placeholder="{{ 'Search'|trans }}" />

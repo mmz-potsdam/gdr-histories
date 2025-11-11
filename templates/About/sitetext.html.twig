@@ -1,6 +1,21 @@
 {% extends '@TeiEdition/Default/base.html.twig' %}
 
+{% block contenttop %}
+    <div class="jumbotron pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col offset-md-2 col-md-9">
+                    <h2>{{ pageTitle }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
 {% block body %}
-    <h2>{{ title|trans }}</h2>
-    {{ content|raw }}
+<div class="row">
+    <div class="col offset-md-2 col-md-9">
+        {{ content|raw }}
+    </div>
+</div>
 {% endblock %}

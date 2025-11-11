@@ -1,6 +1,7 @@
 {% extends '@TeiEdition/Default/base.html.twig' %}
 
 {% import '@TeiEdition/Shared/map-leaflet.html.twig' as map %}
+{% import '@TeiEdition/Shared/helper.html.twig' as helper %}
 
 {% block head %}
     {{ map.head() }}
@@ -11,26 +12,102 @@
 
 {% block contenttop %}
 {% embed '@TeiEdition/Default/contenttop_skeleton.html.twig' %}
+    {% block carousel %}
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+    {#
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+    #}
+        <div class="carousel-inner">
+            <div class="carousel-item active d-flex" style="background-image: url('{{ app.request.basepath }}/viewer/home/banner-hilde-eisler.jpg');">
+                <div class="container">
+                <blockquote class"blockquote">
+                    <p>
+                    „Für mich war vor allen Dingen auch ausschlaggebend,
+                    dass ich mich befreunden konnte mit dem Gedanken,
+                    wieder in Deutschland zu sein“
+                    </p>
+                    <footer class="blockquote-footer">
+                        <a href="{{ path('source', { 'uid': 'source-31' }) }}">Hilde Eisler, Interview vom 31.08.1989</a>
+                    </footer>
+                </blockquote>
+                </div>
+            </div>
+            {#
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+            </div>
+            #}
+        </div>
+        {#
+        <button class="carousel-control-prev" type="button" data-target="#carousel" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carousel" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+        </button>
+        #}
+    </div><!-- #carousel -->
+    {% endblock %}
 {% endembed %}
 {% endblock %}
 
 {% block body %}
     <div class="row">
-        <div id="col-main" class="col-sm-8">
-            <div class="container-fluid">
-                <h4>{{ 'Welcome'|trans }}</h4>
-                <div class="two-columns-disabled justify-hyphens">
-                    {% if 'en' == app.request.locale %}
-                        <p class="dta-p"><a href="{{ path('about') }}">read on...</a></p>
-                    {% else %}
-                        <p class="dta-p">
-                            Begleitend zur Ausstellung „<a href="https://www.jmberlin.de/ausstellung-ein-anderes-land" target="_blank">Ein anderes Land. Jüdisch in der DDR</a>“ im Jüdischen Museum Berlin präsentiert das Moses Mendelssohn Zentrum für europäisch-jüdische Studien in Potsdam eine erste Auswahl aus seinen umfassenden Interview-Sammlungen mit Jüdinnen und Juden aus der DDR.
-                            <a href="{{ path('about') }}">mehr...</a>
-                        </p>
-                    {% endif %}
+        <div id="col-main" class="col-12 offset-md-2 col-md-8">
+            <h4>{{ 'Welcome'|trans }}</h4>
+            <h2>{{ siteName|trans({}, 'additional') }}</h2>
+            <div class="intro two-columns-disabled justify-hyphens">
+                {% if 'en' == app.request.locale %}
+                    <p class="dta-p"><a href="{{ path('about') }}">read on...</a></p>
+                {% else %}
+                    <p class="dta-p">
+                        Das Moses Mendelssohn Zentrum für europäisch-jüdische Studien in Potsdam präsentiert auf dieser Website eine erste Auswahl aus seinen umfangreichen Interview-Sammlungen mit Jüdinnen und Juden aus der DDR.
+                        <a href="{{ path('about') }}">mehr...</a>
+                    </p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div><!-- .container.wrapper -->
+<div id="news" class="jumbotron jumbotron-fluid mt-2 p-0">
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-8 offset-md-2 bg-white">
+                <div class="news-item pl-4 pt-4 pb-5 pr-3">
+                <h4>Aktuelles</h4>
+                <h3>Überlebt – und nun?</h3>
+                <b>Jüdisches Leben in Ostdeutschland nach 1945/89</b><br/>
+                11. November 2025, 18:00 Uhr<br/>
+                Ort: Brandenburg Museum, Am Neuen Markt 9, Potsdam<br/>
+                Lutz Fiedler im Gespräch mit Annette Leo und Jalda Rebling über ein neues Zeitzeugenportal<br/>
+                Organisation: MMZ und Brandenburg Museum <a href="https://gesellschaft-kultur-geschichte.de/veranstaltungen/ueberlebt-und-nun-juedisches-leben-in-ostdeutschland-nach-1945-89/" target="_blank">mehr...</a>
                 </div>
             </div>
+            {#
+            <div class="col col-5 col-md-4">
+                <div class="news-item pl-1 pt-4 pb-5 pr-3">
+                Second Item
+                </div>
+            </div>
+            <div class="col col-md-2 d-none d-md-block" style="border-left: 15px solid white">
+            </div>
+            #}
+        </div>
+    </div>
+</div>
 
+<div class="container wrapper">
+    <div class="row">
+        <div class="col-12 offset-md-2 col-md-8">
             {#
             <div class="container-fluid box">
                 <div class="row box-header map">
@@ -55,15 +132,15 @@
             </div>
             #}
 
-            <div class="container-fluid box" style="margin-top: 2em">
-                <div class="row box-header chronology">
-                    <div class="col-sm-12">
-                        <h4><a href="{{ path('date-chronology') }}">{{ 'Chronology'|trans }}</a></h4>
-                    </div>
-                </div>
+        {% if sourcesTimeline is not empty %}
+            <h4 class="mt-2">{{ 'Interviews'|trans }}</h4>
+            <h2><a href="{{ path('date-chronology') }}">{{ 'Chronology'|trans }}</a></h2>
+            <div class="container-fluid box mb-4 route-date-chronology-partial">
+                {{ helper.source_timeline(sourcesTimeline, true) }}
+                {#
                 <div class="row box-content">
-                    <div id="chronology" data-url="{{ path('date-chronology-partial') }}" style="max-height: 960px; overflow-y: scroll; overflow-x: hidden">
-                        {{ 'Loading...' | trans }}
+                    <div id="chronology" data-url="{{ path('date-chronology-partial') }}" style="max-height: 960px; overflow-y: scroll; overflow-x: hidden; width: 100%;">
+                        {{ 'Loading...'|trans }}
                         <script>
                             var chronologyLoaded = false;
 
@@ -81,41 +158,9 @@
                         </script>
                     </div>
                 </div>
+                #}
             </div>
-        </div>
-
-        <div class="col-sm-4 sidebar">
-            <div class="container-fluid box">
-                <div class="row box-color-title">
-                    <div class="col-sm-12">
-                        <h4>Veranstaltungen</h4>
-                    </div>
-                </div>
-                <div class="row box-color-content">
-                    <div class="col-sm-12">
-                        jeden Dienstag (12. Sep. 2023 bis 9. Jan. 2024), 17:30
-                        <h5>DDR am Dienstag</h5>
-                        Begleitprogramm zur Ausstellung im Jüdischen Museum Berlin, Altbau 1. OG, Lindenstr. 9-14, 10969 Berlin. <a href="https://www.jmberlin.de/ddr-am-dienstag" target="_blank">Mehr...</a>
-                    </div>
-                </div>
-                <div class="row box-color-content border-top">
-                    <div class="col-sm-12">
-                        28. September 2023, 18:00
-                        <h5>Ein neues Deutschland? Rückkehrerfahrungen nach 1945</h5>
-                        Vortrag und Gespräch im Forum Willy Brandt Berlin, Behrenstraße 15, 10117 Berlin Mitte.
-Eintritt frei. Karten unter veranstaltungenberlin@willy-brandt.de oder 030 787 70 70.
-                        Eine Veranstaltung im Rahmen der Tages des Exils Berlin. <a href="https://mmz-potsdam.de/aktuelles/veranstaltungen/2023/tages-des-exils-berlin" target="_blank">Mehr...</a>
-
-                    </div>
-                </div>
-                <div class="row box-color-content border-top">
-                    <div class="col-sm-12">
-                        18.–20. Oktober 2023
-                        <h5>...und der Zukunft zugewandt?</h5>
-                        Wissenschaftliche Konferenz des Moses Mendelssohn Zentrums für europäisch-jüdische Studien in Potsdam und am Jüdischen Museum Berlin
-                    </div>
-                </div>
-            </div>
+        {% endif %}
         </div>
     </div>
 {% endblock %}

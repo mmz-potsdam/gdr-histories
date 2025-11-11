@@ -4,11 +4,13 @@
 {% import '@TeiEdition/Shared/entity-lookup.html.twig' as entityLookup %}
 {% import '@TeiEdition/Shared/map-leaflet.html.twig' as map %}
 
+{% import 'Shared/site.html.twig' as site %}
+
 {% block head %}
     {{ map.head() }}
 
     <!-- we use iview2-classes -->
-    <link href="{{ app.request.basepath }}/viewer/shared/iview2/css/default.css" type="text/css" rel="stylesheet">
+    <link href="{{ app.request.basepath }}/viewer/shared/iview2-2022.06/css/default.css" type="text/css" rel="stylesheet">
 
     {# TODO: move to some shared style-sheet #}
     <style>
@@ -74,12 +76,35 @@
     <link href="{{ app.request.basepath }}/vendor/bootstrap3_player/bootstrap3_player.css" rel="stylesheet">
 {% endblock %}
 
+{% block contenttop %}
+    <div class="jumbotron pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div id="image-viewer-header" class="col offset-md-2 col-md-9">
+                    <h4>{{ 'Interview'|trans }} | {{ article.sourceType }}</h4>
+                    <h2>{{ name }}</h2>
+
+                    {{ helper.source_description(description) }}
+
+                    <div class="small"><b>{{ 'Collection'|trans({}, 'additional') }}</b>: {{ site.collection_linked(article) }}</div>
+                </div>
+            </div>
+            {% if article.dateCreated is not empty %}
+            <div class="row" id="image-viewer-date">
+                <div class="col col-md-2 pt-2 text-md-right">
+                    {{ article.dateCreated|date('Y') }}
+                </div>
+                <div class="col col-1 d-none d-md-block">
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}
+
 {% block body %}
-    <h1>{{ name }}</h1>
     <div class="row">
         <div id="image-viewer-container" class="col-xs-12 col-md-9">
-            {{ helper.source_description(description) }}
-
             <div id="media-viewer">
                 {{ html|raw }}
                 <script src="{{ app.request.basepath }}/vendor/bootstrap3_player/bootstrap3_player.js"></script>
@@ -122,10 +147,7 @@
         </div><!-- .col -->
 
         <div class="col-xs-12 col-md-3 sidebar">
-            <h3 class="pdf-link">
-                <a href="{{ path(app.request.attributes.get('_route') ~ '-pdf', app.request.attributes.get('_route_params')) }}">{{ 'Print Version'|trans }}</a>
-            </h3>
-            {{ helper.source_sidebar(article, description, interpretations, related) }}
+            {{ site.source_sidebar(article, description, interpretations, related) }}
         </div>
     </div>
 {% endblock %}
