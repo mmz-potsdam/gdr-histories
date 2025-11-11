@@ -65,6 +65,9 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     <lb />Technische Umsetzung: Daniel Burckhardt
                     <lb />Wissenschaftliche Hilfskraft: Paul-Levi Mydlach
                 </p>
+                <p>
+                    <lb/>Design: <ref target="https://www.edel-forst.de/">edel &amp; forst – Studio für Kommunikationsdesign</ref>
+                </p>
             </div>
         </body>
     </text>
