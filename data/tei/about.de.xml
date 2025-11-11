@@ -68,6 +68,10 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                 <p>
                     <lb/>Design: <ref target="https://www.edel-forst.de/">edel &amp; forst – Studio für Kommunikationsdesign</ref>
                 </p>
+                <p>
+                    <lb/>
+                    Der Programmcode ist verfügbar unter <ref target="https://github.com/mmz-potsdam/gdr-histories">github.com/mmz-potsdam/gdr-histories</ref>.
+                </p>
             </div>
         </body>
     </text>
