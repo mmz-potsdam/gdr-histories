@@ -1,6 +1,7 @@
 {% extends '@TeiEdition/Default/base.html.twig' %}
 
 {% import '@TeiEdition/Shared/map-leaflet.html.twig' as map %}
+{% import '@TeiEdition/Shared/helper.html.twig' as helper %}
 
 {% block head %}
     {{ map.head() }}
@@ -21,20 +22,18 @@
         </ol>
     #}
         <div class="carousel-inner">
-            <div class="carousel-item active d-flex" style="height: 360px; background-image: url('{{ app.request.basepath }}/viewer/home/banner-archiv-der-erinnerung.png'); background-position: center center; background-size: cover; background-repeat: no-repeat;">
-                <div class="container align-self-end">
-                    {#
-                    <blockquote class"blockquote">
-                        <p>
-                        „Für mich war vor allen Dingen auch ausschlaggebend,
-                        dass ich mich befreunden konnte mit dem Gedanken,
-                        wieder in Deutschland zu sein“
-                        </p>
-                        <footer class="blockquote-footer">
-                            <a href="{{ path('source', { 'uid': 'source-31' }) }}">Hilde Eisler, Interview vom 31.08.1989</a>
-                        </footer>
-                    </blockquote>
-                    #}
+            <div class="carousel-item active d-flex" style="background-image: url('{{ app.request.basepath }}/viewer/home/banner-hilde-eisler.jpg');">
+                <div class="container">
+                <blockquote class"blockquote">
+                    <p>
+                    „Für mich war vor allen Dingen auch ausschlaggebend,
+                    dass ich mich befreunden konnte mit dem Gedanken,
+                    wieder in Deutschland zu sein“
+                    </p>
+                    <footer class="blockquote-footer">
+                        <a href="{{ path('source', { 'uid': 'source-31' }) }}">Hilde Eisler, Interview vom 31.08.1989</a>
+                    </footer>
+                </blockquote>
                 </div>
             </div>
             {#
@@ -88,14 +87,15 @@
     <div class="container">
         <div class="row">
             <div class="col col-md-8 offset-md-2 bg-white">
-                <div class="news-item ps-4 py-3 pe-3">
-                    <h4>Aktuelles</h4>
+                <div class="news-item pl-4 pt-4 pb-5 pr-3">
+                <h4>Aktuelles</h4>
+
                 </div>
             </div>
             {#
             <div class="col col-5 col-md-4">
-                <div class="news-item pr-1 py-3 pr-3">
-                    Second Item
+                <div class="news-item pl-1 pt-4 pb-5 pr-3">
+                Second Item
                 </div>
             </div>
             <div class="col col-md-2 d-none d-md-block" style="border-left: 15px solid white">
@@ -132,13 +132,15 @@
             </div>
             #}
 
+        {% if sourcesTimeline is not empty %}
             <h4 class="mt-2">{{ 'Interviews'|trans }}</h4>
             <h2><a href="{{ path('date-chronology') }}">{{ 'Chronology'|trans }}</a></h2>
-            <div class="container-fluid box mb-4">
+            <div class="container-fluid box mb-4 route-date-chronology-partial">
+                {{ helper.source_timeline(sourcesTimeline, true) }}
+                {#
                 <div class="row box-content">
                     <div id="chronology" data-url="{{ path('date-chronology-partial') }}" style="max-height: 960px; overflow-y: scroll; overflow-x: hidden; width: 100%;">
-                        {# The content will be loaded via AJAX #}
-                        {{ 'Loading...' | trans }}
+                        {{ 'Loading...'|trans }}
                         <script>
                             var chronologyLoaded = false;
 
@@ -156,7 +158,9 @@
                         </script>
                     </div>
                 </div>
+                #}
             </div>
+        {% endif %}
         </div>
     </div>
 {% endblock %}
