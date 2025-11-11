@@ -62,6 +62,10 @@ class AdminPlaceType extends AbstractType
                 'label' => 'TGN',
                 'required' => false,
             ])
+            ->add('geo', TextType::class, [
+                'label' => 'Geo Coordinates (lat,long)',
+                'required' => false,
+            ])
         ;
     }
 
