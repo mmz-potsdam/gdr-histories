@@ -376,7 +376,7 @@
       </trans-unit>
       <trans-unit id="4d1feed383c46aa0ab5f0a419c1a46d2f88fc26d" resname="Sources by primary Place">
         <source>Sources by primary Place</source>
-        <target>Quellen nach primärem Ort</target>
+        <target>Interviews nach Ort der Aufnahme</target>
         <jms:reference-file line="12">\..\..\..\..\..\..\./templates\bundles\TeiEditionBundle\Place\map.html.twig\</jms:reference-file>
       </trans-unit>
       <trans-unit id="9d7ab1a557965be0eae6205c2d860c45a3eafc11" resname="Start Date">
