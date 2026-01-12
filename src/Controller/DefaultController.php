@@ -31,7 +31,7 @@ class DefaultController extends \TeiEditionBundle\Controller\TopicController
                 ->from('\TeiEditionBundle\Entity\SourceArticle', 'S')
                 ->leftJoin('S.isPartOf', 'A')
                 ->orderBy('S.dateCreated', 'ASC')
-                ;
+        ;
 
         foreach ($criteria as $field => $cond) {
             $queryBuilder->andWhere('S.' . $field
