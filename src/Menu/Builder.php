@@ -54,12 +54,48 @@ class Builder
 
         // add menu items
         if (!array_key_exists('part', $options) || 'left' == $options['part']) {
-            $child = $menu->addChild('about', [
-                'label' => 'About this edition',
-                'route' => 'about',
-            ]);
             if ($inline) {
-                $child->setAttribute('class', 'list-inline-item');
+                // hierarchical dropdown
+                $menu->addChild('about', [
+                    'label' => 'About this edition',
+                    'route' => 'about',
+                    'attributes' => [
+                        'id' => 'dropdownAboutMenuButton',
+                        'class' => 'list-inline-item nav-item dropdown',
+                    ],
+                    'linkAttributes' => [
+                        'class' => 'dropdown-toggle', // possibly prepend nav-link
+                        'dropdown' => true,
+                        'role' => 'button',
+                        'data-bs-toggle' => 'dropdown',
+                        'aria-expanded' => 'false',
+                    ],
+                    'childrenAttributes' => [
+                        'class' => 'dropdown-menu dropdown-menu-center',
+                        'aria-labelledby' => 'dropdownAboutMenuButton',
+                    ],
+                ]);
+
+                $menu['about']
+                    ->addChild('about-transcription', [
+                        'label' => $this->translator->trans('Transcription Guidelines'),
+                        'route' => 'about-transcription',
+                        'linkAttributes' => [
+                            'class' => 'dropdown-item',
+                        ],
+                    ]);
+            }
+            else {
+                $menu->addChild('about', [
+                    'label' => 'About this edition',
+                    'route' => 'about',
+                ]);
+
+                $menu['about']
+                    ->addChild('about-transcription', [
+                        'label' => $this->translator->trans('Transcription Guidelines'),
+                        'route' => 'about-transcription',
+                    ]);
             }
 
             $child = $menu->addChild('terms', [

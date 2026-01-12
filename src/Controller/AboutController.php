@@ -67,6 +67,7 @@ class AboutController extends \TeiEditionBundle\Controller\RenderTeiController
     }
 
     #[Route(path: '/about', name: 'about')]
+    #[Route(path: '/about/transcription', name: 'about-transcription')]
     #[Route(path: '/terms', name: 'terms')]
     #[Route(path: '/contact', name: 'contact')]
     public function renderAbout(

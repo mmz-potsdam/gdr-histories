@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.deutschestextarchiv.de/basisformat.rng"
+type="application/xml"
+schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dtabf">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">Transkriptionsrichtlinien Interview-Projekt „Jüdische
+                    Geschichte[n] in der DDR“</title>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>
+                    <orgName ref="http://d-nb.info/gnd/2130670-9">Moses Mendelssohn Zentrum für
+                        europäisch-jüdische Studien</orgName>
+                    <email>redaktion@juedische-geschichte-online.net</email>
+                    <address>
+                        <addrLine>Am Neuen Markt 8, 14467 Potsdam</addrLine>
+                    </address>
+                </publisher>
+                <pubPlace>Potsdam</pubPlace>
+                <date type="publication">2023-09-06</date>
+                <!--
+                <availability>
+                    <licence target="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+                        <p>Dieser Text unterliegt den Bedingungen der Creative Commons Namensnennung
+                            - Nicht kommerziell - Keine Bearbeitungen 4.0 International Lizenz.
+                            Unter Namensnenung gemäß dem Zitationshinweis darf er in unveränderter
+                            Form für nicht-kommerzielle Zwecke nachgenutzt werden.</p>
+                    </licence>
+                </availability>
+                -->
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="deu">Deutsch</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p>Die auf dieser Website veröffentlichten Interviews wurden nach einheitlichen
+                Transkriptionsrichtlinien erstellt, um Lesbarkeit, Verständlichkeit und
+                wissenschaftliche Nachvollziehbarkeit sicherzustellen. Die Transkripte wurden
+                sorgfältig überprüft und gegebenenfalls von den Interviewten autorisiert. Sie
+                spiegeln den Inhalt und Charakter des Gesprächs so originalgetreu wie möglich wider,
+                ohne den Anspruch einer linguistischen Feintranskription zu erheben. </p>
+            <div n="3">
+                <head>Transkription</head>
+                <lb/>
+
+                <p>Die Transkripte geben den gesprochenen Text <hi rendition="#b">inhaltlich
+                        vollständig und wortgetreu</hi>, jedoch <hi rendition="#b">nicht lautgetreu
+                        wieder</hi>. Dialekte, Intonation, Umgangssprache, Verzögerungslaute oder
+                    grammatikalische Besonderheiten wurden nicht berücksichtigt, sofern sie nicht
+                    für das inhaltliche Verständnis relevant sind. Ziel ist eine inhaltlich valide,
+                    aber lesefreundliche Verschriftlichung der Interviews. Inhaltliche Aussagen und
+                    Formulierungen wurden nicht verändert. Füllwörter, Satzabbrüche und
+                    Wiederholungen wurden nur entfernt, wenn sie für das Verständnis nicht relevant
+                    waren.</p>
+            </div>
+            <div n="3">
+                <head>Rechtschreibung und Zeichensetzung</head>
+                <lb/>
+
+                <p>Die Transkripte folgen den Regeln der aktuellen deutschen Rechtschreibung
+                    (Duden).</p>
+                <p>Die Zeichensetzung wurde so angepasst, dass der Lesefluss erleichtert und der
+                    mündliche Charakter des Interviews gleichzeitig erhalten bleibt.</p>
+            </div>
+            <div n="3">
+                <head>Anonymisierung und Datenschutz</head>
+                <lb/>
+
+                <p>Persönliche Daten (z. B. Namen, Orte oder Institutionen) wurden gegebenenfalls
+                    anonymisiert, um die Privatsphäre der Gesprächspartner*innen zu schützen.</p>
+            </div>
+            <div n="3">
+                <head>Verständlichkeit und redaktionelle Eingriffe</head>
+                <lb/>
+
+                <p>Unklare Äußerungen oder Unterbrechungen werden mit Hinweisen wie [unverständlich]
+                    oder [unterbrochen] kenntlich gemacht.</p>
+                <p>Redaktionelle Ergänzungen oder Erläuterungen sind ebenfalls kenntlich
+                    gemacht.</p>
+                <p>Nicht relevante Passagen (z. B. technische Hinweise, Small Talk) können
+                    ausgelassen sein.</p>
+            </div>
+        </body>
+    </text>
+</TEI>
