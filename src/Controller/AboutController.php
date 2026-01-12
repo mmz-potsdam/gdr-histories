@@ -48,10 +48,14 @@ class AboutController extends \TeiEditionBundle\Controller\RenderTeiController
         $fnameTei = $route . '.' . $locale . '.xml';
 
         if (is_null($title)) {
-            $teiHelper = new \TeiEditionBundle\Utils\TeiHelper();
-            $meta = $teiHelper->analyzeHeader($this->locateTeiResource($fnameTei));
-            if (!is_null($meta)) {
-                $title = $meta->name;
+            $fnameTeiFull = $this->locateTeiResource($fnameTei);
+
+            if (false !== $fnameTeiFull) {
+                $teiHelper = new \TeiEditionBundle\Utils\TeiHelper();
+                $meta = $teiHelper->analyzeHeader($fnameTeiFull);
+                if (!is_null($meta)) {
+                    $title = $meta->name;
+                }
             }
         }
 
