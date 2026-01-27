@@ -27,6 +27,11 @@ $screen-sm-max:              ($screen-md-min - 1) !default;
 $screen-md-max:              ($screen-lg-min - 1) !default;
 $screen-lg-max:              ($screen-xl-min - 1) !default;
 
+// bootstrap 4 compatibility
+.jumbotron {
+    margin-bottom: 2rem;
+}
+
 @mixin article-text {
     line-height: 1.6;
     color: $color-text;
