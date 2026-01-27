@@ -73,11 +73,19 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                     mündliche Charakter des Interviews gleichzeitig erhalten bleibt.</p>
             </div>
             <div n="3">
-                <head>Anonymisierung und Datenschutz</head>
+                <head>Anonymisierung, Datenschutz und Urheberrechte</head>
                 <lb/>
 
                 <p>Persönliche Daten (z. B. Namen, Orte oder Institutionen) wurden gegebenenfalls
-                    anonymisiert, um die Privatsphäre der Gesprächspartner*innen zu schützen.</p>
+                    anonymisiert, um die Privatsphäre der Gesprächspartner:innen zu schützen.</p>
+                <p> Bei der Veröffentlichung wurde darauf geachtet, sämtliche urheberrechtlichen,
+                    persönlichkeitsrechtlichen und datenschutzrechtlichen Belange zu wahren.
+                    Alle bekannten Rechteinhaber:innen wurden nach bestem Wissen und Gewissen
+                    ermittelt und kontaktiert. Sollte dennoch ein Anspruch bestehen oder eine
+                    Rechteinhaber:innenschaft unbeabsichtigt nicht berücksichtigt worden sein,
+                    bitten wir davon betroffenen Personen, <ref target="../kontakt">sich mit uns in
+                        Verbindung zu setzen</ref>. Berechtigte Ansprüche werden umgehend geprüft
+                    und berücksichtigt. </p>
             </div>
             <div n="3">
                 <head>Verständlichkeit und redaktionelle Eingriffe</head>
