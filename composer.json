@@ -86,7 +86,7 @@
         "ext-iconv": "*",
         "ext-intl": "*",
         "armin/scssphp-bundle": "dev-master",
-        "eko/feedbundle": "dev-master as 2.2.1",
+        "eko/feedbundle": "dev-symfony-8 as 2.3",
         "fluentdom/fluentdom": "dev-master as 8.0",
         "gmo/iso-639": "dev-master#4834357 as 1.0",
         "hedii/zotero-api": "dev-master#c296090a23e557bd7b38c7f10132ada6bc333631",
