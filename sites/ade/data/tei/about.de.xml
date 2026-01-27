@@ -43,58 +43,82 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
     <text>
         <body>
             <div n="2">
-                <p>Das Interview- und Forschungsprojekt „Archiv der Erinnerung. Interviews mit
-                    Überlebenden der Shoah“ wurde von 1995 bis 1997 als internationale Kooperation
-                    zwischen dem Moses Mendelssohn Zentrum für europäisch-jüdische Studien und dem
-                    Fortunoff Video Archive for Holocaust Testimonies (Yale University) durchgeführt
-                    und von der VolkswagenStiftung gefördert.</p>
-
-                <p>Die Interviews entstanden aufgrund verschiedener Arbeitsschwerpunkte der beiden
-                    Institutionen in einem interdisziplinären Team. Die Interviewer:innengruppe
-                    stammte vor allem aus dem universitären Bereich, unter anderem der Geschichts-
-                    und Literaturforschung sowie der Jüdischen Studien und dem Bereich der
-                    therapeutischen Arbeit. Geleitet wurde das Projekt von den damaligen Direktoren
-                    beider Einrichtungen, Prof. Dr. Julius H. Schoeps und Prof. Dr. Geoffrey H.
-                    Hartman. Hauptsächlich in den Jahren 1995 und 1996 wurden im Rahmen des „Archivs
-                    der Erinnerung“ 78 zumeist in der Region Berlin-Brandenburg lebende jüdische
-                    Zeitzeug:innen vor der Kamera interviewt. Thematisch wird eine Zeitspanne vom
-                    19. Jahrhundert über die NS-Zeit abgedeckt, die Zeitzeug:innen sprechen aber
-                    auch über die DDR-Zeit. Koordinatorinnen waren Dr. Cathy Gelbin und Eva
-                    Lezzi.</p>
-                <p> Die vollständige und ungeschnittene Sammlung des „Archiv der Erinnerung“ kann an
-                    der Yale University recherchiert und nach einer Registrierung auch online
-                    eingesehen werden: <ref
-                        target="https://fortunoff.aviaryplatform.com/collections/1468"
-                        >https://fortunoff.aviaryplatform.com/collections/1468</ref><lb/>
-                    Ebenso besteht in der <ref target="https://www.mmz-potsdam.de/bibliothek">Bibliothek des Moses Mendelssohn Zentrums</ref> und in der
-                    Berliner Gedenkstätte Haus der Wannsee-Konferenz die Möglichkeit, Einsicht in
-                    die Videos zu bekommen. </p>
-                <p> Von Anfang an war auch die pädagogische Verwendung der Interviews in Schule,
-                    Erwachsenenbildung und Universität ein integraler Teil der Konzeption des
-                    „Archivs der Erinnerung“. Zu diesem Zweck wurden sechs exemplarische Interviews
-                    auf eine jeweils halbstündige Länge ediert. Wir danken allen
-                    Interviewpartner:innen und insbesondere denjenigen, die ihr Interview
-                    stellvertretend für alle für die vorliegenden Unterrichtsmaterialien zur
-                    Verfügung gestellt haben. </p>
-                <p> Für die Gesamtkonzeption der Video-Edition waren Dr. Irene Diekmann, Dr. Cathy
-                    Gelbin und Eva Lezzi (alle Moses Mendelssohn Zentrum) sowie Dr. Michael Kaden
-                    (Medienpädagogisches Zentrum des Landes Brandenburgs) verantwortlich. Den
-                    Schnitt und die künstlerische Realisation der Edition besorgten
-                    dankenswerterweise Ulrike Hemberger und Rainer Hällfritzsch. </p>
-                <p> Zeitgleich mit der Video-Edition für den pädagogischen Gebrauch erschien ein
-                    wissenschaftlicher Auswertungsband zum „Archiv der Erinnerung“, der Analysen
-                    einiger für die Unterrichtsmaterialien ausgewählten Interviews enthält, sowie
-                    ein kommentierter Katalog mit biographischen Angaben zu den
-                    Interviewpartner:innen und ein Schlagwort- und Ortsregister. </p>
-                <p>
+                <head>Aktuelles Projektteam</head>
+                <lb/>
+                <p> Projektleitung: <ref target="https://www.mmz-potsdam.de/team/daniel-burckhardt"
+                        >Daniel Burckhardt</ref> / <ref
+                        target="https://www.mmz-potsdam.de/team/nina-zellerhoff">Nina
+                        Zellerhoff</ref> / <ref
+                        target="https://www.mmz-potsdam.de/team/miriam-ruerup">Prof. Dr. Mirim
+                        Rürup</ref><lb/>
+                     Redaktion und Koordination: <ref
+                        target="https://www.mmz-potsdam.de/team/nina-zellerhoff">Nina
+                        Zellerhoff</ref><lb/>
+                     Technische Realisierung: <ref
+                        target="https://www.mmz-potsdam.de/team/daniel-burckhardt">Daniel
+                        Burckhardt</ref>. Der Programmcode ist verfügbar unter <ref
+                        target="https://github.com/mmz-potsdam/gdr-histories"
+                        >github.com/mmz-potsdam/gdr-histories</ref>.<lb/>
+                     Gestaltung: <ref target="https://www.edel-forst.de/">edel &amp; forst</ref>
+                </p>
+            </div>
+            <div n="2">
+                <head>Projektgeschichte</head>
+                <lb/>
+                <div n="3">
+                    <head>Interview- und Forschungsprojekt „Archiv der Erinnerung. Interviews mit
+                        Überlebenden der Shoah“</head>
                     <lb/>
-                     Projektleitung: Prof. Dr. Julius H. Schoeps und Prof. Dr. Geoffrey H. Hartman<lb/>
-                     Projektkoordination: Dr. Cathy Gelbin und Eva Lezzi<lb/>
-                     Gesamtkonzeption der Video-Edition: Dr. Irene Diekmann, Dr. Cathy Gelbin und
-                    Eva Lezzi (alle Moses Mendelssohn Zentrum) sowie Dr. Michael Kaden
-                    (Medienpädagogisches Zentrum des Landes Brandenburgs). Schnitt und künstlerische
-                    Realisation der Edition: Ulrike Hemberger und Rainer Hällfritzsch.<lb/>
-                     Online-Edition: Nina Zellerhoff und Daniel Burckhardt </p>
+                    <p>Das Interview- und Forschungsprojekt „Archiv der Erinnerung. Interviews mit
+                        Überlebenden der Shoah“ wurde von 1995 bis 1997 als internationale
+                        Kooperation zwischen dem Moses Mendelssohn Zentrum für europäisch-jüdische
+                        Studien und dem Fortunoff Video Archive for Holocaust Testimonies (Yale
+                        University) durchgeführt und von der VolkswagenStiftung gefördert.</p>
+
+                    <p>Die Interviews entstanden aufgrund verschiedener Arbeitsschwerpunkte der
+                        beiden Institutionen in einem interdisziplinären Team. Die
+                        Interviewer:innengruppe stammte vor allem aus dem universitären Bereich,
+                        unter anderem der Geschichts- und Literaturforschung sowie der Jüdischen
+                        Studien und dem Bereich der therapeutischen Arbeit. Geleitet wurde das
+                        Projekt von den damaligen Direktoren beider Einrichtungen, Prof. Dr. Julius
+                        H. Schoeps und Prof. Dr. Geoffrey H. Hartman. Hauptsächlich in den Jahren
+                        1995 und 1996 wurden im Rahmen des „Archivs der Erinnerung“ 78 zumeist in
+                        der Region Berlin-Brandenburg lebende jüdische Zeitzeug:innen vor der Kamera
+                        interviewt. Thematisch wird eine Zeitspanne vom 19. Jahrhundert über die
+                        NS-Zeit abgedeckt, die Zeitzeug:innen sprechen aber auch über die DDR-Zeit.
+                        Koordinatorinnen waren Dr. Cathy Gelbin und Eva Lezzi.</p>
+                    <p> Die vollständige und ungeschnittene Sammlung des „Archiv der Erinnerung“
+                        kann an der Yale University recherchiert und nach einer Registrierung auch
+                        online eingesehen werden: <ref
+                            target="https://fortunoff.aviaryplatform.com/collections/1468"
+                            >https://fortunoff.aviaryplatform.com/collections/1468</ref><lb/>
+                         Ebenso besteht in der <ref target="https://www.mmz-potsdam.de/bibliothek"
+                            >Bibliothek des Moses Mendelssohn Zentrums</ref> und in der Berliner
+                        Gedenkstätte Haus der Wannsee-Konferenz die Möglichkeit, Einsicht in die
+                        Videos zu bekommen. </p>
+                </div>
+                <div n="3">
+                    <head>Video-Edition „Archiv der Erinnerung“</head>
+                    <lb/>
+                    <p> Von Anfang an war auch die pädagogische Verwendung der Interviews in Schule,
+                        Erwachsenenbildung und Universität ein integraler Teil der Konzeption des
+                        „Archivs der Erinnerung“. Zu diesem Zweck wurden 1998 sechs exemplarische
+                        Interviews auf eine jeweils halbstündige Länge ediert. Wir danken allen
+                        Interviewpartner:innen und insbesondere denjenigen, die ihr Interview
+                        stellvertretend für alle für die vorliegenden Unterrichtsmaterialien zur
+                        Verfügung gestellt haben. </p>
+                    <p> Für die Gesamtkonzeption der Video-Edition waren Dr. Irene Diekmann, Dr.
+                        Cathy Gelbin und Eva Lezzi (alle Moses Mendelssohn Zentrum) sowie Dr.
+                        Michael Kaden (Medienpädagogisches Zentrum des Landes Brandenburgs)
+                        verantwortlich. Den Schnitt und die künstlerische Realisation der Edition
+                        besorgten dankenswerterweise Ulrike Hemberger und Rainer Hällfritzsch. </p>
+                    <p> Zeitgleich mit der Video-Edition für den pädagogischen Gebrauch erschien ein
+                            <ref target="https://mmz.vufindnet.de/mmz/Record/b0980384"
+                            >wissenschaftlicher Auswertungsband zum „Archiv der Erinnerung“</ref>,
+                        der Analysen einiger für die Unterrichtsmaterialien ausgewählten Interviews
+                        enthält, sowie ein kommentierter Katalog mit biographischen Angaben zu den
+                        Interviewpartner:innen und ein Schlagwort- und Ortsregister. </p>
+                </div>
             </div>
         </body>
     </text>
