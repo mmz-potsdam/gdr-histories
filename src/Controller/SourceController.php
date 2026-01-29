@@ -22,6 +22,7 @@ use App\Service\AvMetadataService;
 class SourceController extends \TeiEditionBundle\Controller\SourceController
 {
     protected $avMetadataService;
+    protected $bootstrapVersion = 4;
 
     /**
      * Inject XsltProcessor and PdfGenerator
@@ -38,6 +39,11 @@ class SourceController extends \TeiEditionBundle\Controller\SourceController
         parent::__construct($kernel, $slugify, $themeContext, $twig, $xsltProcessor, $pdfGenerator);
 
         $this->avMetadataService = $avMetadataService;
+
+        $siteKey = $twig->getGlobals()['siteKey'] ?? null;
+        if ('ade' === $siteKey) {
+            $this->bootstrapVersion = 5;
+        }
     }
 
     #[Route(path: '/source/{uid}.jsonld', name: 'source-jsonld')]
@@ -114,7 +120,9 @@ class SourceController extends \TeiEditionBundle\Controller\SourceController
                                         case '16x9':
                                         case '4x3':
                                         case '1x1':
-                                            $responsiveRatioNew = 'embed-responsive-' . str_replace('x', 'by', $aspectRatio);
+                                            $responsiveRatioNew = $this->bootstrapVersion >= 5
+                                                ? 'ratio-' . $aspectRatio
+                                                : 'embed-responsive-' . str_replace('x', 'by', $aspectRatio);
                                             break;
                                     }
 
