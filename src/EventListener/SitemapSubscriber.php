@@ -108,6 +108,8 @@ class SitemapSubscriber implements EventSubscriberInterface
     {
         $locale = $this->translator->getLocale();
 
+        $siteKey = $this->params->get('app.site.key');
+
         $urlDescriptions = [];
 
         foreach ($this->router->getRouteCollection() as $name => $route) {
@@ -140,6 +142,9 @@ class SitemapSubscriber implements EventSubscriberInterface
                 || preg_match('/^glossary/', $routeName)
                 || preg_match('/^search/', $routeName)
                 || preg_match('/^topic/', $routeName)
+                || preg_match('/^place-map\-landmark/', $routeName)
+                || preg_match('/^landmark/', $routeName)
+                || ('ade' == $siteKey && preg_match('/^date\-chronology/', $routeName))
                 // login and admin
                 || preg_match('/^app_/', $routeName)) {
                 // omit certain routes from sitemap

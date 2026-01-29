@@ -18,6 +18,7 @@ class Builder
     private $translator;
     private $requestStack;
     private $router;
+    private $twig;
 
     /**
      * @param FactoryInterface $factory
@@ -26,17 +27,20 @@ class Builder
      * @param Router $router
      *
      * Add any other dependency you need
+     * @param \Twig\Environment $twig
      */
     public function __construct(
         FactoryInterface $factory,
         TranslatorInterface $translator,
         RequestStack $requestStack,
-        RouterInterface $router
+        RouterInterface $router,
+        \Twig\Environment $twig
     ) {
         $this->factory = $factory;
         $this->translator = $translator;
         $this->requestStack = $requestStack;
         $this->router = $router;
+        $this->twig = $twig;
     }
 
     public function createTopMenu(array $options): ItemInterface
@@ -118,8 +122,6 @@ class Builder
 
     public function createMainMenu(array $options): ItemInterface
     {
-        $breadcrumbMode = isset($options['position']) && 'breadcrumb' == $options['position'];
-
         $menu = $this->factory->createItem('home', [ 'label' => 'Home', 'route' => 'home' ]);
         if (array_key_exists('position', $options) && 'footer' == $options['position']) {
             $menu->setChildrenAttributes([ 'id' => 'menu-main-footer', 'class' => 'small' ]);
@@ -128,14 +130,17 @@ class Builder
             $menu->setChildrenAttributes([ 'id' => 'menu-main', 'class' => 'list-inline' ]);
         }
 
-        // add menu item
-        // $menu->addChild('topic-index', [ 'label' => 'Topics', 'route' => 'topic-index' ]);
+        // add menu items
 
-        $menu->addChild('date-chronology', [
-            'label' => 'Chronology',
-            'route' => 'date-chronology',
-        ])
-            ->setAttribute('class', 'list-inline-item');
+        $siteKey = $this->twig->getGlobals()['siteKey'] ?? 'gdr';
+
+        if ('ade' != $siteKey) {
+            $menu->addChild('date-chronology', [
+                'label' => 'Chronology',
+                'route' => 'date-chronology',
+            ])
+                ->setAttribute('class', 'list-inline-item');
+        }
 
         $menu->addChild('place-map', [
             'label' => 'Map',
@@ -192,10 +197,16 @@ class Builder
         if (array_key_exists('position', $options) && 'footer' == $options['position']) {
         }
         else {
-            // $menu['topic-index']->setAttribute('id', 'menu-item-topic');
-            $menu['place-map']->setAttribute('id', 'menu-item-map');
-            $menu['date-chronology']->setAttribute('id', 'menu-item-chronology');
-            $menu['_lookup']->setAttribute('id', 'menu-item-lookup');
+            foreach ([
+                'place-map' => 'menu-item-map',
+                'date-chronology' => 'menu-item-chronology',
+                '_lookup' => 'menu-item-lookup',
+            ] as $key => $id) {
+                $menuItem = $menu[$key];
+                if (!is_null($menuItem)) {
+                    $menuItem->setAttribute('id', $id);
+                }
+            }
 
             // find the matching parent
             // TODO: maybe use a voter

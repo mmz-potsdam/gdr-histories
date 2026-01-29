@@ -2,6 +2,7 @@ twig:
     file_name_pattern: '*.twig'
     default_path: '%kernel.project_dir%/templates'
     globals:
+        siteKey: '%app.site.key%'
         siteName: '%app.site.name%'
         siteTagline: '%app.site.byline%'
         sitePublisher: '%app.site.publisher%'
