@@ -24,18 +24,16 @@
         <div class="carousel-inner">
             <div class="carousel-item active d-flex" style="background-image: url('{{ app.request.basepath }}/viewer/home/banner-archiv-der-erinnerung.png');">
                 <div class="container">
-                {#
-                <blockquote class"blockquote">
+                <blockquote class="blockquote ps-5">
                     <p>
-                    „Für mich war vor allen Dingen auch ausschlaggebend,
-                    dass ich mich befreunden konnte mit dem Gedanken,
-                    wieder in Deutschland zu sein“
+                    Überlebende der Shoah erinnern sich&#x2026;
                     </p>
+                    {#
                     <footer class="blockquote-footer">
                         <a href="{{ path('source', { 'uid': 'source-31' }) }}">Hilde Eisler, Interview vom 31.08.1989</a>
                     </footer>
+                    #}
                 </blockquote>
-                #}
                 </div>
             </div>
             {#
@@ -110,58 +108,28 @@
 <div class="container wrapper">
     <div class="row">
         <div class="col-12 offset-md-2 col-md-8">
-            {#
-            <div class="container-fluid box">
-                <div class="row box-header map">
-                    <div class="col-sm-12">
-                        <h4><a href="{{ path('place-map') }}">{{ 'Map'|trans }}</a></h4>
-                    </div>
-                </div>
-                <div class="row box-content">
-                    <div class="col-sm-12">
-                        <div id="map-container">
-                            <div id="map" style="width: 100%; min-height: 320px"></div>
-                            <script>
-                            $( document).ready(function () {
-                                showMap();
-                            });
-
-                            {{ map.showMap(bounds, markers) }}
-                            </script>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            #}
-
         {% if sourcesTimeline is not empty %}
-            <h4 class="mt-2">{{ 'Interviews'|trans }}</h4>
-            <h2><a href="{{ path('date-chronology') }}">{{ 'Chronology'|trans }}</a></h2>
-            <div class="container-fluid box mb-4 route-date-chronology-partial">
-                {{ helper.source_timeline(sourcesTimeline, true) }}
-                {#
-                <div class="row box-content">
-                    <div id="chronology" data-url="{{ path('date-chronology-partial') }}" style="max-height: 960px; overflow-y: scroll; overflow-x: hidden; width: 100%;">
-                        {{ 'Loading...'|trans }}
-                        <script>
-                            var chronologyLoaded = false;
-
-                            $( document).ready(function () {
-                                if (!chronologyLoaded) {
-                                    var pane = $( '#chronology' );
-                                    var url = pane.attr("data-url");
-
-                                    // ajax load from data-url
-                                    $( pane ).load(url,function(result){
-                                        chronologyLoaded = true;
-                                    });
-                                }
-                            });
-                        </script>
+            <h3 class="mt-5 pb-3">{{ 'Interviews'|trans }}</h3>
+            <div class="container-fullwidth">
+                <div class="row">
+                {% for source in sourcesTimeline %}
+                    {% set path = path('source', { 'uid' : source.uid }) %}
+                    {% set thumb = '/viewer/source-%05d/thumb.jpg'|format(source.uid|u.replaceMatches('/.*source\-/', '').__toString) %}
+                    <div class="col-12 col-md-6 mb-5" style="overflow: hidden;">
+                        <a href="{{ path }}" class="play-icon {% if source.sourceType is not empty %}sourcetype-{{ source.sourceType|lower }}{% endif %}">
+                        {% if file_exists(webDir ~ thumb) %}
+                            <div class="ratio ratio-4x3 mb-1" alt="" style="background: url({{ app.request.basepath }}{{ thumb }}); background-size: cover; ">
+                            {% if source.sourceType is not empty %}
+                                <div class="play-icon-overlay">{{ source.sourceType|capitalize }}</div>
+                            {% endif %}
+                            </div>
+                        {% endif %}
+                            {{ source.name }}
+                        </a>
                     </div>
-                </div>
-                #}
-            </div>
+                {% endfor %}
+                </div><!-- .row -->
+            </div><!-- .container-fluid -->
         {% endif %}
         </div>
     </div>
