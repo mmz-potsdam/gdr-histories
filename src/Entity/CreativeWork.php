@@ -558,9 +558,9 @@ class CreativeWork extends SchemaOrg
      *
      * @return $this
      */
-    public function setPagination($pagionation = null)
+    public function setPagination($pagination = null)
     {
-        $this->pagination = $pagionation;
+        $this->pagination = $pagination;
 
         return $this;
     }
@@ -762,6 +762,8 @@ class CreativeWork extends SchemaOrg
         if (isset($this->isPartOf) && $this->isPartOf instanceof Periodical) {
             return $this->isPartOf->getIssn();
         }
+
+        return null;
     }
 
     /**

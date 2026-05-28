@@ -34,7 +34,7 @@ class SourceController extends \TeiEditionBundle\Controller\SourceController
         \Twig\Environment $twig,
         XsltProcessor $xsltProcessor,
         PdfGenerator $pdfGenerator,
-        ?AVMetadataService $avMetadataService
+        ?AvMetadataService $avMetadataService
     ) {
         parent::__construct($kernel, $slugify, $themeContext, $twig, $xsltProcessor, $pdfGenerator);
 
@@ -97,7 +97,7 @@ class SourceController extends \TeiEditionBundle\Controller\SourceController
             // set proper aspect ratio
             $html = preg_replace_callback(
                 '/(<div class="embed-responsive (embed-responsive-[^"]*)">)\s*([\s\S]*?)(<\/div>)/s',
-                function ($matches) use ($baseUrl) {
+                function ($matches) {
                     $full = $matches[0];
 
                     $responsiveRatio = $matches[2];
