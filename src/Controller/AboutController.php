@@ -53,7 +53,7 @@ class AboutController extends \TeiEditionBundle\Controller\RenderTeiController
             if (false !== $fnameTeiFull) {
                 $teiHelper = new \TeiEditionBundle\Utils\TeiHelper();
                 $meta = $teiHelper->analyzeHeader($fnameTeiFull);
-                if (!is_null($meta)) {
+                if (!is_null($meta) && false !== $meta) {
                     $title = $meta->name;
                 }
             }
