@@ -65,6 +65,10 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/burki/wordpress-rest-api-client"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/burki/FeedBundle"
         },
         {
@@ -90,7 +94,7 @@
         "fluentdom/fluentdom": "dev-master as 8.0",
         "gmo/iso-639": "dev-master#4834357 as 1.0",
         "hedii/zotero-api": "dev-master#c296090a23e557bd7b38c7f10132ada6bc333631",
-        "igdj/tei-edition-bundle": "dev-attributes",
+        "igdj/tei-edition-bundle": "dev-attributes-only",
         "jms/translation-bundle": "^2.7",
         "presta/sitemap-bundle": "^4.3",
         "square-bit/oai-pmh": "dev-master as 0.3",
@@ -99,7 +103,8 @@
         "symfony/flex": "^2",
         "symfony/form": "7.4.*",
         "symfony/runtime": "7.4.*",
-        "symfony/security-bundle": "7.4.*"
+        "symfony/security-bundle": "7.4.*",
+        "vnn/wordpress-rest-api-client": "dev-master"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.94",
