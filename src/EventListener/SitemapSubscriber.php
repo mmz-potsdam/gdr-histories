@@ -14,7 +14,6 @@ use Symfony\Contracts\Translation\TranslatorInterface;
 use Doctrine\ORM\EntityManagerInterface;
 use Cocur\Slugify\SlugifyInterface;
 use Presta\SitemapBundle\Event\SitemapPopulateEvent;
-use Presta\SitemapBundle\Service\UrlContainerInterface;
 use Presta\SitemapBundle\Sitemap\Url\UrlConcrete;
 
 class SitemapSubscriber implements EventSubscriberInterface
@@ -30,19 +29,10 @@ class SitemapSubscriber implements EventSubscriberInterface
     private $router;
 
     /**
-     * @var UrlGeneratorInterface
-     */
-    private $urlGenerator;
-
-    /**
      * @var TranslatorInterface
      */
     private $translator;
 
-    /**
-     * @var SlugifyInterface
-     */
-    private $slugify;
 
     /**
      * @var ParameterBagInterface
@@ -50,22 +40,16 @@ class SitemapSubscriber implements EventSubscriberInterface
     private $params;
 
     /**
-     * @param UrlGeneratorInterface $urlGenerator
-     * @param EntityManagerInterface $entityManager
      */
     public function __construct(
         EntityManagerInterface $entityManager,
         RouterInterface $router,
-        UrlGeneratorInterface $urlGenerator,
         TranslatorInterface $translator,
-        SlugifyInterface $slugify,
         ParameterBagInterface $params
     ) {
         $this->entityManager = $entityManager;
         $this->router = $router;
-        $this->urlGenerator = $urlGenerator;
         $this->translator = $translator;
-        $this->slugify = $slugify;
         $this->params = $params;
     }
 

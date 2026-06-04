@@ -17,6 +17,11 @@ use TeiEditionBundle\Entity\Place;
  */
 class CreativeWork extends SchemaOrg
 {
+    static protected $PARENT_ITEM_TYPE_MAP = [
+        'ScholarlyArticle' => 'issue',
+        'Chapter' => 'book'
+    ];
+
     protected static function buildCorresp($zoteroData, $zoteroMeta)
     {
         $slugify = new \Cocur\Slugify\Slugify();
@@ -185,87 +190,87 @@ class CreativeWork extends SchemaOrg
     protected $itemType;
 
     /**
-     * @var array The author/contributor/editor of this CreativeWork.
+     * @var array|null The author/contributor/editor of this CreativeWork.
      */
     protected $creators;
 
     /**
-     * @var string The series of books the book was published in
+     * @var string|null The series of books the book was published in
      */
     protected $series;
 
     /**
-     * @var string The number within the series of books the book was published in
+     * @var string|null The number within the series of books the book was published in
      */
     protected $seriesNumber;
 
     /**
-     * @var string The volume of a journal or multi-volume book
+     * @var string|null The volume of a journal or multi-volume book
      */
     protected $volume;
 
     /**
-     * @var string The number of volumes of a multi-volume book
+     * @var string|null The number of volumes of a multi-volume book
      */
     protected $numberOfVolumes;
 
     /**
-     * @var string The issue of a journal, magazine, or tech-report, if applicable
+     * @var string|null The issue of a journal, magazine, or tech-report, if applicable
      */
     protected $issue;
 
     /**
-     * @var string The edition of a book
+     * @var string|null The edition of a book
      */
     protected $bookEdition;
 
     /**
-     * @var string The place(s) of publication
+     * @var string|null The place(s) of publication
      */
     protected $publicationLocation; /* map to contentLocation in Schema.org */
 
     /**
-     * @var string The publisher's name
+     * @var string|null The publisher's name
      */
     protected $publisher;
 
     /**
-     * @var string Date of first broadcast/publication.
+     * @var string|null Date of first broadcast/publication.
      */
     protected $datePublished;
 
     /**
-     * @var string The Page numbers, separated either by commas or as range by hyphen
+     * @var string|null The Page numbers, separated either by commas or as range by hyphen
      */
     protected $pagination;
 
     /**
-     * @var string The number of pages of the book
+     * @var string|null The number of pages of the book
      */
     protected $numberOfPages;
 
     /**
-     * @var string The doi of the article
+     * @var string|null The doi of the article
      */
     protected $doi;
 
     /**
-     * @var string The isbn of the book
+     * @var string|null The isbn of the book
      */
     protected $isbn;
 
     /**
-     * @var array
+     * @var array|null
      */
     protected $additional;
 
     /**
-     * @var CreativeWork Indicates a Bibitem that this Bibitem is (in some sense) part of.
+     * @var CreativeWork|null Indicates a Bibitem that this Bibitem is (in some sense) part of.
      */
     protected $isPartOf;
 
     /**
-     * @var string The title of the book or journal for bookSection / journalArticle.
+     * @var string|null The title of the book or journal issue for bookSection / journalArticle.
      */
     protected $containerName;
 
@@ -295,7 +300,6 @@ class CreativeWork extends SchemaOrg
 
     /**
      * @var string
-     *
      */
     protected $version;
 
@@ -1051,7 +1055,7 @@ class CreativeWork extends SchemaOrg
      * We transfer to Citeproc JSON
      * see https://github.com/citation-style-language/schema/blob/master/csl-data.json
      */
-    public function jsonSerialize($locale = 'de_DE')
+    public function jsonSerialize($locale = 'de_DE'): mixed
     {
         // see http://aurimasv.github.io/z2csl/typeMap.xml
         static $typeMap = [
@@ -1215,7 +1219,7 @@ class CreativeWork extends SchemaOrg
                         continue;
                     }
 
-                    if (!empty($creator['firstName'])) {
+                    if (!empty($creator['firstName']) || !empty($creator['lastName'])) {
                         // we have a person
                         $person = new Person();
                         if (!empty($creator['firstName'])) {
@@ -1240,7 +1244,8 @@ class CreativeWork extends SchemaOrg
                 if (1 == $numValues) {
                     $ret[$key] = $values[0];
                 }
-                else if ($numValues > 1) {
+                else /* if ($numValues > 1) */ {
+                    // $numValues should always be > 1 here
                     $ret[$key] = $values;
                 }
             }
@@ -1273,41 +1278,28 @@ class CreativeWork extends SchemaOrg
                 $ret['numberOfPages'] = (int) $this->numberOfPages;
             }
         }
-        else if (in_array($type, [ 'ScholarlyArticle', 'Chapter' ])) {
+        else if (array_key_exists($type, self::$PARENT_ITEM_TYPE_MAP)) {
             foreach ([ 'pagination' ] as $property) {
                 if (!empty($this->$property)) {
                     $ret[$property] = $this->$property;
                 }
             }
 
-            if (!empty($this->containerName)) {
-                $parentItemType = null;
-                switch ($type) {
-                    case 'ScholarlyArticle':
-                        $parentItemType = 'issue';
-                        break;
+            $parentItemType = self::$PARENT_ITEM_TYPE_MAP[$type];
 
-                    case 'Chapter':
-                        $parentItemType = 'book';
-                        break;
-                }
-
-                if (!is_null($parentItemType)) {
-                    $parent = clone $this;
-                    $parent->setItemType($parentItemType);
-                    $parent->setName($this->containerName);
-                    if ('Chapter' == $type && !empty($this->creators)) {
-                        $creatorsParent = [];
-                        foreach ($this->creators as $creator) {
-                            if (!in_array($creator['creatorType'], [ 'author', 'translator'])) {
-                                $creatorsParent[] = $creator;
-                            }
-                        }
-                        $parent->setCreators($creatorsParent);
+            $parent = clone $this;
+            $parent->setItemType($parentItemType);
+            $parent->setName($this->containerName);
+            if ('Chapter' == $type && !empty($this->creators)) {
+                $creatorsParent = [];
+                foreach ($this->creators as $creator) {
+                    if (!in_array($creator['creatorType'], [ 'author', 'translator'])) {
+                        $creatorsParent[] = $creator;
                     }
-                    $ret['isPartOf'] = $parent->jsonLdSerialize($locale, true);
                 }
+                $parent->setCreators($creatorsParent);
             }
+            $ret['isPartOf'] = $parent->jsonLdSerialize($locale, true);
         }
 
         if (in_array($type, [ 'Periodical', 'Book' ])) {
