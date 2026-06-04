@@ -10,12 +10,13 @@ class JsonLd
     /**
      * Convert.
      *
-     * @param string|\DateTime $date date string
+     * @param string|\DateTime $date date string or DateTime object
      *
      * @return string|null formatted date string (either YYYY or YYYY-MM-DD)
      */
     public static function formatDate8601($date)
     {
+        // @phpstan-ignore instanceof.alwaysTrue (if $date is not string, $date instanceof \DateTime by docblock)
         if (is_object($date) && $date instanceof \DateTime) {
             return $date->format('Y-m-d');
         }

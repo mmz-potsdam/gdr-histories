@@ -22,23 +22,18 @@
 
 namespace App\EventListener;
 
-use Symfony\Component\HttpFoundation\Session\Session;
-use Symfony\Component\Security\Http\Event\InteractiveLoginEvent;
 use Symfony\Component\HttpKernel\Event\RequestEvent;
 use Symfony\Component\HttpKernel\HttpKernelInterface;
-use JMS\I18nRoutingBundle\Router\LocaleResolverInterface;
 
 class LanguageListener
 {
     protected $defaultLocale;
     protected $locales;
-    protected $localeResolver;
 
-    public function __construct($defaultLocale, array $locales, LocaleResolverInterface $localeResolver)
+    public function __construct($defaultLocale, array $locales)
     {
         $this->defaultLocale = $defaultLocale;
         $this->locales = $locales;
-        $this->localeResolver = $localeResolver;
     }
 
     public function setLocale(RequestEvent $event)
@@ -49,10 +44,10 @@ class LanguageListener
 
         $request = $event->getRequest();
 
-        $locale = $this->localeResolver->resolveLocale($request, $this->locales) ?: $this->defaultLocale;
-
         // doesn't seem to work - so check if pathInfo starts with '/locale/'
         $pathInfo = $request->getPathInfo();
+
+        $locale = $request->getLocale();
 
         if ($locale != $this->defaultLocale) {
             $needle = '/' . $locale . '/';

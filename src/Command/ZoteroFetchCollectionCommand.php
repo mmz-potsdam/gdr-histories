@@ -41,8 +41,7 @@ class ZoteroFetchCollectionCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $groupId = $this->zoteroApiService->getGroupId();
-
+        $groupId = $this->zoteroApiService->getGroupId(); // set in config/services.yaml
         $api = $this->zoteroApiService->getInstance($groupId);
 
         $key = $input->getOption('secondary')
