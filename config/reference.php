@@ -1130,6 +1130,24 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     }>,
  *     auto_index?: bool|Param, // Default: true
  * }
+ * @psalm-type TeiEditionConfig = array{
+ *     public_dir?: string|Param, // Path to the public directory (default: %kernel.project_dir%/public) // Default: "%kernel.project_dir%/public"
+ *     imagemagick?: array{
+ *         processor?: array{
+ *             path?: string|Param,
+ *         },
+ *     },
+ *     pdf_generator?: mixed,
+ *     xsl?: array{
+ *         cache?: string|Param,
+ *         commandline?: array{
+ *             template?: string|Param,
+ *         },
+ *         saxon?: array{
+ *             enabled?: bool|Param, // When enabled, built-in saxonc-extension will be use. // Default: false
+ *         },
+ *     },
+ * }
  * @psalm-type PrestaSitemapConfig = array{
  *     generator?: scalar|Param|null, // Default: "presta_sitemap.generator_default"
  *     dumper?: scalar|Param|null, // Default: "presta_sitemap.dumper_default"
@@ -1554,6 +1572,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *     jms_translation?: JmsTranslationConfig,
  *     doctrine?: DoctrineConfig,
  *     fs_solr?: FsSolrConfig,
+ *     tei_edition?: TeiEditionConfig,
  *     presta_sitemap?: PrestaSitemapConfig,
  *     security?: SecurityConfig,
  *     twig_extra?: TwigExtraConfig,
@@ -1574,6 +1593,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         jms_translation?: JmsTranslationConfig,
  *         doctrine?: DoctrineConfig,
  *         fs_solr?: FsSolrConfig,
+ *         tei_edition?: TeiEditionConfig,
  *         presta_sitemap?: PrestaSitemapConfig,
  *         debug?: DebugConfig,
  *         maker?: MakerConfig,
@@ -1598,6 +1618,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         jms_translation?: JmsTranslationConfig,
  *         doctrine?: DoctrineConfig,
  *         fs_solr?: FsSolrConfig,
+ *         tei_edition?: TeiEditionConfig,
  *         presta_sitemap?: PrestaSitemapConfig,
  *         security?: SecurityConfig,
  *         twig_extra?: TwigExtraConfig,
@@ -1619,6 +1640,7 @@ use Symfony\Component\Config\Loader\ParamConfigurator as Param;
  *         jms_translation?: JmsTranslationConfig,
  *         doctrine?: DoctrineConfig,
  *         fs_solr?: FsSolrConfig,
+ *         tei_edition?: TeiEditionConfig,
  *         presta_sitemap?: PrestaSitemapConfig,
  *         security?: SecurityConfig,
  *         web_profiler?: WebProfilerConfig,

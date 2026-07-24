@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "842662218e5ef2736938f4a0fe8bd432",
+    "content-hash": "2c693b20b9ac3a9fc9d97f92992aec61",
     "packages": [
         {
             "name": "armin/scssphp-bundle",
@@ -2451,16 +2451,16 @@
         },
         {
             "name": "igdj/tei-edition-bundle",
-            "version": "dev-symfony-8",
+            "version": "dev-bundle-configuration",
             "source": {
                 "type": "git",
                 "url": "https://github.com/burki/tei-edition-bundle.git",
-                "reference": "0f348872e66769b0f164fa9903c4a896df4c78a9"
+                "reference": "af80436ab7194145455f923ab4a4283190681c7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/0f348872e66769b0f164fa9903c4a896df4c78a9",
-                "reference": "0f348872e66769b0f164fa9903c4a896df4c78a9",
+                "url": "https://api.github.com/repos/burki/tei-edition-bundle/zipball/af80436ab7194145455f923ab4a4283190681c7a",
+                "reference": "af80436ab7194145455f923ab4a4283190681c7a",
                 "shasum": ""
             },
             "require": {
@@ -2538,9 +2538,9 @@
             ],
             "description": "Symfony bundle to provide TEI edition functionality.",
             "support": {
-                "source": "https://github.com/burki/tei-edition-bundle/tree/symfony-8"
+                "source": "https://github.com/burki/tei-edition-bundle/tree/bundle-configuration"
             },
-            "time": "2026-06-20T07:15:02+00:00"
+            "time": "2026-07-30T15:15:17+00:00"
         },
         {
             "name": "illuminate/collections",
