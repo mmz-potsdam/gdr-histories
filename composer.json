@@ -108,6 +108,7 @@
         "symfony/form": "7.4.*",
         "symfony/runtime": "7.4.*",
         "symfony/security-bundle": "7.4.*",
+        "textrazor/textrazor-php": "*@dev",
         "vnn/wordpress-rest-api-client": "dev-master"
     },
     "require-dev": {

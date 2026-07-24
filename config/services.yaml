@@ -26,6 +26,8 @@ parameters:
 
     app.site.matomo.id: "%env(string:SITE_MATOMO_ID)%"
     app.public_dir: '%kernel.project_dir%/public'
+    app.textrazor.options:
+        api-key: "%env(string:TEXTRAZOR_API_KEY)%"
     app.zotero.options:
         api-key: "%env(string:ZOTERO_API_KEY)%"
         group-id: 5126936 # https://www.zotero.org/groups/5126936/einf%C3%BChrungsbibliographie_ddr/
