@@ -78,17 +78,17 @@ services:
             $siteTheme: "@= parameter('app.site.key') == 'gdr' ? (parameter('app.preview') ? 'mmz-potsdam/gdr-histories' : null) : 'mmz-potsdam/' ~ parameter('app.site.key')"
             #$wordpressBaseUrl: '%app.wordpress.url%'
 
+    # make Controller classes in TeiEditionBundle available to be used as services
+    # this creates a service per class whose id is the fully-qualified class name
+    # must come before App\ so we can override routes in App\ below
+    TeiEditionBundle\:
+        resource: '%kernel.project_dir%/vendor/igdj/tei-edition-bundle/src'
+        exclude: '%kernel.project_dir%/vendor/igdj/tei-edition-bundle/src/{Entity,Migrations,Tests}'
+
     # makes classes in src/ available to be used as services
     # this creates a service per class whose id is the fully-qualified class name
     App\:
         resource: '../src/'
-
-    # makes classes in TeiEditionBundle available to be used as services
-    # this creates a service per class whose id is the fully-qualified class name
-    # TODO: expose this in bundle configuration: https://symfony.com/doc/current/bundles/extension.html
-    TeiEditionBundle\:
-        resource: '%kernel.project_dir%/vendor/igdj/tei-edition-bundle/src'
-        exclude: '%kernel.project_dir%/vendor/igdj/tei-edition-bundle/src/{Entity,Migrations,Tests}'
 
     # override command in bundle, see https://stackoverflow.com/a/57107379
     App\Command\ArticleRefreshCommand:
