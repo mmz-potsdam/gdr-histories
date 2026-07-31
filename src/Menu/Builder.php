@@ -91,7 +91,7 @@ class Builder
                 $menu['about']
                     ->addChild('about-transcription', [
                         'label' => $this->translator->trans('Transcription Guidelines'),
-                        'uri' => $this->router->generate('about-additional', [ 'path' => 'transcription' ]),
+                        'uri' => $this->router->generate('about-additional', [ 'path' => 'transkription' ]),
                         'linkAttributes' => [
                             'class' => 'dropdown-item',
                         ],
@@ -106,7 +106,7 @@ class Builder
                 $menu['about']
                     ->addChild('about-transcription', [
                         'label' => $this->translator->trans('Transcription Guidelines'),
-                        'uri' => $this->router->generate('about-additional', [ 'path' => 'transcription' ]),
+                        'uri' => $this->router->generate('about-additional', [ 'path' => 'transkription' ]),
                     ]);
             }
 
