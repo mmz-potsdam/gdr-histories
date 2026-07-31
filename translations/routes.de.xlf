@@ -22,9 +22,9 @@
         <source>/about/authors</source>
         <target>/ueber/autorinnen</target>
       </trans-unit>
-      <trans-unit id="565692a759f23d08ed50f171b3a8c4f21f24200c" resname="about-transcription">
-        <source>/about/transcription</source>
-        <target state="new">/ueber/transkription</target>
+      <trans-unit id="565692a759f23d08ed50f171b3a8c4f21f24200c" resname="about-additional">
+        <source>/about/{path}</source>
+        <target>/ueber/{path}</target>
       </trans-unit>
       <trans-unit id="36fce355865a381e0efe7bc29b2d716a6be2120f" resname="app_admin_event_delete">
         <source>/admin/event/{id}</source>
@@ -212,7 +212,7 @@
       </trans-unit>
       <trans-unit id="25d793dbb8b816a2f81fdd7ee262951bf6cf0b17" resname="imginfo">
         <source>/source/imginfo/{path}</source>
-        <target>/source/imginfo/{path}</target>
+        <target>/quelle/imginfo/{path}</target>
       </trans-unit>
       <trans-unit id="93ac1a0050ee54e77acc49225601f34f27f8d4d7" resname="landmark">
         <source>/landmark/{id}</source>

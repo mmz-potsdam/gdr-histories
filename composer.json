@@ -69,6 +69,10 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/burki/JMSI18nRoutingBundle"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/burki/wordpress-rest-api-client"
         },
         {
@@ -96,10 +100,12 @@
         "armin/scssphp-bundle": "dev-master",
         "eko/feedbundle": "dev-symfony-8",
         "fluentdom/fluentdom": "dev-master as 8.0",
+        "gjuric/i18n-routing-bundle": "dev-php-file-loader as 3.2.99",
         "gmo/iso-639": "dev-master#4834357 as 1.0",
         "hedii/zotero-api": "dev-master#c296090a23e557bd7b38c7f10132ada6bc333631",
         "igdj/tei-edition-bundle": "dev-bundle-configuration",
-        "jms/translation-bundle": "dev-symfony-8",
+        "jms/translation-bundle": "dev-symfony-8 as 2.7.99",
+
         "presta/sitemap-bundle": "^4.3",
         "square-bit/oai-pmh": "dev-master as 0.3",
         "symfony/apache-pack": "^1.0",

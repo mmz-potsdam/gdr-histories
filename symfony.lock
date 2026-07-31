@@ -71,6 +71,9 @@
             ".php-cs-fixer.dist.php"
         ]
     },
+    "gjuric/i18n-routing-bundle": {
+        "version": "dev-php-file-loader"
+    },
     "igdj/tei-edition-bundle": {
         "version": "dev-verbrannte-buecher.de"
     },

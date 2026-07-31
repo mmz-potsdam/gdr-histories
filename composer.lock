@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2c693b20b9ac3a9fc9d97f92992aec61",
+    "content-hash": "b497e03f5e8570f7cf2cfb41fb87fc01",
     "packages": [
         {
             "name": "armin/scssphp-bundle",
@@ -1874,6 +1874,64 @@
                 "source": "https://github.com/burki/converter/tree/master"
             },
             "time": "2020-11-27T09:00:35+00:00"
+        },
+        {
+            "name": "gjuric/i18n-routing-bundle",
+            "version": "dev-php-file-loader",
+            "target-dir": "JMS/I18nRoutingBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/burki/JMSI18nRoutingBundle.git",
+                "reference": "4a84ab31680e4653c6aa177ea2f4e2e256aea68a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/burki/JMSI18nRoutingBundle/zipball/4a84ab31680e4653c6aa177ea2f4e2e256aea68a",
+                "reference": "4a84ab31680e4653c6aa177ea2f4e2e256aea68a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "symfony/framework-bundle": ">=4.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0|^9.0",
+                "sensio/framework-extra-bundle": "*",
+                "symfony/symfony": "^4.4|^5.0|^6.0"
+            },
+            "suggest": {
+                "jms/translation-bundle": "If you want to use the RouteTranslation extractor"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "JMS\\I18nRoutingBundle": ""
+                }
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Johannes M. Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                },
+                {
+                    "name": "Albert Casademont",
+                    "email": "albertcasademont@gmail.com"
+                }
+            ],
+            "description": "This bundle allows you to create i18n routes.",
+            "homepage": "http://jmsyst.com/bundles/JMSI18nRoutingBundle",
+            "keywords": [
+                "multilanguage",
+                "routing",
+                "translation"
+            ],
+            "support": {
+                "source": "https://github.com/burki/JMSI18nRoutingBundle/tree/php-file-loader"
+            },
+            "time": "2026-02-23T06:59:10+00:00"
         },
         {
             "name": "gmo/iso-639",
@@ -12319,16 +12377,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v3.95.17",
+            "version": "v3.95.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer.git",
-                "reference": "0ee88422118f3cc59c8c3def222ba7f1493b6d5b"
+                "reference": "a8b4e4216faabf67f4e96110ee99a48c96e4e683"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/0ee88422118f3cc59c8c3def222ba7f1493b6d5b",
-                "reference": "0ee88422118f3cc59c8c3def222ba7f1493b6d5b",
+                "url": "https://api.github.com/repos/PHP-CS-Fixer/PHP-CS-Fixer/zipball/a8b4e4216faabf67f4e96110ee99a48c96e4e683",
+                "reference": "a8b4e4216faabf67f4e96110ee99a48c96e4e683",
                 "shasum": ""
             },
             "require": {
@@ -12412,7 +12470,7 @@
             ],
             "support": {
                 "issues": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/issues",
-                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.95.17"
+                "source": "https://github.com/PHP-CS-Fixer/PHP-CS-Fixer/tree/v3.95.18"
             },
             "funding": [
                 {
@@ -12420,7 +12478,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-07-24T13:54:39+00:00"
+            "time": "2026-07-30T15:46:02+00:00"
         },
         {
             "name": "phpstan/phpstan",
@@ -13560,10 +13618,22 @@
             "alias_normalized": "8.0.0.0"
         },
         {
+            "package": "gjuric/i18n-routing-bundle",
+            "version": "dev-php-file-loader",
+            "alias": "3.2.99",
+            "alias_normalized": "3.2.99.0"
+        },
+        {
             "package": "gmo/iso-639",
             "version": "9999999-dev",
             "alias": "1.0",
             "alias_normalized": "1.0.0.0"
+        },
+        {
+            "package": "jms/translation-bundle",
+            "version": "dev-symfony-8",
+            "alias": "2.7.99",
+            "alias_normalized": "2.7.99.0"
         },
         {
             "package": "square-bit/oai-pmh",
@@ -13577,6 +13647,7 @@
         "armin/scssphp-bundle": 20,
         "eko/feedbundle": 20,
         "fluentdom/fluentdom": 20,
+        "gjuric/i18n-routing-bundle": 20,
         "gmo/iso-639": 20,
         "hedii/zotero-api": 20,
         "igdj/tei-edition-bundle": 20,
