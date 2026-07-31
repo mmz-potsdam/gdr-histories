@@ -36,27 +36,29 @@ class AboutController extends \TeiEditionBundle\Controller\RenderTeiController
 
     /**
      * Render about-text from TEI to HTML
-     * If $title is null, extract from TEI
+     * If $path is null, get from route
      */
     protected function renderTitleContent(
         Request $request,
         $template,
-        $title = null
+        $path = null
     ) {
-        $route = $request->get('_route');
+        $basename = is_null($path)
+            ? $request->get('_route')
+            : $basename = 'about-' . $path;
+
         $locale = $request->getLocale();
-        $fnameTei = $route . '.' . $locale . '.xml';
+        $fnameTei = $basename . '.' . $locale . '.xml';
 
-        if (is_null($title)) {
-            // try to extract title from TEI
-            $fnameTeiFull = $this->locateTeiResource($fnameTei);
+        $title = null;
+        // try to extract title from TEI
+        $fnameTeiFull = $this->locateTeiResource($fnameTei);
 
-            if (false !== $fnameTeiFull) {
-                $teiHelper = new \TeiEditionBundle\Utils\TeiHelper();
-                $meta = $teiHelper->analyzeHeader($fnameTeiFull);
-                if (false !== $meta) {
-                    $title = $meta->name;
-                }
+        if (false !== $fnameTeiFull) {
+            $teiHelper = new \TeiEditionBundle\Utils\TeiHelper();
+            $meta = $teiHelper->analyzeHeader($fnameTeiFull);
+            if (false !== $meta) {
+                $title = $meta->name;
             }
         }
 
@@ -68,14 +70,14 @@ class AboutController extends \TeiEditionBundle\Controller\RenderTeiController
     }
 
     #[Route(path: '/about', name: 'about')]
-    #[Route(path: '/about/transcription', name: 'about-transcription')]
+    #[Route(path: '/about/{path}', name: 'about-additional')]
     #[Route(path: '/terms', name: 'terms')]
     #[Route(path: '/contact', name: 'contact')]
     public function renderAbout(
         Request $request,
         TranslatorInterface $translator,
-        $title = null
+        $path = null
     ): Response {
-        return $this->renderTitleContent($request, 'About/sitetext.html.twig', $title);
+        return $this->renderTitleContent($request, 'About/sitetext.html.twig', $path);
     }
 }

@@ -43,6 +43,11 @@ class Builder
         $this->twig = $twig;
     }
 
+    private function getSiteKey(): string
+    {
+        return $this->twig->getGlobals()['siteKey'] ?? 'gdr';
+    }
+
     public function createTopMenu(array $options): ItemInterface
     {
         $menu = $this->factory->createItem('root');
@@ -80,10 +85,13 @@ class Builder
                     ],
                 ]);
 
+                if ('ade' == $this->getSiteKey()) {
+                }
+
                 $menu['about']
                     ->addChild('about-transcription', [
                         'label' => $this->translator->trans('Transcription Guidelines'),
-                        'route' => 'about-transcription',
+                        'uri' => $this->router->generate('about-additional', [ 'path' => 'transcription' ]),
                         'linkAttributes' => [
                             'class' => 'dropdown-item',
                         ],
@@ -98,7 +106,7 @@ class Builder
                 $menu['about']
                     ->addChild('about-transcription', [
                         'label' => $this->translator->trans('Transcription Guidelines'),
-                        'route' => 'about-transcription',
+                        'uri' => $this->router->generate('about-additional', [ 'path' => 'transcription' ]),
                     ]);
             }
 
