@@ -86,6 +86,41 @@ class Builder
                 ]);
 
                 if ('ade' == $this->getSiteKey()) {
+                    $menu['about']
+                        ->addChild('about-conception', [
+                            'label' => $this->translator->trans('Zur Konzeption der Video-Edition'),
+                            'uri' => $this->router->generate('about-additional', [ 'path' => 'konzeption' ]),
+                            'linkAttributes' => [
+                                'class' => 'dropdown-item',
+                            ],
+                        ]);
+
+                        $menu['about']
+                        ->addChild('about-oral-history', [
+                            'label' => $this->translator->trans('Methodische Überlegungen zur ‚Oral History‘'),
+                            'uri' => $this->router->generate('about-additional', [ 'path' => 'oral-history' ]),
+                            'linkAttributes' => [
+                                'class' => 'dropdown-item',
+                            ],
+                        ]);
+
+                    $menu['about']
+                        ->addChild('about-juden-berlin-brandenburg', [
+                            'label' => $this->translator->trans('Juden in Berlin und Brandenburg'),
+                            'uri' => $this->router->generate('about-additional', [ 'path' => 'juden-berlin-brandenburg' ]),
+                            'linkAttributes' => [
+                                'class' => 'dropdown-item',
+                            ],
+                        ]);
+
+                    $menu['about']
+                        ->addChild('about-original-project', [
+                            'label' => $this->translator->trans('Vorstellung des ursprünglichen Projekts'),
+                            'uri' => $this->router->generate('about-additional', [ 'path' => 'urspruengliches-projekt' ]),
+                            'linkAttributes' => [
+                                'class' => 'dropdown-item',
+                            ],
+                        ]);
                 }
 
                 $menu['about']
@@ -195,12 +230,15 @@ class Builder
                 'label' => 'Articles',
                 'route' => 'article-index',
             ]);
-        $menu['_lookup']
-            ->addChild('glossary-index', [
-                'label' => 'Glossary',
-                'route' => 'glossary-index',
-            ]);
         */
+
+        if ('ade' == $siteKey) {
+            $menu['_lookup']
+                ->addChild('glossary-index', [
+                    'label' => 'Glossary',
+                    'route' => 'glossary-index',
+                ]);
+        }
 
         if (array_key_exists('position', $options) && 'footer' == $options['position']) {
         }
