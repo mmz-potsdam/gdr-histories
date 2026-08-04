@@ -1,0 +1,187 @@
+{% extends '@TeiEdition/Default/base.html.twig' %}
+
+{% import '@TeiEdition/Shared/helper.html.twig' as helper %}
+{% import '@TeiEdition/Shared/entity-lookup.html.twig' as entityLookup %}
+{% import '@TeiEdition/Shared/map-leaflet.html.twig' as map %}
+
+{% block head %}
+    {{ map.head() }}
+
+    {# TODO: move to some shared style-sheet #}
+    <style>
+    #authors, #license {
+        display: none;
+    }
+    </style>
+
+    {{ entityLookup.head(entity_lookup, bibitem_lookup, glossary_lookup) }}
+    <script>
+    $(function () {
+        initEntityGlossaryNote('.source-description');
+        initEntityGlossaryNote('.article');
+    });
+    </script>
+{% endblock %}
+
+{% block contenttop %}
+    <div class="jumbotron pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col offset-md-2 col-md-9 mb-5">
+                    <h4>{{ 'Interview'|trans }} | Kurzvita und Hinweise zur Bildungsarbeit</h4>
+                    <h1>{{ name }}</h1>
+                    {% if authors is not empty %}
+                        <div class="author">
+                            <a href="#author">
+                            {% for author in authors %}
+                                {{ author.text }}{% if not loop.last %}, {% endif %}
+                            {% endfor %}
+                            </a>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block body %}
+    {#
+    <h1>{{ name }}</h1>
+    {% if authors is not empty %}
+        <div class="author">
+            <a href="#author">
+            {% for author in authors %}
+                {{ author.text }}{% if not loop.last %}, {% endif %}
+            {% endfor %}
+            </a>
+        </div>
+    {% endif %}
+    #}
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-8">
+        {% if source_description is not empty %}
+            {% if related|length > 0  and related[0].genre == 'source' %}
+            <h2>{{ 'Source Description'|trans }}</h2>
+            {% endif %}
+            {{ source_description|raw }}
+        {% endif %}
+
+        {{ html|raw }}
+
+        {{ helper.article_authors(authors) }}
+
+        {% if related|length > 0 and related[0].genre == 'source' %}
+        {% set source = related[0] %}
+        <h3 id="source-link">
+            <a href="{{ path('source', { 'uid' : source.uid }) }}">{{ 'Display Source'|trans }} &gt;</a>
+        </h3>
+        {% endif %}
+
+        {{ helper.article_citation(article, meta, authors, name) }}
+
+        {{ helper.article_license(license) }}
+        </div><!-- .col -->
+
+        <div class="col-xs-12 col-sm-4 sidebar">
+            <h3 class="pdf-link">
+                <a href="{{ path(app.request.attributes.get('_route') ~ '-pdf', app.request.attributes.get('_route_params')) }}">{{ 'Print Version'|trans }}</a>
+            </h3>
+
+            {% if related|length > 0  and related[0].genre == 'source' %}
+                {% set sources = [] %}
+                {% for article_related in related %}
+                    {% if article_related.genre == 'source' %}
+                        {% set sources = sources|merge( [ article_related ]) %}
+                    {% endif %}
+                {% endfor %}
+            <div class="container-fluid box">
+                <div class="row box-color-title">
+                    <div class="col-sm-12">
+                    <h4>{{ 'source.oneormany'|trans({ 'count': sources|length }, 'additional') }}</h4>
+                    </div>
+                </div>
+
+                {% for source in sources %}
+                <div class="row box-color-content-inverse">
+                    <div class="col-sm-4">
+                        {% set thumb = '/viewer/source-%05d/thumb.jpg'|format(source.uid|u.replaceMatches('/.*source\-/', '').__toString) %}
+                        {% if file_exists(public_dir ~ thumb) %}
+                            <a href="{{ path('source', { 'uid' : source.uid }) }}"><img src="{{ app.request.basepath }}{{ thumb }}" alt="" style="width: 100%; height: auto;"></a>
+                        {% endif %}
+                    </div>
+                    <div class="col-sm-8">
+                        <p>{{ helper.article_linked(source) }}</p>
+                    </div>
+                </div>
+               {% endfor %}
+            </div>
+            {% endif %}
+
+            <div class="container-fluid box top-buffer">
+                <div class="row box-color-title">
+                    <div class="col-sm-12">
+                        <h4>{{ 'Content'|trans }}</h4>
+                    </div>
+                </div>
+                <div class="row box-color-content-inverse">
+                    <div class="col-sm-12">
+                    {% if section_headers is not empty %}
+                        {% for header in section_headers %}
+                            <p><a href="#{{ header['id'] }}">{{ header['text'] }}</a></p>
+                        {% endfor %}
+                        <hr />
+                    {% endif %}
+                    {% if authors is not empty %}
+                        <p><a href="#author">{{ helper.article_author_aboutlabel(authors) }}</a></p>
+                    {% endif %}
+                    <p><a href="#citation">{{ 'Recommended Citation and License Statement'|trans }}</a></p>
+                    </div>
+                </div>
+            </div>
+
+            {% if related|length > 0  and related[related|length - 1].genre != 'source' %}
+                {% set related_filtered = [] %}
+                {% for article_related in related %}
+                    {% if article_related.genre != 'source' %}
+                        {% set related_filtered = related_filtered|merge([ article_related ]) %}
+                    {% endif %}
+                {% endfor %}
+                {% set genre_related = 'overview' %}
+                {% if 'country' == genre %}
+                    {% set genre_related = 'related' %}
+                {% endif %}
+            <div class="container-fluid box">
+                <div class="row box-color-title">
+                    <div class="col-sm-12">
+                    <h4>{{ (genre_related ~ '.oneormany')|trans({ 'count': related_filtered|length }, 'additional') }}</h4>
+                    </div>
+                </div>
+
+                {% for article in related_filtered %}
+                <div class="row box-color-content-inverse">
+                    <div class="col-sm-8">
+                        <p>{{ helper.article_linked(article) }}</p>
+                    </div>
+                </div>
+               {% endfor %}
+            </div>
+            {% endif %}
+
+            {#% if article.keywords|extract_topics is not empty %}
+            <div class="container-fluid box top-buffer">
+                <div class="row box-color-title">
+                    <div class="col-sm-12">
+                        <h4>{{ 'topic.oneormany'|trans({ 'count': article.keywords|extract_topics|length }, 'additional') }}</h4>
+                    </div>
+                </div>
+
+                <div class="row box-color-content-inverse">
+                {{ helper.keywords_linked(article.keywords|extract_topics, 'topic-index') }}
+                </div>
+            </div>
+            {% endif %#}
+        </div>
+    </div>
+{% endblock %}

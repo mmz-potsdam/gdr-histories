@@ -708,7 +708,8 @@ body.route-contact {
     }
 }
 
-body.route-source {
+body.route-source, body.route-article
+{
     .jumbotron {
         background-color: $color-gray-light;
 
@@ -778,6 +779,16 @@ body.route-source {
 
     h3#citation + p {
         font-size: .875em; /* taken from .small */
+    }
+}
+
+body.route-article {
+    .article div.dta-list {
+        margin-top: 0;
+
+        .dta-list-item {
+            &:before { content: none; }
+        }
     }
 }
 
