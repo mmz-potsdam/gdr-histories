@@ -30,7 +30,7 @@ class DefaultController extends \TeiEditionBundle\Controller\TopicController
                 ->select('S, A')
                 ->from('\TeiEditionBundle\Entity\SourceArticle', 'S')
                 ->leftJoin('S.isPartOf', 'A')
-                ->orderBy('S.dateCreated', 'ASC')
+                ->orderBy('S.dateCreated', \SortDirection::Ascending)
         ;
 
         foreach ($criteria as $field => $cond) {

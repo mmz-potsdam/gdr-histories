@@ -12,7 +12,6 @@ use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Routing\RouterInterface;
 use Symfony\Contracts\Translation\TranslatorInterface;
 use Doctrine\ORM\EntityManagerInterface;
-use Cocur\Slugify\SlugifyInterface;
 use Presta\SitemapBundle\Event\SitemapPopulateEvent;
 use Presta\SitemapBundle\Sitemap\Url\UrlConcrete;
 
@@ -179,7 +178,7 @@ class SitemapSubscriber implements EventSubscriberInterface
                                 ->getRepository('\TeiEditionBundle\Entity\Place')
                                 ->findBy(
                                     [ 'type' => 'inhabited place' ],
-                                    [ 'name' => 'ASC' ]
+                                    [ 'name' => \SortDirection::Ascending ]
                                 );
 
                         foreach ($places as $entity) {

@@ -19,7 +19,7 @@ class AdminEventController extends AbstractController
         $results = $entityManager
             ->getRepository(Event::class)
             ->findBy([], [
-                'name' => 'ASC',
+                'name' => \SortDirection::Ascending,
             ]);
 
         return $this->render('Admin/Event/index.html.twig', [

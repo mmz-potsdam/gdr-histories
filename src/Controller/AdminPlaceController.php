@@ -19,7 +19,7 @@ class AdminPlaceController extends AbstractController
         $results = $entityManager
             ->getRepository(Place::class)
             ->findBy([], [
-                'name' => 'ASC',
+                'name' => \SortDirection::Ascending,
             ]);
 
         return $this->render('Admin/Place/index.html.twig', [
