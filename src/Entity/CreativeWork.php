@@ -19,7 +19,7 @@ class CreativeWork extends SchemaOrg
 {
     static protected $PARENT_ITEM_TYPE_MAP = [
         'ScholarlyArticle' => 'issue',
-        'Chapter' => 'book'
+        'Chapter' => 'book',
     ];
 
     protected static function buildCorresp($zoteroData, $zoteroMeta)
@@ -1244,7 +1244,7 @@ class CreativeWork extends SchemaOrg
                 if (1 == $numValues) {
                     $ret[$key] = $values[0];
                 }
-                else /* if ($numValues > 1) */ {
+                else { /* if ($numValues > 1) */
                     // $numValues should always be > 1 here
                     $ret[$key] = $values;
                 }

@@ -95,14 +95,14 @@ class Builder
                             ],
                         ]);
 
-                        $menu['about']
-                        ->addChild('about-oral-history', [
-                            'label' => $this->translator->trans('Methodische Überlegungen zur ‚Oral History‘'),
-                            'uri' => $this->router->generate('about-additional', [ 'path' => 'oral-history' ]),
-                            'linkAttributes' => [
-                                'class' => 'dropdown-item',
-                            ],
-                        ]);
+                    $menu['about']
+                    ->addChild('about-oral-history', [
+                        'label' => $this->translator->trans('Methodische Überlegungen zur ‚Oral History‘'),
+                        'uri' => $this->router->generate('about-additional', [ 'path' => 'oral-history' ]),
+                        'linkAttributes' => [
+                            'class' => 'dropdown-item',
+                        ],
+                    ]);
 
                     $menu['about']
                         ->addChild('about-juden-berlin-brandenburg', [
