@@ -121,13 +121,14 @@ class SourceController extends \TeiEditionBundle\Controller\SourceController
                                     $responsiveRatioNew = null;
 
                                     switch ($aspectRatio) {
-                                        // Bootstrap 4: https://getbootstrap.com/docs/4.6/utilities/embed/
                                         case '21x9':
                                         case '16x9':
                                         case '4x3':
                                         case '1x1':
+                                            // Bootstrap 4: https://getbootstrap.com/docs/4.6/utilities/embed/
+                                            // Bootstrap 5: https://getbootstrap.com/docs/5.2/helpers/ratio/
                                             $responsiveRatioNew = $this->bootstrapVersion >= 5
-                                                ? 'ratio-' . $aspectRatio
+                                                ? 'ratio ratio-' . $aspectRatio
                                                 : 'embed-responsive-' . str_replace('x', 'by', $aspectRatio);
                                             break;
                                     }
