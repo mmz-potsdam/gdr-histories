@@ -975,13 +975,18 @@ class CreativeWork extends SchemaOrg
             // modern method
             $formatter = new \IntlDateFormatter($locale, \IntlDateFormatter::FULL, \IntlDateFormatter::FULL);
             $formatter->setPattern($pattern);
-            $dateObj = \DateTime::createFromFormat('U', $formatter->parse($dateStr));
-            if (false !== $dateObj) {
-                return [
-                    'year' => (int) $dateObj->format('Y'),
-                    'month' =>  (int) $dateObj->format('m'),
-                    'day' => (int) $dateObj->format('d'),
-                ];
+
+            $dateStrFormatted = $formatter->parse($dateStr);
+
+            if (false !== $dateStrFormatted) {
+                $dateObj = \DateTime::createFromFormat('U', $dateStrFormatted); // @phpstan-ignore argument.type
+                if (false !== $dateObj) {
+                    return [
+                        'year' => (int) $dateObj->format('Y'),
+                        'month' =>  (int) $dateObj->format('m'),
+                        'day' => (int) $dateObj->format('d'),
+                    ];
+                }
             }
         }
 

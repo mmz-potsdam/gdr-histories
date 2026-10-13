@@ -69,7 +69,6 @@ class ArticleEnhanceCommand extends BaseCommand
 
             $textRazorApiKey = $textRazorOptions['api-key'];
 
-
             $teiEnhancer = new \App\Utils\TeiEnhancer([
                 'textRazorApiKey' => $textRazorApiKey,
                 'ignore' => [
@@ -156,10 +155,11 @@ class ArticleEnhanceCommand extends BaseCommand
                 }
 
                 if (is_null($entity)) {
+                    sleep(1); // be nice to the endpoint
+
                     // lookup sameAs
                     $identifer = \LodService\Identifier\Factory::fromUri($uri);
-                    sleep(1); // be nice to the endpoint
-                    $sameAs = $wikidataService->lookupSameAs($identifer);
+                    $sameAs = $wikidataService->lookupSameAs($identifer); // @phpstan-ignore method.notFound
                     foreach ($sameAs as $identifer) {
                         if (array_key_exists($uri, $uris) && false !== $uris[$uri]) {
                             // so we only pick the first $sameAs
