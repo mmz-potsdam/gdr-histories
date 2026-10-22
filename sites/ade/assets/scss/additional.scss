@@ -741,6 +741,16 @@ body.route-source {
             span.editorial.inline {
                 color: $color-gray-medium;
             }
+
+            .dta-vocal {
+                color: $color-gray-medium;
+                &::before {
+                    content: "[";
+                }
+                &::after {
+                    content: "]";
+                }
+            }
         }
 
         .dta-time {
