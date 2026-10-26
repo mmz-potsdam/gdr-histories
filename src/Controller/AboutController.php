@@ -44,7 +44,7 @@ class AboutController extends \TeiEditionBundle\Controller\RenderTeiController
         $path = null
     ) {
         $basename = is_null($path)
-            ? $request->get('_route')
+            ? $request->attributes->get('_route')
             : $basename = 'about-' . $path;
 
         $locale = $request->getLocale();
