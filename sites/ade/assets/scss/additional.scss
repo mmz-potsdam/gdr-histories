@@ -819,6 +819,19 @@ body.route-terms {
     }
 }
 
+body[class*="route-about"]
+{
+    /* don't show h2.source-description-head on about pages */
+    h2.source-description-head {
+        display: none;
+    }
+
+    div.source-description {
+        font-style: italic;
+    }
+}
+
+
 /* for the moment, hide search */
 #header-search-wrapper {
     display: none !important;
