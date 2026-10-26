@@ -87,6 +87,15 @@ class Builder
 
                 if ('ade' == $this->getSiteKey()) {
                     $menu['about']
+                        ->addChild('about-project', [
+                            'label' => $this->translator->trans('Über dieses Online-Angebot'),
+                            'route' => 'about',
+                            'linkAttributes' => [
+                                'class' => 'dropdown-item',
+                            ],
+                        ]);
+
+                    $menu['about']
                         ->addChild('about-conception', [
                             'label' => $this->translator->trans('Zur Konzeption der Video-Edition'),
                             'uri' => $this->router->generate('about-additional', [ 'path' => 'konzeption' ]),
