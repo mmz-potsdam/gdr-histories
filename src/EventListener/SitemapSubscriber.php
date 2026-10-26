@@ -120,7 +120,7 @@ class SitemapSubscriber implements EventSubscriberInterface
             ])
                 // the following are not yet implemented on this site
                 || preg_match('/^about\-authors/', $routeName)
-                || preg_match('/^article/', $routeName)
+                || ('ade' != $siteKey && preg_match('/^article/', $routeName))
                 || preg_match('/^bibliography/', $routeName)
                 || preg_match('/^glossary/', $routeName)
                 || preg_match('/^search/', $routeName)
