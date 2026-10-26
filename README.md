@@ -37,7 +37,7 @@ Installation
 ------------
 ### Requirements
 
-- PHP >= 8.3 (check with `php -v`)
+- PHP >= 8.4.1 (check with `php -v`)
 - composer (check with `composer -v`; if it is missing, see https://getcomposer.org/)
 - `convert` (for image tiles, check with `which convert`; if it is missing, install e.g. with `sudo apt-get install imagemagick`)
 - Java 1.11 (for XSLT and Solr, check with `java -version`; if it is missing, install e.g. with `sudo apt-get install openjdk-11-jdk`)
@@ -76,6 +76,10 @@ Change into the newly created project-directory
 In a `prod` environment, generate `public/css/base.css` and `public/css/print.css`
 
 - ./bin/console scss:compile
+
+### Add User
+
+- ./bin/console app:add-user --help
 
 ### Solr Setup
 You can skip this installation in the first step. Everything except the
