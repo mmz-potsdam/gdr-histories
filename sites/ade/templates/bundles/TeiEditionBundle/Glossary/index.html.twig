@@ -17,7 +17,7 @@
             <ul class="list-unstyled">
             {% endif %}
             <li>
-                <b id="{{ term.slug }}">{{ term.name }}</b>{% if term.headline is not empty %} {{ term.headline }}{% endif %}{% if term.description is not empty %}: {{ term.description|escape('html')|glossaryAddRefLink }}{% endif %}
+                <b id="{{ term.slug }}">{{ term.name }}</b>{% if term.headline is not empty %} {{ term.headline }}{% endif %}{% if term.description is not empty %} {{ term.description|escape('html')|glossaryAddRefLink }}{% endif %}
             </li>
         {% endfor %}
         </ul>
