@@ -19,6 +19,11 @@ class AvMetadataService
         // if there are multiple aspect-ratios within a site, use php-ffmpeg/php-ffmpeg
         $basename = basename($fname, '.mp4');
 
+        if (preg_match('/^(\d+)_/', $basename, $matches)) {
+            // ade collection filenames start with a number followed by an underscore
+            $basename = (int) $matches[1];
+        }
+
         if (
             ($basename >= 100 && $basename < 200) // HER
             || $basename == 303                   // SON Gelbin
