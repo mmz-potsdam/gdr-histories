@@ -451,6 +451,14 @@ h3#citation {
         */
     }
 
+    .dta-list-bibl {
+        margin-bottom: 1rem;
+
+        & > .dta-bibl {
+            display: block;
+        }
+    }
+
     .editorial.foot {
         display: none;
     }
