@@ -179,7 +179,7 @@
     <div class="row box-color-content-inverse">
         <div class="col-sm-4">
         {% set thumb = '/viewer/source-%05d/thumb.jpg'|format(source.uid|u.replaceMatches('/.*source\-/', '').__toString) %}
-        {% if file_exists(webDir ~ thumb) %}
+        {% if file_exists(public_dir ~ thumb) %}
             <a href="{{ path }}"><img src="{{ app.request.basepath }}{{ thumb }}" alt="" style="width: 100%; height: auto;"></a>
         {% endif %}
         </div>
@@ -494,7 +494,7 @@
 
 {% macro person_list_item(person) %}
     <a href="{% if person.gnd is not empty %}{{ path('person-by-gnd', { 'gnd' : person.gnd }) }}{% else %}{{ path('person', { 'id' : person.id }) }}{% endif %}">
-        {{ person.fullname }}
+        {{- person.fullname -}}
     </a>
 
     {% set birthPlace = person.birthPlaceInfo(app.request.locale) %}
@@ -504,9 +504,9 @@
         ({% if birthPlace is not empty or person.birthDate is not empty %}
                 {{- person.birthDate|dateincomplete -}}
                 {% if birthPlace is not empty %}{% if person.birthDate is not empty %}{{- ',' }}{% endif %}
-                    {% if birthPlace is defined and birthPlace.id is not empty %}
-                        <a href="{% if birthPlace.tgn is not empty %}{{ path('place-by-tgn', { 'tgn' : birthPlace.tgn }) }}{% else %}{{ path('place', { 'id' : birthPlace.id }) }}{% endif %}">
-                        {{ birthPlace['name'] }}
+                    {% if birthPlace is defined and birthPlace.id is defined and birthPlace.id is not empty %}
+                        <a href="{% if birthPlace.tgn is defined and birthPlace.tgn is not empty %}{{ path('place-by-tgn', { 'tgn' : birthPlace.tgn }) }}{% else %}{{ path('place', { 'id' : birthPlace.id }) }}{% endif %}">
+                        {{- birthPlace['name'] -}}
                         </a>
                     {% else %}
                         {{ birthPlace['name'] }}
@@ -514,7 +514,7 @@
                 {% endif %}
         {% endif %}
         {% if deathPlace is not empty or person.deathDate is not empty %}
-            -
+            –
                 {{ person.deathDate|dateincomplete -}}
                 {% if deathPlace is not empty %}{% if person.deathDate is not empty %}{{- ',' }}{% endif %}
                     {% if deathPlace.id is defined and deathPlace.id is not empty %}<a href="{% if deathPlace.tgn is not empty %}{{ path('place-by-tgn', { 'tgn' : deathPlace.tgn }) }}{% else %}{{ path('place', { 'id' : deathPlace.id }) }}{% endif %}">
