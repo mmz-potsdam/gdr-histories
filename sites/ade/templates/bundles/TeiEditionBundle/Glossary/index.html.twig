@@ -1,7 +1,22 @@
 {% extends '@TeiEdition/Default/base.html.twig' %}
 
+{% block contenttop %}
+    <div class="jumbotron pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col offset-md-2 col-md-9">
+                    <h4>{{ 'Look-up'|trans }}</h4>
+                    <h2>{{ 'Glossary' | trans }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
 {% block body %}
+    {#
     <h1>{{ 'Glossary' | trans }}</h1>
+    #}
     <div class="row">
         <div class="col-sm-12">
         {% if terms is not empty %}
