@@ -42,6 +42,19 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
     </teiHeader>
     <text>
         <body>
+            <p>
+                Das digitale Projekt geht zurück auf die in den Jahren 1995–1997 mit dem Fortunoff
+                Video Archive for Holocaust Testimonies (Yale University) aufgebaute
+                Interviewsammlung „Archiv der Erinnerung. Interviews mit Überlebenden der Shoah“.
+                Damals entstanden 78 videographierte Interviews mit meist in der Region
+                Berlin-Brandenburg lebenden jüdischen Zeitzeuginnen und Zeitzeugen. Mit der
+                Online-Stellung von sechs exemplarischen Interviews des „Archivs der Erinnerung“
+                schafft das Moses Mendelssohn Zentrum für europäisch-jüdische Studien (MMZ) neue
+                Zugänge zum ursprünglichen Projekt. Das Portal enthält zusätzlich erweiterte
+                Informationen sowie Unterrichtsmaterialien zu diesen ausgewählten Interviews. Zudem
+                wird es kontinuierlich um Bildungsmaterialien, auch aus anderen Projekten des MMZ,
+                erweitert.
+            </p>
             <div n="2">
                 <head>Aktuelles Projektteam</head>
                 <lb/>
