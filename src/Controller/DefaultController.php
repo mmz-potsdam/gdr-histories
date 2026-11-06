@@ -25,12 +25,17 @@ class DefaultController extends \TeiEditionBundle\Controller\TopicController
             $criteria['language'] = \TeiEditionBundle\Utils\Iso639::code1to3($locale);
         }
 
+        $siteKey = $this->getSiteKey();
+        [$orderBy, $orderDir] = 'ade' === $siteKey
+            ? ['S.uid', \SortDirection::Ascending]
+            : ['S.dateCreated', \SortDirection::Ascending];
+
         $queryBuilder = $entityManager
                 ->createQueryBuilder()
                 ->select('S, A')
                 ->from('\TeiEditionBundle\Entity\SourceArticle', 'S')
                 ->leftJoin('S.isPartOf', 'A')
-                ->orderBy('S.dateCreated', \SortDirection::Ascending)
+                ->orderBy($orderBy, $orderDir)
         ;
 
         foreach ($criteria as $field => $cond) {
