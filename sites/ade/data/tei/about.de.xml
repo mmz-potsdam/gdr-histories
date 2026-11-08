@@ -42,8 +42,7 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
     </teiHeader>
     <text>
         <body>
-            <p>
-                Das digitale Projekt geht zurück auf die in den Jahren 1995–1997 mit dem Fortunoff
+            <p> Das digitale Projekt geht zurück auf die in den Jahren 1995–1997 mit dem Fortunoff
                 Video Archive for Holocaust Testimonies (Yale University) aufgebaute
                 Interviewsammlung „Archiv der Erinnerung. Interviews mit Überlebenden der Shoah“.
                 Damals entstanden 78 videographierte Interviews mit meist in der Region
@@ -53,8 +52,10 @@ schematypens="http://relaxng.org/ns/structure/1.0"?>
                 Zugänge zum ursprünglichen Projekt. Das Portal enthält zusätzlich erweiterte
                 Informationen sowie Unterrichtsmaterialien zu diesen ausgewählten Interviews. Zudem
                 wird es kontinuierlich um Bildungsmaterialien, auch aus anderen Projekten des MMZ,
-                erweitert.
-            </p>
+                erweitert. </p>
+            <p> Das Archiv ist Teil mehrerer Oral-History-Bestände am MMZ. Diese werden wir in den
+                kommenden Jahren im Portal „Jüdische Stimmen online“ zugänglich und
+                sammlungsübergreifend durchsuchbar machen. </p>
             <div n="2">
                 <head>Aktuelles Projektteam</head>
                 <lb/>

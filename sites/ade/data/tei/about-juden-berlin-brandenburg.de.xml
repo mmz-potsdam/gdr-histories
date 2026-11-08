@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.deutschestextarchiv.de/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dtabf">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Kurzer Abriss zur Situation der Juden in der Region Berlin-Brandenburg
+          von der Gründung des Kaiserreiches 1871 bis zur Gegenwart</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher/>
+      </publicationStmt>
+      <notesStmt>
+        <note type="remarkDocument">
+          <p>Die Interviews in diesem Portal zeigen Zeitzeugenberichte von Überlebenden der Schoa
+            aus der Region Berlin-Brandenburg. Ein kurzer historischer Überblick hilft dabei, diese
+            persönlichen Berichte einzuordnen. Der äußerst knappe Abriss konzentriert sich auf die
+            wesentlichen Entwicklungen: Er zeigt, wie die Geschichte der jüdischen Bevölkerung in
+            Berlin-Brandenburg in die gesamtdeutsche Geschichte eingebettet ist – und welche
+            regionalen Besonderheiten es gab. Insofern ist der Einsatz der Videos auch nicht auf die
+            Region Berlin-Brandenburg beschränkt, sondern bietet Einsatzmöglichkeiten in allen
+            anderen Regionen Deutschlands.</p>
+          <p>Die Zäsur 1871 wurde gewählt, weil die in den Interviews erzählten Familiengeschichten
+            z. T. bis in das letzte Jahrhundert zurückgehen. So ist es erforderlich, dass der
+            historische Hintergrund soweit zurückverfolgt wird, um das Verständnis für die besondere
+            Situation der Juden zu erleichtern.</p>
+        </note>
+      </notesStmt>
+      <sourceDesc>
+        <p>Produced by pandoc.</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="deu">German</language>
+      </langUsage>
+      <textClass>
+        <classCode scheme="http://germanhistorydocs.org/docs/#genre">document</classCode>
+      </textClass>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+
+      <div xml:id="die-demographische-situation" n="2">
+        <head>Die demographische Situation</head>
+        <lb/>
+        <p>Bei Gründung des Deutschen Kaiserreiches lebten etwa siebzig Prozent der Juden noch in
+          Dörfern und kleinen Landstädten mit bis zu 20.000 Einwohnern. In Preußen allerdings hatten
+          sie bereits vor 1871 in größerem Umfang in Städten siedeln können und begannen danach
+          verstärkt, die Kleinstädte zu verlassen.</p>
+        <p>Von den 512.153 Juden, die 1871 im Deutschen Reich lebten, entfielen auf Preußen 325.578.
+          Allein in Berlin lebten zu diesem Zeitpunkt 36.325 Juden. Zum Vergleich dazu sei
+          Frankfurt/Main angeführt, wo zur selben Zeit 10.009 Juden wohnten. Bis zum Jahre 1910
+          wuchs die Zahl der in Berlin ansässigen Juden auf 144.043 an.</p>
+        <p>Der Anteil der Juden an der Gesamtbevölkerung verringerte sich allerdings seit 1871.
+          Waren es im Jahre der Gründung des Deutschen Kaiserreiches bei einer Gesamtbevölkerung von
+          41 Millionen 512.153 Juden (d. h 1 Prozent), 1910 bei insgesamt 64,92 Millionen Einwohnern
+          615.021 Juden (d. h. 0,95 Prozent), so lebten 1933 in Deutschland 499.682 Personen, die in
+          der Statistik als „Glaubensjude“ bezeichnet wurden. Ihr Anteil an der Gesamtbevölkerung
+          betrug 0,77 Prozent. Davon lebten 160.564 Juden in Berlin, die 3,78 Prozent der
+          Einwohnerzahl ausmachten.<note place="foot"> Die Zahlenangaben wurden zusammengestellt
+            nach Monika Richarz, <hi rendition="#i">Die Entwicklung der jüdischen Bevölkerung</hi>,
+            in: Deutsch-jüdische Geschichte der Neuzeit, hrsg. von Michael A. Meyer, Bd. 3,
+            Umstrittene Integration 1841-1918, München 1997, S. 13-38.</note></p>
+        <p>Interessant ist in diesem Zusammenhang die Verteilung der Juden auf die einzelnen Bezirke
+          der Stadt Berlin. Von den der Mittelklasse angehörigen Juden wurden die westlichen Vororte
+          bevorzugt: Charlottenburg (1910: 22.000), Schöneberg (1910: 11 000) und Wilmersdorf. Die
+          jüdische Oberschicht ließ sich in den teuersten Wohngebieten Dahlem und Grunewald nieder
+          sowie in Mitte, dem Stadtteil, wo sich auch die meisten jüdischen Einrichtungen Berlins
+          befanden, waren vorrangig die jüdischen Zuwanderer und die Kleinbürger ansässig.<note
+            place="foot"> Vgl. dazu Heinrich Silbergleit, <hi rendition="#i">Zur Statistik der
+              jüdischen Bevölkerung Berlin</hi>, Zeitschrift für Demographie und Statistik der
+            Juden, 9-12 (1927), S. 134.</note> 1925 besaß ein Viertel aller in Berlin ansässigen
+          Juden eine ausländische Staatszugehörigkeit. Diese osteuropäischen Juden auch als
+          „Ostjuden“ bezeichnet und die schon seit mehreren Generationen in Deutschland ansässigen
+          Juden standen sich oft ambivalent gegenüber.<note place="foot"> Vgl. dazu Trude Maurer,
+            Ostjuden in Deutschland 1918-1933, Hamburg 1986.</note></p>
+        <p>Im Gegensatz dazu waren in der Provinz Mark Brandenburg lediglich 0,28 Prozent der
+          Einwohner Juden. In absoluten Zahlen heißt das, dass dort 1933 insgesamt 7.616 Juden
+          ansässig waren.</p>
+        <p>Was die Entwicklung der jüdischen Bevölkerung im Deutschen Kaiserreich anbelangt, kann
+          zusammenfassend festgestellt werden: „<gap reason="insignificant"/> so war das Resultat
+          eine sehr städtische, sehr mittelständische und zunehmend geburtenschwache Minderheit. Die
+          jüdische Minorität nahm früh demographische Kennzeichen der Modernisierung vorweg – höhere
+          Lebenserwartung, niedrigere Geburtenrate und die Konzentrierung in den Großstädten. Diese
+          Merkmale bildeten gleichzeitig Symptome der fortgesetzten Verbürgerlichung.“<note
+            place="foot"> Monika Richarz, <hi rendition="#i">Berufliche und soziale Struktur</hi>,
+            in: Deutsch-jüdische Geschichte in der Neuzeit, hrsg. von Michael A. Meyer, Bd. 3.
+            Umstrittene Integration 1871-1918, München 1997, S. 38.</note></p>
+      </div>
+      <div xml:id="berufsstruktur" n="2">
+        <head>Berufsstruktur</head>
+        <lb/>
+        <p> Durch die jahrhundertelange Beschränkung der Juden im wirtschaftlichen Bereich – so
+          waren sie von allen zunftmäßig organisierten Berufen sowie von der Landwirtschaft
+          ausgeschlossen, da sie kein Land besitzen durften – waren sie vor allem in die
+          Handelsberufe abgedrängt worden. Lediglich als Fleischer und Bäcker durften sie tätig
+          sein, um koscher* leben zu können. Diese Berufsstruktur änderte sich auch nach ihrer
+          Emanzipation nicht wesentlich. Die Juden wählten ihre Berufe nach der Tradition, den
+          konkreten wirtschaftlichen Verhältnissen und vor allem auch danach, welche
+          de-facto-Restriktionen es für sie in einigen Berufsgruppen immer noch gab (Staatsdienst,
+          Universitäten, Armee). Ein Beispiel für die nach wie vor wirkenden Einschränkungen war die
+          preußische Verfassung von 1815, die bis 1918 gültig war. In ihr wurde die
+          staatsbürgerliche Gleichheit vor dem Gesetz (Artikel 4) und auch die Gleichheit der Rechte
+          und Pflichten unabhängig vom religiösen Bekenntnis (Artikel 12) garantiert. „Artikel 14
+          jedoch forderte den christlichen Charakter für ‚diejenigen Einrichtungen des Staats,
+          welche mit der Religionsausübung in Zusammenhang stehen.‘“<note place="foot"> Peter
+            Pulzer, <hi rendition="#i">Rechtliche Gleichstellung und öffentliches Leben</hi>, in:
+            Deutsch-jüdische Geschichte [wie Anm. 4], S. 153.</note></p>
+        <p>1895 waren 37,5 Prozent der Gesamtbevölkerung in der Landwirtschaft beschäftigt, aber nur
+          1,6 Prozent der Juden war dort tätig, im Handel und Verkehr war das Verhältnis 10,6
+          Prozent zu 65,2 Prozent. So blieb zwar die traditionelle Berufsstruktur bei den Juden
+          weitestgehend bestehen, änderte sich jedoch insofern, als es eine verstärkte Hinwendung zu
+          den freien Berufen gab. Die Industrialisierung führte dazu, dass Juden auch als
+          Unternehmer und Angestellte tätig waren. Ebenso gab es einen stärkeren Anteil von Juden an
+          intellektuellen und künstlerischen Berufen.</p>
+      </div>
+      <div xml:id="fragen-der-identitt" n="2">
+        <head>Fragen der Identität</head>
+        <lb/>
+        <p>Das 19. Jahrhundert war hinsichtlich der Gleichstellung der Juden in der Gesellschaft
+          nicht nur durch eine Reihe von Gesetzen<note place="foot"> Vgl. u. a. Annegret H. Brammer,
+            Judenpolitik und Judengesetzgebung in Preußen 1812 bis 1847. Mit einem Ausblick auf das
+            Gleichberechtigungsgesetz des Norddeutschen Bundes von 1869, Berlin 1987.</note>
+          gekennzeichnet, die dies bestimmten, sondern vor allem auch unter deutschen Juden gab es
+          große Meinungsunterschiede, was diese Frage anbelangte.</p>
+        <p>So war dieses Jahrhundert bestimmt durch den Kampf der Orthodoxie mit den Kräften
+          innerhalb des Judentums, die für Reformen eintraten. Das Reformjudentum hatte sich nach
+          Gründung des Kaiserreiches in fast allen größeren städtischen jüdischen Gemeinden
+          Deutschlands durchgesetzt. Dies kam u. a. darin zum Ausdruck, dass der Ritus liberalisiert
+          wurde und eine Orgel in der Synagoge* vorhanden war. Auf dem Lande war die Mehrzahl der
+          Gemeinden nach wie vor orthodox. „Um die Jahrhundertwende schätzte man den Anteil der
+          Orthodoxie auf 10 bis 20 Prozent der jüdischen Bevölkerung Deutschlands.“<note
+            place="foot"> Steven M. Lowenstein, <hi rendition="#i">Das religiöse Leben</hi>, in:
+            Deutsch-jüdische Geschichte [wie Anm. 4], S. 101.</note> Durch ein 1876 im preußischen
+          Landtag erlassenes Gesetz waren u. a. in Preußen orthodoxe Austrittsgemeinden zulässig,
+          d. h. dass es an einem Ort mehr als nur eine jüdische Gemeinde geben konnte.</p>
+        <p>Das Spektrum der religiösen Einstellungen im städtischen Bereich war breit und reichte
+          vom Atheismus und religiöser Indifferenz über ein engagiertes liberales Judentum bis zur
+          strengsten Orthodoxie. Und wie bei allen Kategorisierungen gab es auch hier immer
+          Grenzfälle und Haltungen, die keine Zuordnung zulassen bzw. möglich machen. Viele Juden
+          waren nur noch formell Angehörige der jeweiligen Gemeinden, sie zahlten zwar ihre
+          Gemeindesteuern, beschränkten aber den Besuch der Gottesdienste auf wenige Tage. Deshalb
+          bildete sich der Begriff des „Dreitagejuden“ heraus.<note place="foot"> Diese drei Tage
+            waren in der Regel das jüdische Neujahrsfest, der Versöhnungstag (Jom Kippur) sowie der
+            Todestag der Mutter oder des Vaters.</note></p>
+        <p>1899 gab es im Kaiserreich 2.359 Kultusgemeinden, deren Zahl ständig abnahm. Besonders
+          verringerte sich die Zahl der Gemeindemitglieder. 1914 hatte die Hälfte der ländlichen
+          Gemeinden weniger als fünfzig Mitglieder (Kinder mit eingerechnet). Das führte dazu, dass
+          diese Gemeinden keinen eigenen Rabbiner mehr hatten und „sich oft mit einem einzigen
+          religiösen Funktionär behelfen“ mussten, „der gleichzeitig als Lehrer, Vorbeter, Schächter
+          und inoffizielles Gemeindeoberhaupt wirkte.“<note place="foot"> Steven M. Lowenstein, <hi
+              rendition="#i">Das religiöse Leben</hi> [wie Anm. 7], S. 125.</note></p>
+        <p>Dies war eine Erscheinung, die häufig auch in der Provinz Mark Brandenburg in den
+          kleineren Städten anzutreffen war, deren Gemeinden nur wenige Mitglieder zählten.</p>
+        <p>Aufgrund dieser Entwicklungen vollzog sich um die Jahrhundertwende in Teilen der
+          deutschsprachigen Judenheit bezogen auf Fragen der Ideologie und Identität ein
+          tiefgreifender Orientierungswandel. „Anfang und Mitte des 19. Jahrhunderts hatte sich die
+          Diskussion unter den deutschen Juden vor allem auf die Frage konzentriert, wie die
+          Integration in die deutsche Gesellschaft am besten zu bewerkstelligen sei. die Anerkennung
+          als gleichberechtigte Staatsbürger und der Erwerb der deutschen Kultur waren Ziele, die
+          die meisten deutschen Juden anstrebten. Mit Ausnahme der extremen Traditionalisten waren
+          sich alle darin einig, dass das Judentum in erster Linie eine Religion und nicht eine
+          Nationalität sei […].“<note place="foot"> Ders., <hi rendition="#i">Ideologie und
+              Identität</hi>, in: Deutsch-jüdische Geschichte [wie Anm. 4], S. 278.</note> Aus
+          diesem Grunde sahen sie sich als Deutsche jüdischen Glaubens an.</p>
+        <p>Diese Einstellung spiegelte sich auch beim Ausbruch des Ersten Weltkrieges wider. Viele
+          Juden hielten es für ihre patriotische Pflicht, an diesem Krieg teilzunehmen. Der <hi
+            rendition="#i">Centralverein deutscher Staatsbürger jüdischen Glaubens</hi> (CV) rief
+          seine Mitglieder dazu auf, dem Vaterland „über das Maß der Pflicht hinaus zu dienen“.<note
+            place="foot"> Peter Pulzer, <hi rendition="#i">Der Erste Weltkrieg</hi>, in:
+            Deutsch-jüdische Geschichte [wie Anm. 3], S. 358.</note> In der kaiserlichen Armee
+          dienten ca. 100.000 Juden, von denen ca. 80.000 direkt an der Front waren. 12.000 fielen,
+          etwa 35.000 erhielten eine Auszeichnung. Auf vielen jüdischen Friedhöfen in ganz
+          Deutschland sind besondere Denkmäler für die Gefallenen im Ersten Weltkrieg zu finden. Als
+          Abwehrinstrument gegen die Vorwürfe, die Juden in Deutschland wären ihrer Wehrpflicht
+          nicht nachgekommen, wurde 1919 der <hi rendition="#i">Reichsbund jüdischer
+            Frontsoldaten</hi> gegründet.<note place="foot"> Vgl. dazu auch Deutsche jüdische
+            Soldaten. Von der Epoche der Emanzipation bis zum Zeitalter der Weltkriege.
+            Ausstellungskatalog, Hamburg, Berlin, Bonn 1996.</note></p>
+      </div>
+      <div xml:id="hauptentwicklungen-nach-dem-ersten-weltkrieg" n="2">
+        <head>Hauptentwicklungen nach dem Ersten Weltkrieg</head>
+        <lb/>
+        <p>Nach dem Ersten Weltkrieg setzte sich der bereits Ende des 19. Jahrhunderts sichtbar
+          gewordene Geburtenrückgang bei der jüdischen Bevölkerung fort. Auch der Trend zum Leben in
+          der Stadt verstärkte sich weiter. So lebten 1933 insgesamt 54,5 Prozent aller Juden in
+          Deutschland in zehn Städten mit über 100.000 Einwohnern. Insgesamt verteilte sich die
+          jüdische Bevölkerung auf 2.000 Orte verschiedener Größe. Es bestanden noch 1.600 jüdische
+            Gemeinden.<note place="foot"> Avraham Barkai, <hi rendition="#i">Bevölkerungsrückgang
+              und wirtschaftliche Stagnation</hi>, in: Deutsch-jüdische Geschichte in der Neuzeit,
+            hrsg. von Michael A. Meyer, Bd. 4 Aufbruch und Zerstörung 1918-1925, München 1997, S.
+            39.</note></p>
+        <p>Bei der Berufsstruktur zeichnete sich nach dem Krieg folgender Trend ab: Es war ein
+          Abrücken von den kommerziellen Berufen der Vätergeneration festzustellen. Bevorzugt wurden
+          Berufe im akademischen oder im Angestelltenbereich. Die Zahl der jüdischen Angestellten
+          stieg von 1907 bis 1933 von 36.400 auf 82.800 an, von 10,8 auf 21 Prozent aller jüdischen
+          Erwerbstätigen. Auch wurden nun verstärkt Berufe in Landwirtschaft, Handwerk und Industrie
+          gewählt. Inwiefern sich der Trend weiter fortgesetzt hätte, bleibt Spekulation, weil sich
+          nach dem 30. Januar 1933 die Situation für die Juden radikal änderte.</p>
+        <p>In den 1920er-Jahren wurde der Unterschied zwischen dem jüdischen Leben in der Großstadt
+          und auf dem Lande größer. Dies lässt sich u. a. an den Eheschließungen mit nichtjüdischen
+          Partner festmachen. Insgesamt wurden in den 1920er-Jahren 17 Prozent aller Ehen von Juden
+          mit nichtjüdischen Partnern geschlossen, in Berlin waren dies 30 Prozent.</p>
+        <p>Auch in Fragen des traditionellen Familienlebens waren Veränderungen zu sehen. Dem
+          Historiker Avraham Barkai zufolge war „der oft idealisiert dargestellte emotionale
+          Zusammenhalt der jüdischen Familie <gap reason="insignificant"/> zur hier beschriebenen
+          Zeit schon weitgehend gelockert. Die sozialen und kulturellen Entwicklungen der modernen
+          Industriegesellschaft wirkten, besonders unter der heranwachsenden Jugend, den
+          traditionellen Normen und Vorstellungen entgegen. <gap reason="insignificant"/> Der alte
+          Zusammenhalt des Haushaltes, in dem Ehefrau, Kinder und ledige Verwandte gemeinsam im
+          Familienbetrieb mitarbeiteten und Söhne das väterliche Geschäft übernahmen, war weitgehend
+            durchbrochen.“<note place="foot"> Ebenda, S. 69.</note></p>
+        <p>Gerade was die soziale Stellung der Frau anbelangte, so veränderten sich auch bei den
+          jüdischen Frauen die bisherigen Verhaltensmodelle durch die fortschreitende Modernisierung
+          und die sich verschlechternde Wirtschaftslage. 1925 waren in Preußen über 32 Prozent aller
+          jüdischen Frauen im Alter zwischen 15 und 65 Jahren erwerbstätig, gegenüber 48,1 Prozent
+          aller gleichaltrigen Frauen in der Gesamtbevölkerung. 22,5 Prozent wurden als „mithelfende
+          Familienmitglieder“ geführt.<note place="foot"> Ebenda, S. 70.</note></p>
+        <p>In der nichtjüdischen Öffentlichkeit wurden Juden besonders stark im Kunst- und
+          Literaturbereich, im Film- und Theaterbetrieb, in der Musik und Architektur, in den Natur-
+          und auch Geisteswissenschaften wahrgenommen. Oftmals wurden nur sie in den Mittelpunkt der
+          Aufmerksamkeit gerückt und je nach der politischen Prägung begrüßt oder geschmäht.</p>
+        <p>Die Situation der Juden in der Weimarer Republik – zum einen waren sie endlich ganz an
+          der Kultur und dem öffentlichen Leben beteiligt, zum anderen aber wurde ihnen gerade
+          dieses Recht wieder streitig gemacht – war sehr widersprüchlich. Die „Judenfrage“ nahm
+          wieder einen breiten Raum in der öffentlichen Diskussion ein. Der im 19. Jahrhundert
+          entstandene politische und rassische Antisemitismus verstärkte sich wieder. Von den
+          reaktionären und antimodernistischen Kräften wurden die Juden als „Außenseiter“
+          betrachtet, als fremd und modernistisch bezeichnet und gerieten so zum Symbol all dessen,
+          was zu verabscheuen ist.</p>
+      </div>
+      <div xml:id="die-nationalsozialistische-diktatur" n="2">
+        <head>Die nationalsozialistische Diktatur</head>
+        <lb/>
+        <p>Die Etappen der Ausgrenzung und Verfolgung nach dem 30. Januar 1933 sind bereits
+          hinlänglich beschrieben und sollen hier lediglich überblicksartig dargestellt werden.<note
+            place="foot"> Vgl. u.a. Joseph Walk u.a. (Hrsg.), Das Sonderrecht für die Juden im
+            NS-Staat. Eine Sammlung der gesetzlichen Maßnahmen und Richtlinien Inhalt und Bedeutung,
+            Heidelberg <hi rendition="#sup">2</hi>1996; Avraham Barkai, Vom Boykott zur „Entjudung“.
+            Der wirtschaftliche Existenzkampf der Juden im Dritten Reich 1933-1943, Frankfurt/M.
+            1988. Die Juden in Deutschland 1933-1945, hrsg. von Wolfgang Benz, München 1989.</note>
+          Gleich am 1. April 1933 wurde zum Boykott jüdischer Einzelhandelsgeschäfte, Arztpraxen und
+          Anwaltskanzleien aufgerufen.<note place="foot"> Beispiele für den Boykott in Brandenburg
+            vgl. Irene Diekmann, Boykott, Entrechtung, Pogrom, Deportation. Die „Arisierung“
+            jüdischen Eigentums während der NS-Diktatur. Untersucht und dargestellt an Beispielen
+            aus der Provinz Mark Brandenburg, in: Brandenburg in der NS-Zeit. Studien und Dokumente,
+            hrsg. von Dietrich Eichholz, Berlin 1983, S. 207-229.</note> Daneben wurden durch das
+          „Gesetz zur Wiederherstellung des Berufsbeamtentums“ vom 7. April 1933 alle Beamte, „die
+          nicht arischer Abstammung sind“ (§ 1 des Gesetzes) in den Ruhestand versetzt. Davon waren
+          direkt etwa 5.000 jüdische Beamte betroffen. Aber nicht nur die im Berufsleben stehenden
+          Juden waren bereits kurz nach der Machtübernahme durch die Nationalsozialisten massiven
+          Einschränkungen unterlegen. Durch das „Gesetz gegen die Überfüllung deutscher Schulen und
+          Hochschulen“ vom 25. April 1933 und seine Präzisierungen in den folgenden
+          Durchführungsbestimmungen wurde die Zahl der „Nichtarier“ an Schulen und Hochschulen auf 1
+          Prozent beschränkt. In den folgenden Jahren wurden die Restriktionen auf alle Bereiche des
+          beruflichen und gesellschaftlichen Lebens ausgedehnt. Bereits am 22. September 1933 wurde
+          durch das „Reichskulturkammergesetz“ die Zugehörigkeit zu einer der Kammern als
+          Voraussetzung für die Berufsausübung bestimmt. Juden allerdings durften nicht in die
+          Kammer aufgenommen werden.</p>
+        <p>Im Jahre 1935 wurden auf Initiative Hitlers während des Reichsparteitages in Nürnberg
+          zwei für die Juden in Deutschland einschneidende rassistische Gesetze verabschiedet. Am
+          15. September 1935 wurden die sogenannten „Nürnberger Gesetze“ — das „Reichsbürgergesetz“
+          und das „Gesetz zum Schutze des deutschen Blutes und der deutschen Ehre“ — erlassen.
+          Während das erste Gesetz die Juden als Reichsbürger ausschloss auf Grund der Definition,
+          dass „Reichsbürger <gap reason="insignificant"/> nur Staatsangehörige deutschen oder
+          artverwandten Blutes“ sind und sie dadurch ihre politischen Rechte verloren, verbot das
+          zweite Gesetz u. a. die Eheschließungen zwischen „Juden und Staatsangehörigen deutschen
+          oder artverwandten Blutes“. In den Ausführungsbestimmungen zu diesen Gesetzen wurde auch
+          genau definiert, wer im Sinne der Rassenideologie der Nationalsozialisten „deutschblütig“,
+          „Jude“, „Mischling 1. Grades“ und „Mischling 2. Grades“ war. Zwischen November 1935 und
+          Juli 1943 wurden 13 Durchführungsverordnungen allein zum „Reichsbürgergesetz“ erlassen,
+          durch die die Juden systematisch aus dem öffentlichen Leben ausgeschlossen wurden.</p>
+        <p>Trat im Vorfeld der Olympischen Spiele von 1936 äußerlich etwas ‚Ruhe‘ im Vorgehen gegen
+          die Juden ein, so war dies die ‚Ruhe vor dem Sturm‘. Schon 1935 war beim Sicherheitsdienst
+          (SD) ein Judenreferat errichtet worden. Unter der Bezeichnung „Abteilung IV/B4“ des
+          Reichssicherheitshauptamtes erreichte es später unheilvolle Berühmtheit.</p>
+        <p>1938 wurde dann mit dem Novemberpogrom zum „großen Schlag“ ausgeholt. Bis zu diesem Jahr
+          hatte die jüdische Bevölkerung in Deutschland um etwa ein Drittel abgenommen. Im Frühjahr
+          begann die Bereicherung am jüdischen Eigentum mit dem Erlass von etwa 250 Gesetzen. So
+          mussten die Juden durch eine Verordnung vom 26. April 1938 ihr Vermögen anmelden. Zwar
+          ergab die Auswertung der Unterlagen, dass sich das jüdische Vermögen seit 1933 bereits um
+          die Hälfte verringert hatte, es wurde nur noch auf 5,1 Mrd. RM beziffert. Durch den
+          Novemberpogrom und die danach den Juden auferlegte „Sühneleistung“ in Höhe von 1 Mrd. RM
+          wurden sie ihres letzten Vermögens beraubt.</p>
+        <p>Danach begann für die Juden eine Periode völliger Rechtlosigkeit – sie hatten in
+          Deutschland keine Zukunft mehr. Maßnahme um Maßnahme, Gesetz um Gesetz, Verordnung um
+          Verordnung wurde erlassen, die letzten Lebensmöglichkeiten noch mehr einzuschränken, die
+          Ausgrenzung noch weiter zu betreiben bis schließlich die Deportationen einsetzten. So
+          wurden ihre Führerscheine eingezogen, sie mussten ihre Autos verkaufen (14. Dezember
+          1938), sie wurden gezwungen, Schmuck und Gegenstände aus Edelmetallen abzuliefern (1. März
+          1939).</p>
+        <p>Durch einen Erlass vom 20. September 1939 wurden die Rundfunkapparate beschlagnahmt.
+          Schließlich erfolgte am 1. September 1941 die „Polizeiordnung über die Kennzeichnung der
+          Juden“, durch die sie nun auch äußerlich durch das Tragen des „Judensterns“* stigmatisiert
+          waren. Sie durften schließlich nicht einmal mehr Schreibmaschinen, Fahrräder,
+          Photoapparate und Ferngläser besitzen (13. November 1941). Selbst alle Wollsachen, Pelze,
+          Skier und Winterschuhe wurden eingezogen (5. Januar 1942). Schließlich mussten bis zum 30.
+          Juni 1942 alle jüdischen Schulen geschlossen sein. Die über die Ermordung der Juden genau
+          buchführenden Nationalsozialistischen ordneten am 16. Februar 1945 noch unter der
+          Überschrift „Behandlung von Entjudungsakten“ an: „Wenn der Abtransport von Akten, deren
+          Gegenstand anti-jüdische Tätigkeiten sind, nicht möglich ist, sind sie zu vernichten,
+          damit sie nicht dem Feind in die Hände fallen.“<note place="foot"> Joseph Walk, Das
+            Sonderrecht [wie Anm. 16], S. 406.</note></p>
+        <p>Lebten 1933 insgesamt 502.799 sogenannte „Glaubensjuden“ im Deutschland (einschließlich
+          des Saarlandes), so waren es 1939 noch 213.930. Von 1933 bis 1941 konnten 270.000 deutsche
+          Jüdinnen und Juden emigrieren. Für die jüdischen Gemeinden bedeutete dies die
+          Beschleunigung ihrer Verarmung und schließlich ihre Auflösung. 1933 gab es in Deutschland
+          noch 1.611 organisierte Gemeinden, bis 1938 wurden 403 aufgelöst oder befanden sich in
+          Auflösung.</p>
+        <p>Bei Kriegsausbruch befanden sich noch 185.000 „Glaubensjuden“ in Deutschland. Nachdem
+          auch die Rationierung von Lebensmitteln eingeführt wurde, die für die Juden geringer waren
+          als für die übrige Bevölkerung, durften sie nur noch zu bestimmten Zeiten einkaufen. Im
+          Herbst 1941 begannen die ersten systematischen Deportationen aus dem „Altreich“ in die
+          Ghettos und Vernichtungslager. Ab 18. September 1942 bekamen Juden keine Zuteilung für
+          Fleisch, Fleischprodukte, Eier und Milch mehr. Im Januar 1943 war die Zahl der im
+          „Altreich“ lebenden Juden auf ca. 50.000 gesunken.</p>
+        <p>Bis 1945 wird die Zahl der ermordeten deutschen Juden zwischen 160.000 und 195.000
+          geschätzt, ca. 15.000 überlebten in „Mischehen“, etwa 6.000 überstanden die Lager. Wenige
+          konnten im Versteck und in der Illegalität das Ende der Nazi-Diktatur überleben.</p>
+      </div>
+      <div xml:id="juden-in-deutschland-nach-1945" n="2">
+        <head>Juden in Deutschland nach 1945</head>
+        <lb/>
+        <p> Nach der bedingungslose Kapitulation der deutschen Wehrmacht und dem Ende der
+          nationalsozialistischen Gewaltherrschaft gab es in Europa ca. 13,5 Mio „Displaced Persons“
+          (DPs), sogenannte „Entwurzelte“.<note place="foot"> Vgl. Julius H. Schoeps (Hrsg.), Neues
+            Lexikon des Judentums, Gütersloh 1992, S. 119.</note> Unter ihnen befanden sich ca.
+          200.000 Juden.<note place="foot"> Vgl. Enzyklopädie des Holocaust. Die Vernichtung und
+            Ermordung der europäischen Juden, hrsg. von Eberhard Jäckel, Peter Longerich, Julius H.
+            Schoeps. Bd. 1, Berlin 1993, S. 345.</note> Für etwa 90 Prozent dieser Personen war eine
+          Zukunft in Deutschland nicht vorstellbar; sie verließen – soweit sie die Möglichkeit dazu
+          hatten – das Land. Nach Auflösung der DP-Lager gab es noch etwa 12.000 jüdische
+          Überlebende in Deutschland. „Ein Teil von ihnen konnte aus Schwäche und Krankheit nicht
+          weiterwandern, ein Teil hatte in der langen Wartezeit eine berufliche Existenz gründen
+          können oder einen deutschen Ehepartner geheiratet. Die Restgruppe der verbliebenen DPs,
+          von der später weitere auswanderten, und die Restgruppe der deutschen Juden, die geblieben
+          waren, bildeten jetzt zusammen die Mitgliedschaft der jüdischen Gemeinden.“<note
+            place="foot"> Monika Richarz, <hi rendition="#i">Juden in der BRD und der DDR</hi>, in:
+            Jüdisches Leben in Deutschland seit 1945, hrsg. von Micha Brumlik u. a., Frankfurt/M.
+            1988, S. 18.</note></p>
+        <p>Nach der Gründung der Bundesrepublik Deutschland lebten dort etwa 15.000 Mitglieder in
+          den jüdischen Gemeinden, die sich 1950 mit der Gründung des <hi rendition="#i"
+            >Zentralrates der Juden in Deutschland</hi> eine überregionale Interessenvertretung
+          schufen. In der sowjetischen Besatzungszone lebten nach einer Zählung aus dem Jahre 1946
+          insgesamt 2.094 und im sowjetischen Sektor Berlins 2.535 Juden.<note place="foot"> Vgl.
+            Lothar Mertens, Davidstern unter Hammer und Zirkel. Die jüdischen Gemeinden in der
+            SBZ/DDR und ihre Behandlung durch Partei und Staat 1945-1990, S. 28.</note> Schon kurz
+          nach Kriegsende kam eine kleine Gruppe von Juden aus der Emigration dorthin zurück. Es
+          handelte sich dabei vor allem um politisch motivierte Menschen, die helfen wollten, ein
+          neues Deutschland zu gestalten.<note place="foot"> Vgl. dazu Nora Goldenbogen, <hi
+              rendition="#i">Juden in der DDR. Erwartungen – Realitäten – Wandlungen</hi>, in:
+            Günther B. Ginzel (Hrsg.), Der Anfang nach dem Ende. Jüdisches Leben in Deutschland 1945
+            bis heute, Düsseldorf 1996, S. 123ff.</note> Mitte der 1950er-Jahre nach dem Abschluß
+          des Wiedergutmachungsvertrages mit Israel setzte eine vom Umfang geringe Rückwanderung der
+          ehemaligen deutschen Bevölkerung in die Bundesrepublik ein, die 1960 ihren Höhepunkt
+          erreichte. Schätzungsweise 5 Prozent der deutschen jüdischen Emigranten kehrten zurück.
+          Doch nicht nur deutsche Juden wanderten in die Bundesrepublik ein, sondern auch Juden aus
+          ganz Osteuropa, aber auch aus Israel.</p>
+        <p>Die Zahl der Gemeindemitglieder in der DDR verringerte sich ständig. Zum einen hatte dies
+          seine Ursache darin, dass in der DDR keine Wiedergutmachungen geleistet wurden, zum
+          anderen flohen in Folge der Ereignisse des 17. Juni 1953 und der stalinistischen
+          „Säuberungen“, die Ende der 1940er-/Anfang der 1950er-Jahre einsetzten, etwa 400 Juden in
+          den Westen, so dass Mitte der 1950er-Jahre lediglich noch 671 Juden in den Gemeinden
+          registrierte waren. Für die 1970er-Jahre wird die Zahl der Gemeindemitglieder mit 710
+            angegeben.<note place="foot"> Vgl. L. Martens, Davidstern [wie Anm. 22], S. 72 und
+            114.</note> Der Prozess der zahlenmäßigen Verringerung der Gemeinden konnte bis 1989
+          nicht aufgehalten werden.</p>
+        <p>In der Bundesrepublik dagegen stieg die Zahl der Juden vor allem durch Zuwanderung. In
+          den 1960er-Jahren waren etwa 26.000 Mitglieder in den jüdischen Gemeinden registriert, in
+          den 1980er-Jahren wird eine Zahl von 27.000 und 28.000 angegeben. Da aber nicht alle
+          jüdischen Einwanderer auch Mitglieder der Gemeinden sind, wird die Zahl der insgesamt in
+          der Bundesrepublik lebenden Juden auf etwa 50.000 geschätzt.<note place="foot"> Vgl. M.
+            Richarz [wie Anm. 21], S. 22. Zu dieser Problematik vgl. auch: Erica Burgauer, Zwischen
+            Erinnerung und Verdrängung – Juden in Deutschland nach 1945, Reinbek 1993.</note></p>
+        <p>Im Zuge der Wende 1989 kamen immer mehr Juden aus der Sowjetunion und ihren
+          Nachfolgestaaten in das wiedervereinte Deutschland. Auch wenn ihre gesellschaftliche
+          Eingliederung mit Herausforderungen verbunden war, eröffnete diese Zuwanderung große
+          Chancen für einen Neubeginn jüdischen Lebens in Deutschland.<note place="foot"> Zur
+            jüdischen Zuwanderer vgl. Julius H. Schoeps, Willi Jasper, Bernhard Vogt, Ein neues
+            Judentum in Deutschland? Fremd und Eigenbilder der russisch-jüdischen Zuwanderung,
+            Potsdam 1999.</note> Heute leben schätzungsweise rund 200.000 bis 225.000 Jüdinnen und
+          Juden in Deutschland, wovon rund 95.000 in einer jüdischen Gemeinde organisiert sind.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

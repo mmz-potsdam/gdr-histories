@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.deutschestextarchiv.de/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dtabf">
+<teiHeader>
+  <fileDesc>
+    <titleStmt>
+      <title type="main">„Archiv der Erinnerung“ – Vorstellung des ursprünglichen
+  Projekts</title>
+    </titleStmt>
+    <publicationStmt>
+    <publisher/></publicationStmt>
+    <sourceDesc>
+      <p>Produced by pandoc.</p>
+    </sourceDesc>
+  </fileDesc>
+<profileDesc><langUsage><language ident="deu">German</language></langUsage><textClass><classCode scheme="http://germanhistorydocs.org/docs/#genre">document</classCode></textClass></profileDesc></teiHeader>
+<text>
+<body>
+
+<quote>
+    <p>Das Interview- und Forschungsprojekt „Archiv der Erinnerung.
+    Interviews mit Überlebenden der Shoah“ wurde von 1995-97 als
+    internationale Kooperation zwischen dem
+    <hi rendition="#i">Moses Mendelssohn Zentrum für
+    europäisch-jüdische Studien (Universität Potsdam)</hi> und dem
+    <hi rendition="#i">Fortunoff Video Archive for Holocaust
+    Testimonies (Yale University)</hi> durchgeführt und von der
+    <hi rendition="#i">Volkswagen-Stiftung</hi> großzügig
+    gefördert. Das 1992 gegründete <hi rendition="#i">Moses
+    Mendelssohn Zentrum</hi> ist ein interdisziplinär arbeitendes
+    An-Institut der <hi rendition="#i">Universität
+    Potsdam</hi> und am dortigen Studiengang Jüdische Studien beteiligt,
+    während sich das <hi rendition="#i">Fortunoff Video
+    Archive</hi> seit seiner Gründung im Jahr 1982 zunächst regional,
+    dann jedoch zunehmend international der Sammlung videographierter
+    Lebenszeugnisse von Überlebenden der Schoa widmet. Der von beiden
+    Institutionen u. a. auch regionalgeschichtlich gesetzte
+    Arbeitsschwerpunkt sowie die interdisziplinäre Herangehensweise, die
+    der Umgang mit Lebensberichten zur Schoa fordert, machten eine
+    Zusammenarbeit beider Einrichtungen notwendig und fruchtbar.
+    Geleitet wurde das Projekt von den Direktoren beider Einrichtungen,
+    Prof. Dr. Julius H. Schoeps und Prof. Dr. Geoffrey H. Hartman.</p>
+    <p>Hauptsächlich in den Jahren 1995 und 1996 wurden im Rahmen des
+    „Archivs der Erinnerung“ fast 80 heute zumeist in der Region
+    Berlin-Brandenburg lebende jüdische Zeitzeugen vor der Kamera
+    interviewt. Die Gespräche wurden von einer interdisziplinären
+    Interviewergruppe vor allem aus dem universitären Bereich, u.a. der
+    Geschichts- und Literaturforschung sowie der Jüdischen Studien und
+    dem Bereich der therapeutischen Arbeit geführt. Mit Ausnahme der
+    zwei am „Archiv der Erinnerung“ angestellten Projektkoordinatorinnen
+    Eva Lezzi und Dr. Cathy Gelbin arbeiteten alle Interviewerinnen und
+    Interviewer ehrenamtlich. Über Anzeigen in jüdischen Zeitschriften
+    und durch die persönliche Vermittlung der Interviewer sowie bereits
+    interviewter Überlebender meldeten sich jeweils weitere, an der
+    Teilnahme am Projekt interessierte Zeitzeugen. Das Projekt
+    versuchte, das gesamte Spektrum der Verfolgung zu dokumentieren,
+    d. h. es wurden sowohl Berichte von KZ-Überlebenden aufgezeichnet
+    als auch Zeugnisse derer, die im Versteck oder durch eine Emigration
+    ihrer geplanten Ermordung entkamen. Ein besonderes, bislang häufig
+    unbeachtetes Kapitel der NS-Zeit bildet die Verfolgung derjenigen,
+    die aus Familien mit einem jüdischen und einem nichtjüdischen
+    Elternteil kamen und nach den Nürnberger Gesetzen als „Mischlinge
+    galten. Als einem der ersten Verfolgtenprojekte gelang es dem
+    „Archiv der Erinnerung“, auch diese, gegenüber den als „Juden“ Definierten als „privilegiert“ geltende Gruppe
+    explizit in die Dokumentation mit einzubeziehen. Die Aufnahmen
+    belegen auch die vielfachen Überschneidungen zwischen den
+    verschiedenen Verfolgungsschicksalen. Obwohl beispielsweise einigen
+    Zeitzeugen die Emigration gelang, holten die Verfolger sie später
+    u. a. im NS-besetzten Frankreich oder unter dem rumänischen
+    Kollaborationsregime wieder ein und verschleppten sie aus dem
+    Emigrationsland in die Vernichtungslager.</p>
+    <p>Die aus der Verfolgung resultierenden biographischen Brüche
+    lassen sich vor allem aus dem lebensgeschichtlichen Charakter der
+    geführten Interviews erkennen. Die Zeitzeugen wurden nicht nur nach
+    der Periode der Verfolgung befragt, sondern sie berichteten je nach
+    Alter auch über ihre davor liegende Kindheit und Jugend sowie über
+    das Leben nach der Befreiung. Für ihre Lebenserzählung benötigten
+    sie zumeist mehrere Stunden, nicht selten sogar mehrere Tage. Erst
+    durch die so erfolgte Einbettung der Verfolgungserfahrung in den
+    lebensgeschichtlichen Kontext wurde der Verlust des familiären,
+    kulturell-religiösen und sozialen Umfeldes der Interviewpartner
+    vollends deutlich. Oftmals waren sie die einzigen ihrer Familie bzw.
+    unter den wenigen der jüdischen Gemeinschaft ihres Herkunftsortes,
+    die die Verfolgung überlebten. Aufgrund dessen sowie infolge ihrer
+    eigenen, emotional und körperlich zerstörerischen
+    Verfolgungserfahrung empfanden viele Interviewpartner das Kriegsende
+    nicht als echte Befreiung, da sich die Folgen der Vergangenheit bis
+    in die Gegenwart hin bemerkbar machen. Die videographierten
+    Interviews des „Archivs der Erinnerung“ lassen demnach nicht nur
+    Schlüsse über die Geschichte der Verfolgung, sondern auch auf die
+    historische Situation der Juden vor 1933 und nach 1945 zu. Die
+    videographierten Interviews bieten sich aufgrund ihres
+    Gegenwartsbezuges sowie ihrer sprachlichen und inhaltlichen
+    Strukturierung auch für eine Diskussion über Erinnerungskulturen und
+    -strukturen in der früheren DDR und Bundesrepublik an.</p>
+    <p>Von Anfang an war auch die pädagogische Verwendung der Interviews
+    in Schule, Erwachsenenbildung und Universität ein integraler Teil
+    der Konzeption des „Archivs der Erinnerung“. Zu diesem Zweck wurden
+    sechs exemplarische Interviews auf eine jeweils halbstündige Länge
+    ediert. Wir danken allen Interviewpartnern, die sich für das „Archiv
+    der Erinnerung“, und insbesondere denjenigen, die ihr Interview
+    stellvertretend für alle für die vorliegenden Unterrichtsmaterialien
+    zur Verfügung gestellt haben. Für die Gesamtkonzeption der
+    Video-Edition zeichnen Dr. Irene Diekmann (MMZ), Dr. Cathy Gelbin
+    (MMZ), Dr. Michael Kaden (MPZ) und Eva Lezzi (MMZ) verantwortlich.
+    Den Schnitt und die künstlerische Realisation der Edition besorgten
+    dankenswerterweise Ulrike Hemberger und Rainer Hällfritzsch.
+    Zeitgleich mit der Video-Edition für den pädagogischen Gebrauch
+    erscheint ein wissenschaftlicher Auswertungsband zum „Archiv der
+    Erinnerung“ , der auch Analysen einiger für die
+    Unterrichtsmaterialien ausgewählter Interviews enthielt, des
+    weiteren ein kommentierter Katalog mit biographischen Angaben zu den
+    Interviewpartnern sowie einem Schlagwort- und Ortsregister.<note place="foot">
+      
+    Vgl. Cathy Gelbin, Eva Lezzi, Geoffrey H. Hartmann und Julius
+      H. Schoeps (Hrsg.), „Archiv der Erinnerung: Interviews mit
+      Überlebenden der Shoah“. Bd I. Videographierte Lebenserzählungen
+      und ihre Interpretationen, sowie Sonja Miltenberger (Hrsg.),
+      „Archiv der Erinnerung: Interviews mit Überlebenden der Shoah“. Bd
+      II. Kommentierter Katalog. Beide Bände erscheinen 1998 im Verlag
+      für Berlin-Brandenburg, Potsdam.</note> Die vollständige und ungeschnittene Sammlung des „Archiv der
+    Erinnerung“ kann jedoch auch von der breiten Öffentlichkeit in der
+    Berliner Gedenkstätte Haus der Wannsee-Konferenz bzw. an der Yale
+    University eingesehen und zur Aufarbeitung der Shoah, aber auch der
+    jüdisch-deutschen Geschichte in der Region Berlin-Brandenburg
+    allgemein dienen. Schließlich erhält das dialogische Element der
+    videographierten Lebensberichte seinen eigentlichen Sinn erst, wenn
+    es so viele Menschen wie möglich erreicht.</p>
+  </quote>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.deutschestextarchiv.de/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dtabf">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Methodische Überlegungen zur ‚Oral History‘ - revisited</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher/>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Produced by pandoc.</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="deu">German</language>
+      </langUsage>
+      <textClass>
+        <classCode scheme="http://germanhistorydocs.org/docs/#genre">document</classCode>
+      </textClass>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <p><hi rendition="#i">„Die Nationalsozialisten haben bekanntermaßen alles daran gesetzt, die
+          Spuren der Ermordung der europäischen Juden zu beseitigen. Die Juden sollten nicht nur
+          umgebracht, sondern auch ihrer Geschichte beraubt werden. In zeitgenössischen
+          Publikationen tauchen die Opfer denn auch nur unter der diffamierenden Perspektive ihrer
+          Verfolger auf. Oral-History-Projekte zur Shoah versuchen, Verfolgung und Ermordung der
+          Jüdinnen und Juden unter der Perspektive der Überlebenden zu vergegenwärtigen. Für die
+          historische Aufarbeitung der Shoah bedeuten mündliche ebenso wie schriftliche
+          Zeitzeugenberichte eine unverzichtbare Ergänzung zu den von den Nationalsozialisten
+          hinterlassenen einseitigen Quellen.“</hi></p>
+      <p>So beginnt 1998 der Abschnitt der „Methodischen Überlegungen“ im gedruckten Begleitheft zur
+        Video-Edition. Der Wert dieser Quellen bleibt ungeachtet des zeitlichen Rahmens, in dem sich
+        mit ihnen beschäftigt wird, bestehen. Im Text von 1998 wird auf die zunehmende Anzahl an
+        Publikationen zu Interviews verwiesen, die einen inter- und multidisziplinären Zugang zu der
+        Forschung mithilfe von (videografierten) Interviews nahelegen. Das hat sich nicht verändert,
+        allerdings hat sich Oral History als Methode zur Erforschung erlebter Geschichte inzwischen
+        durchgesetzt. Psychologie, Soziologie sowie die historischen und kulturwissenschaftlichen
+        Fächer haben seit nun über 30 Jahren eigene Herangehensweisen ausgebildet, befruchten sich
+        gegenseitig oder stehen in einem regen methodischen Austausch..</p>
+      <p>Die Entstehung der <hi rendition="#i">Oral-History-Quelle</hi> ist in ihrer Verwendung als
+        Anschauungs- oder Unterrichtsmaterial zu berücksichtigen. In der fachlichen Diskussion über
+        die Videoquellen nehmen die Darstellungsform und der Entstehungskontext ebenso wie die
+        Erzählweise manchmal sogar einen größeren Teil ein als der Inhalt. Vor dieser Problematik
+        stehen dann die Fachdidaktiken, Bildungsprojekte und Schulen, die mit ihnen arbeiten. Anders
+        als schriftliche Quellen oder Objekte sind die Videos in der Zeit verortet, die sich nach
+        dem Erleben der Ereignisse befindet. Inzwischen ist die Geschichte der Oral History so lang
+        andauernd, dass sie selbst zum Gegenstand der Forschung wird.</p>
+      <p>Für den Entstehungskontext des „Archivs der Erinnerung“ bedeutet dies, dass in den
+        Interviews hauptsächlich die von Dori Laub entwickelte, an die therapeutische
+        Gesprächsführung angelehnte Methode zur Anwendung kam. Dem amerikanischen Psychoanalytiker
+        zufolge, der selbst als Kind während der Schoa verfolgt wurde, dienen die Erzählungen der
+        Überlebenden primär der Evokation von traumatischen Erfahrungen, die innerhalb der
+        geschützten Interviewsituation häufig zum ersten Mal zur Sprache kommen können. Die
+        wichtigste Aufgabe der Interviewer:innen ist das anteilnehmende Zuhören. Sie dienen als
+        Gegenüber, die das Zeugnis (<hi rendition="#i">testimony</hi>) der Überlebenden aufnimmt und
+        damit ihrerseits bezeugt. Die Interviewer:innen stellen nur wenige, in die Erzählung der
+        Überlebenden eingebettete Fragen, um so direkt oder indirekt angesprochene Themen zu
+        vertiefen und emotional schwierige Stellen des Interviews aktiv zu begleiten.</p>
+      <p>In Ergänzung zu Laubs Interviewmethode nahm das „Archiv der Erinnerung“ wichtige Anregungen
+        aus dem Bereich der Sozial- und Biographieforschung auf und zwar insbesondere Elemente des
+        biographisch-narrativen Interviews nach Fritz Schütze und Gabriele Rosenthal. Das
+        biographisch-narrative Interview wird in drei Phasen aufgeteilt: für den Zeitraum der
+        Eingangserzählung werden die Interviewten möglichst nicht unterbrochen, damit ihr eigenes
+        Relevanzsystem in seinen gesellschaftlichen und individuellen Dimensionen erkennbar bleibt.
+        Erst anschließend stellen die Interviewer:innen zunächst erzählinterne, dann erzählexterne
+        Fragen zu Themen, die in der Eingangserzählung nicht direkt angesprochen wurden. Als Stärke
+        des biographisch-narrativen Interviews sahen die Projektmitarbeiter:innen u. a. die größere
+        Einbettung der Verfolgungszeit in einen lebensgeschichtlichen Kontext.</p>
+      <p>Die erwähnten, für das „Archiv der Erinnerung“ kombinierten Interviewmethoden sind beide
+        „nichtdirektiv“, d. h. sie beziehen sich nicht auf einen festen Fragenkatalog, sondern
+        verlangten von den Interviewer:innen Einfühlung und ein intuitives Nachfragen. Dabei sind
+        jedoch auch historische Kenntnisse wichtig, um die Erfahrungen der Überlebenden besser
+        kontextualisieren und damit den Erinnerungsprozess fundierter begleiten zu können.</p>
+      <p>Die einzige strukturierende Vorgabe bzw. Anregung in der Interviewsituation bestand darin,
+        alle drei lebensgeschichtlich wichtigen Phasen zu thematisieren, nämlich die Zeit vor,
+        während und nach der Verfolgung. Auf diese Weise werden die durch die Schoa zerstörten
+        Lebenszusammenhänge der Interviewten deutlicher, vom gewaltsamen Verlust der Welt ihrer
+        Kindheit bis zum heutigen Leben mit der Erinnerung in einem – seit dem Ende der DDR und
+        mitten in der Transformationszeit – zum wiederholten Male gänzlich neuen soziokulturellen
+        Kontext.</p>
+      <p>Neben der Interviewführung beinhaltet selbstverständlich auch die Edierung der Videos eine
+        gewisse, von außen kommende Interpretation und Kontextualisierung des Erinnerten. Einerseits
+        ermöglicht die Edierung der Interviews eine konzentriertere Einsicht in spezifische Themen
+        und die vorgenommenen Kürzungen erleichtern die Aufnahmefähigkeit der Rezipienten.
+        Gleichzeitig bedeuten Schnitt, Umstellungen und Zwischenkommentare Eingriffe in die
+        ursprüngliche Erzählstruktur der Überlebenden und die Interaktion zwischen Interviewter:m
+        und Interviewer:in. Die Autor:innen des ursprünglichen Textes schlugen daher vor, das
+        „Archivs der Erinnerung“ in der Gedenkstätte <hi rendition="#i">Haus der
+          Wannsee-Konferenz</hi> in Berlin oder über das Online-Archiv an der <hi rendition="#i"
+          >Yale University</hi> (<ref target="https://fortunoff.aviaryplatform.com/collections/1468"
+            >https://fortunoff.aviaryplatform.com/collections/1468</ref>)
+        einzusehen. Die Annahme bestand darin, dass die Sicht eines ungeschnittenen, mehrstündigen
+        Interviews es erlaube, die gesamte Erzählstruktur und die zugrunde liegende Interviewführung
+        zu erkennen sowie die durch die Projektmitarbeiter:innen vorgenommene Editionsform zu
+        diskutieren.</p>
+      <p>Aus Sicht des Teams am Moses Mendelssohn Zentrum war und bleibt ein Punkt entscheidend –
+        unabhängig davon, ob es um die Arbeit mit dem hier präsentierten Bestand oder um eigene
+        Oral-History-Projekte geht: Für den Entstehungskontext muss berücksichtigt werden, dass die
+        meisten Rezipient:innen dieser und anderer Video-Editionen in Deutschland keinen jüdischen
+        Familienhintergrund haben.</p>
+      <p>Die <hi rendition="#i">testimonies</hi> der jüdischen Überlebenden sollen Empathie mit den
+        Verfolgten des Nationalsozialismus ermöglichen, jedoch nicht im Sinne einer Identifikation,
+        mittels derer die eigene Familiengeschichte überdeckt und damit vergessen wird. Vielmehr
+        wäre es wünschenswert, wenn die sensible Kenntnis der Geschichte der Verfolgten es erlauben
+        würde, auch an die jeweils eigene Familiengeschichte neue Fragen zu stellen. Ziel sollte
+        sein, die Geschichte des Nationalsozialismus und der Shoah als konkret gelebte, von
+        Individuen mitgestaltete oder mit erlittene Geschichte zu begreifen.</p>
+      <div n="3">
+        <head>Anmerkungen</head>
+        <lb/>
+        <list type="ordered:arabic">
+          <item>
+            <p>Für einen Überblick neuerer Publikationen vgl. Eva Lezzi, <hi rendition="#i">Oral
+                History und Shoa. Ein Literaturbericht</hi>, in: Mittelweg 36. Zeitschrift des
+              Hamburger Instituts für Sozialforschung, 1996, Heft 2, S. 48–54.</p>
+          </item>
+          <item>
+            <p>Zu allgemeinen theoretischen wie praktischen Überlegungen im Kontext von Oral History
+              Projekten vgl. Herwart Vorländer (Hrsg.), Oral History. Mündlich erfragte Geschichte,
+              Göttingen 1990. Zum Projekt „Archiv der Erinnerung“ siehe Cathy Gelbin, Eva Lezzi,
+              Geoffrey Hartman, Julius H. Schoeps (Hrsg.), Archiv der Erinnerung. Interviews mit
+              Überlebenden der Shoah, Band l: Videographierte Lebenserzählungen und ihre
+              Interpretationen, Potsdam 1998 sowie Sonja Miltenberger (Hrsg.), Archiv der
+              Erinnerung. Interviews mit Überlebenden der Shoah, Band II: Kommentierter Katalog.</p>
+          </item>
+          <item>
+            <p>In folgendem Band stellt Laub seine Interviewmethode vor: Shoshana Felman/Dori Laub,
+              Testimony. Crises of Witnessing in Literature, Psychoanalysis and History, New York
+              1992.</p>
+          </item>
+          <item>
+            <p>Vgl. hierzu u. a. Fritz Schütze, Die Technik des narrativen Interviews in
+              Interaktionsfeldstudien, dargestellt an einem Projekt zur Erforschung von kommunalen
+              Machtstrukturen, Bielefeld 1977 sowie Gabriele Rosenthal, Erlebte und erzählte
+              Lebensgeschichte. Gestalt und Struktur biographischer Selbstbeschreibungen,
+              Frankfurt/M. <hi rendition="#sup">2</hi>2024.</p>
+          </item>
+        </list>
+      </div>
+    </body>
+  </text>
+</TEI>

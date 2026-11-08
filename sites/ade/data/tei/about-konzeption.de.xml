@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model href="http://www.deutschestextarchiv.de/basisformat.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="dtabf">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">Zur Konzeption der Video-Edition</title>
+      </titleStmt>
+      <publicationStmt>
+        <publisher/>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Produced by pandoc.</p>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="deu">German</language>
+      </langUsage>
+      <textClass>
+        <classCode scheme="http://germanhistorydocs.org/docs/#genre">document</classCode>
+      </textClass>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+
+      <div xml:id="kurzbeschreibung" n="2">
+        <head>Kurzbeschreibung</head>
+        <lb/>
+        <p>Die sechs videographischen Einzeldarstellungen veranschaulichen exemplarisch wichtige
+          Aspekte der Judenverfolgung während des Nationalsozialismus. Die Interviews beschäftigen
+          sich jeweils mit den Themenbereichen der KZ-Haft, des Überlebens im Versteck bzw. in der
+          Emigration, des Weiteren mit der speziellen Verfolgungsproblematik in einer
+          brandenburgischen Kleinstadt und der besonderen Situation verfolgter Kinder und der nach
+          den NS-Rassegesetzen als „jüdische Mischlinge“ Geltenden. Um auch geschlechtsspezifische
+          und politisch bedingte Erinnerungs- und Erzählweisen transparent zu machen, wurden jeweils
+          gleichgewichtig die Berichte von Männern und Frauen sowie von Überlebenden, die nach 1945
+          im Osten bzw. Westen Deutschlands lebten, ausgewählt. Zu jedem Interview finden sie auch
+          eine Kurzbiographie der/des Interviewpartners sowie Kontext-Informationen mit
+          Themenvorschlägen für die Bildungsarbeit. Da bestimmte Themen in mehreren Interviews
+          angesprochen werden (so z. B. die Reichspogromnacht 1938, das Gespräch über die Shoah mit
+          der nachfolgenden Generation usw.), können diese Hinweise auch als Anregung für eine
+          vergleichende Diskussion mehrerer Interviews genutzt werden.</p>
+        <p>Jedes Interview umfasst ein Transkript als weitere Erleichterung bei der Themenauswahl
+          und als Grundlage für die tiefergehende Bearbeitung der Interviews im Unterricht.
+          Die Transkripte geben so genau wie möglich den gesprochenen Text wieder, d. h. aufgrund
+          der spontanen Erzählsituation entstehen hier anders als in der Schriftsprache, unter
+          anderem Wort- und Satzabbrüche, die für die Transkription nicht geglättet wurden.</p>
+      </div>
+      <div xml:id="empfohlene-fcher" n="2">
+        <head>Empfohlene Fächer</head>
+        <lb/>
+        <p>Geschichte, Politische Bildung, Lebensgestaltung-Ethik-Religionskunde (LER)</p>
+      </div>
+      <div xml:id="adressaten" n="2">
+        <head>Adressaten</head>
+        <lb/>
+        <p>Sekundarstufe I (10. Klasse), Sekundarstufe Il, Jugend- und Erwachsenenbildung,
+          Hochschulbildung</p>
+      </div>
+      <div xml:id="lernziele" n="2">
+        <head>Lernziele</head>
+        <lb/>
+        <p>Die Interviews dienen als unverzichtbare Ergänzung zur Vermittlung von Faktenwissen über
+          die Zeit des Nationalsozialismus und die Ermordung der europäischen Juden. Anhand der
+          jeweiligen Überlebensberichte sollen die Rezipienten ein Verständnis für die Totalität der
+          Shoah sowie ein kritisches Bewusstsein gegenüber der eigenen nationalen Vergangenheit
+          entwickeln. Dies ist besonders wichtig, um gegenwärtigen rechtsradikalen bzw.
+          antisemitischen und rassistischen Tendenzen entgegenzuwirken. Des Weiteren stellt die
+          Online-Edition die oftmalige Reduzierung von Juden auf das Opfersein in Frage und rückt
+          die fortgeführte Existenz dieser Gruppe in Deutschland nach 1945 in den Blick. Den
+          lebensgeschichtlichen Bogen spannend, berichten die Interviewpartner von ihren aktiven
+          Versuchen, der Verfolgung zu entkommen bzw. Widerstand zu leisten, aber auch von ihren
+          ermordeten Familienangehörigen und Freunden.</p>
+        <p>Das Bild der Shoah ist weithin geprägt durch Bilder aus der NS-Zeit, die oftmals von den
+          Tätern selbst gemacht wurden und den menschenverachtenden Blick auf die Opfer
+          reproduzieren. Die videographierten Erzählungen der Überlebenden, die allerdings die
+          Ausnahme bilden in der Masse der Vielen, die nicht überleben konnten, korrigieren diese
+          Perspektive; sie erinnern daran, dass auch hinter den anonymen Toten auf den Fotografien
+          der Massengräber Gesichter und Namen stehen. Der Schmerz um individuelle Menschen
+          ermöglicht auch für die Nachgeborenen im Land der einstigen Verfolger, in dem die Shoah
+          lange Zeit nicht tiefgehend thematisiert wurde, einen emotionalen Zugang zur eigenen
+          Geschichte und damit ein Aufbrechen der oftmals distanzierenden Umgangsformen mit der
+          Shoah in Deutschland. Anhand der edierten Videos lassen sich auch allgemeingültige
+          Aussagen über den schwierigen Umgang mit der Shoah in den beiden deutschen Staaten, aber
+          auch innerhalb der Familien der Verfolgten selbst erarbeiten. Des Weiteren bietet sich die
+          Video-Edition für eine Thematisierung des fortbestehenden jüdischen Lebens und seines
+          historischen Stellenwertes in der früheren Bundesrepublik und DDR an.</p>
+      </div>
+      <div xml:id="didaktisch-methodische-hinweise" n="2">
+        <head>Didaktisch-methodische Hinweise</head>
+        <lb/>
+        <p>In der schulischen Bildungsarbeit können die Videos des „Archivs der Erinnerung“ am Ende
+          der Sekundarstufe I (Klasse 10) in den Fächern Geschichte, Politische Bildung und LER
+          eingesetzt werden, in der Sekundarstufe Il in den Fächern Geschichte und Politische
+          Bildung. Denkbar ist auch ein Einsatz im Rahmen von fachübergreifenden Projekttagen oder
+          in Vorbereitung eines Austauschs mit einer israelischen Schule oder eines
+          Gedenkstättenbesuchs. Aufgrund der besonderen Anforderungen, die videographierte
+          Interviews an die Rezipienten stellen eignen sich die einzelnen Videos des „Archivs der
+          Erinnerung“ in der Regel - nicht als einführende Filme in eine Unterrichtseinheit.</p>
+        <p>Um gleichermaßen die besondere Eigenart der Video-Edition „Archiv der Erinnerung“
+          thematisieren zu können, empfiehlt es sich, bei der Erarbeitung der grundlegenden
+          historischen Zusammenhänge und Ereignisse der Shoah gezielt auch andere audiovisuelle
+          Medien einzusetzen. Aus mediendidaktischer Perspektive wäre es wichtig, bei der Auswahl
+          der Kontextmedien neben Filmen bzw. Sequenzen mit historischem Bildmaterial auch
+          (Kurz-)Spielfilme und aktuelle dokumentarische Auseinandersetzungen mit dem Thema ‚Shoah‘
+          zu verwenden.</p>
+        <p>Die Interviews mit Überlebenden ermöglichen den Rezipienten einen persönlichen und
+          empathischen Zugang zur Geschichte der Shoah. Die Schaffung eines entsprechenden
+          Unterrichtsrahmens durch die Lehrenden, der auch emotionale Reaktionen auf Seiten der
+          Rezipienten ermöglicht und berücksichtigt, kann diesen Prozess noch unterstützen. Diese
+          Form der Vor-und Nachbereitung des Themas bietet auch die Chance einer anderen
+          Unterrichtsqualität, die über die Faktenvermittlung hinausgeht. Die Video-Edition kann
+          sowohl in ihrer Gesamtheit als auch in Form einzelner Interviews eingesetzt werden.
+          Möglich ist zudem die exemplarische oder auch vergleichende Betrachtung jeweiliger
+          Video-Ausschnitte zu Themen wie der Kindheit vor dem Nationalsozialismus, der Verfolgung
+          selbst oder dem Weiterleben nach Kriegsende. Insbesondere das schwierige Gespräch der
+          einstmals Verfolgten mit ihren Kindern bietet sich als Vergleichsmöglichkeit zu den
+          eigenen Erfahrungen der Rezipienten mit ihren Eltern und Großeltern an. Grundsätzlich
+          sollten die Lernenden nicht schlichtweg zur Identifikation mit den verfolgten Juden
+          angeregt werden, sondern zum kritischen Hinterfragen der eigenen Lokal- bzw.
+          Familiengeschichte während des Nationalsozialismus. Die breite Konzeption der
+          Video-Edition lässt diese als geeignet für die Arbeit in mehreren Gruppen erscheinen. So
+          können einerseits einzelne Themen eines bestimmten Interviews in Form von Gruppenarbeit
+          tiefergehend aufbereitet werden, während durch Gruppen andererseits auch mehrere Videos
+          gleichzeitig für die Lernsituation aufbereitet werden können.</p>
+        <p>Aufgrund der über 30-minütigen Länge der einzelnen Interviews sollte für die
+          Video-Edition mindestens eine Doppelstunde eingeplant werden, damit genügend Zeit zur
+          Präsentation und Diskussion bleibt. Wo es der Unterrichtsplan zulässt, ist allerdings eine
+          Behandlung der Online-Edition während mehrerer Stunden günstiger. Ebenso wird angeregt,
+          dies auch für die außerschulische Bildungsarbeit zu beachten.</p>
+      </div>
+    </body>
+  </text>
+</TEI>
