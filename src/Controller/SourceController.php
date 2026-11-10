@@ -79,8 +79,9 @@ class SourceController extends \TeiEditionBundle\Controller\SourceController
 
                 if (preg_match('/(\:.)/s', $rest_plain, $matches_rest) && !preg_match('/\[.*\d[\d\:]+\d\]/', $rest_plain)) {
                     $pos = strpos($matches[3], $matches_rest[1]);
+                    $pos_plain = strpos($rest_plain, $matches_rest[1]);
 
-                    $candidate_interviewer = substr($rest_plain, 0, $pos);
+                    $candidate_interviewer = substr($rest_plain, 0, $pos_plain);
                     if (str_word_count($candidate_interviewer) > 4) {
                         // if the text before the colon is more than 4 words, it is probably not a speaker name
                         return $matches[1] . '<span class="dta-time">' . $timecode . '</span>' . $matches[3] . $matches[4];
