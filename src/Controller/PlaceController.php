@@ -30,5 +30,4 @@ class PlaceController extends \TeiEditionBundle\Controller\PlaceController
 
         return parent::buildPopupContentArticles($entityManager, $ids, $geo, $locale, $mode);
     }
-
 }
