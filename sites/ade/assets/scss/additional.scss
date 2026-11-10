@@ -770,7 +770,7 @@ body.route-source, body.route-article
             color: $color-color-spot;
 
             span.entity-ref {
-                font-weight: 600;
+                /* font-weight: 600; */
                 color: $color-color-spot;
             }
         }
@@ -794,6 +794,11 @@ body.route-source, body.route-article
 }
 
 body.route-article {
+    /* don't show Source Description */
+    div.source-description, h2.source-description-head {
+        display: none;
+    }
+
     .article div.dta-list {
         margin-top: 0;
 

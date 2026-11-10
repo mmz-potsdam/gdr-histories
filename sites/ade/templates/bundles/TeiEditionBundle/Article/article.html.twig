@@ -63,7 +63,7 @@
         <div class="col-xs-12 col-sm-8">
         {% if source_description is not empty %}
             {% if related|length > 0  and related[0].genre == 'source' %}
-            <h2>{{ 'Source Description'|trans }}</h2>
+            <h2 class="source-description-head">{{ 'Source Description'|trans }}</h2>
             {% endif %}
             {{ source_description|raw }}
         {% endif %}
