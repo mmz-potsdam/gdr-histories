@@ -17,7 +17,8 @@ parameters:
 
     app.site.name: "%env(string:SITE_NAME)%"
     env(SITE_NAME): 'Jüdische Geschichte[n] in der DDR'
-    app.site.byline: 'Ein Interview-Portal'
+    app.site.byline: "%env(string:SITE_BYLINE)%"
+    env(SITE_BYLINE): 'Ein Interview-Portal'
     app.site.email: 'info@juedische-geschichte-online.net'
     app.site.publisher: 'Moses Mendelssohn Zentrum für europäisch-jüdische Studien'
     app.site.publisher.address: 'Am Neuen Markt 8, 14467 Potsdam'
