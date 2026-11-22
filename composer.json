@@ -105,11 +105,11 @@
         "jms/translation-bundle": "dev-symfony-8 as 2.7.99",
         "presta/sitemap-bundle": "^4.3",
         "symfony/apache-pack": "^1.0",
-        "symfony/dotenv": "7.4.*",
+        "symfony/dotenv": "8.1.*",
         "symfony/flex": "^2",
-        "symfony/form": "7.4.*",
-        "symfony/runtime": "7.4.*",
-        "symfony/security-bundle": "7.4.*",
+        "symfony/form": "8.1.*",
+        "symfony/runtime": "8.1.*",
+        "symfony/security-bundle": "8.1.*",
         "textrazor/textrazor-php": "*@dev",
         "vnn/wordpress-rest-api-client": "dev-master"
     },
@@ -117,10 +117,10 @@
         "friendsofphp/php-cs-fixer": "^3.95",
         "phpstan/phpstan": "^2.2",
         "phpstan/phpstan-doctrine": "^2.0",
-        "symfony/debug-bundle": "7.4.*",
+        "symfony/debug-bundle": "8.1.*",
         "symfony/maker-bundle": "^1.67",
-        "symfony/stopwatch": "7.4.*",
-        "symfony/web-profiler-bundle": "7.4.*"
+        "symfony/stopwatch": "8.1.*",
+        "symfony/web-profiler-bundle": "8.1.*"
     },
     "autoload": {
         "psr-4": {
@@ -162,7 +162,7 @@
     "extra": {
         "symfony": {
             "allow-contrib": false,
-            "require": "7.4.*"
+            "require": "8.1.*"
         }
     }
 }
