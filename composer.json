@@ -69,7 +69,7 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/burki/JMSI18nRoutingBundle"
+            "url": "https://github.com/brain-appeal/JMSI18nRoutingBundle"
         },
         {
             "type": "vcs",
@@ -99,9 +99,9 @@
         "ext-intl": "*",
         "armin/scssphp-bundle": "dev-master",
         "dikastes/zotero-api": "dev-main#df24826a60f3a4aba413b66bdd5bdf504fa232eb",
-        "gjuric/i18n-routing-bundle": "dev-php-file-loader as 3.2.99",
         "gmo/iso-639": "dev-master#4834357 as 1.0",
         "igdj/tei-edition-bundle": "dev-bundle-configuration",
+        "jms/i18n-routing-bundle": "dev-master",
         "jms/translation-bundle": "dev-symfony-8 as 2.7.99",
         "presta/sitemap-bundle": "^4.3",
         "symfony/apache-pack": "^1.0",

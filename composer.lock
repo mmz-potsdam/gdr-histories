@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c2a959d1518546f755cdfef8ca80f57d",
+    "content-hash": "acaa1cd959b31f89be1b79fc1756606c",
     "packages": [
         {
             "name": "armin/scssphp-bundle",
@@ -1972,64 +1972,6 @@
             "time": "2020-11-27T09:00:35+00:00"
         },
         {
-            "name": "gjuric/i18n-routing-bundle",
-            "version": "dev-php-file-loader",
-            "target-dir": "JMS/I18nRoutingBundle",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/burki/JMSI18nRoutingBundle.git",
-                "reference": "4a84ab31680e4653c6aa177ea2f4e2e256aea68a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/burki/JMSI18nRoutingBundle/zipball/4a84ab31680e4653c6aa177ea2f4e2e256aea68a",
-                "reference": "4a84ab31680e4653c6aa177ea2f4e2e256aea68a",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.1",
-                "symfony/framework-bundle": ">=4.4"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^8.0|^9.0",
-                "sensio/framework-extra-bundle": "*",
-                "symfony/symfony": "^4.4|^5.0|^6.0"
-            },
-            "suggest": {
-                "jms/translation-bundle": "If you want to use the RouteTranslation extractor"
-            },
-            "type": "symfony-bundle",
-            "autoload": {
-                "psr-0": {
-                    "JMS\\I18nRoutingBundle": ""
-                }
-            },
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Johannes M. Schmitt",
-                    "email": "schmittjoh@gmail.com"
-                },
-                {
-                    "name": "Albert Casademont",
-                    "email": "albertcasademont@gmail.com"
-                }
-            ],
-            "description": "This bundle allows you to create i18n routes.",
-            "homepage": "http://jmsyst.com/bundles/JMSI18nRoutingBundle",
-            "keywords": [
-                "multilanguage",
-                "routing",
-                "translation"
-            ],
-            "support": {
-                "source": "https://github.com/burki/JMSI18nRoutingBundle/tree/php-file-loader"
-            },
-            "time": "2026-02-23T06:59:10+00:00"
-        },
-        {
             "name": "gmo/iso-639",
             "version": "dev-master",
             "source": {
@@ -2070,22 +2012,22 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.16.5",
+            "version": "7.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "b0605f32e77a13cf98bc5e75b1d71877b6814e17"
+                "reference": "f61ba5ea0a55032a55ddbb72cab7d307c1043654"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/b0605f32e77a13cf98bc5e75b1d71877b6814e17",
-                "reference": "b0605f32e77a13cf98bc5e75b1d71877b6814e17",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/f61ba5ea0a55032a55ddbb72cab7d307c1043654",
+                "reference": "f61ba5ea0a55032a55ddbb72cab7d307c1043654",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "guzzlehttp/promises": "^2.6.1",
-                "guzzlehttp/psr7": "^2.13.5",
+                "guzzlehttp/promises": "^2.6.2",
+                "guzzlehttp/psr7": "^2.13.6",
                 "php": "^7.2.5 || ^8.0",
                 "psr/http-client": "^1.0",
                 "symfony/deprecation-contracts": "^2.5 || ^3.0",
@@ -2178,7 +2120,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/7.16.5"
+                "source": "https://github.com/guzzle/guzzle/tree/7.17.0"
             },
             "funding": [
                 {
@@ -2194,8 +2136,8 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-11-20T22:56:33+00:00",
-            "published-time": "2026-11-20T22:57:55+00:00"
+            "time": "2026-11-22T16:49:11+00:00",
+            "published-time": "2026-11-22T16:50:19+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -2977,6 +2919,65 @@
             },
             "time": "2026-11-13T15:26:53+00:00",
             "published-time": "2026-11-17T15:00:30+00:00"
+        },
+        {
+            "name": "jms/i18n-routing-bundle",
+            "version": "dev-master",
+            "target-dir": "JMS/I18nRoutingBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/brain-appeal/JMSI18nRoutingBundle.git",
+                "reference": "4c7c2e8daa498e5e6de4a3b2ed2c7a7131ede7af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/brain-appeal/JMSI18nRoutingBundle/zipball/4c7c2e8daa498e5e6de4a3b2ed2c7a7131ede7af",
+                "reference": "4c7c2e8daa498e5e6de4a3b2ed2c7a7131ede7af",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "symfony/framework-bundle": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0|^9.0",
+                "sensio/framework-extra-bundle": "*",
+                "symfony/symfony": "^7.4|^8.0"
+            },
+            "suggest": {
+                "jms/translation-bundle": "If you want to use the RouteTranslation extractor"
+            },
+            "default-branch": true,
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "JMS\\I18nRoutingBundle": ""
+                }
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Johannes M. Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                },
+                {
+                    "name": "Albert Casademont",
+                    "email": "albertcasademont@gmail.com"
+                }
+            ],
+            "description": "This bundle allows you to create i18n routes.",
+            "homepage": "http://jmsyst.com/bundles/JMSI18nRoutingBundle",
+            "keywords": [
+                "multilanguage",
+                "routing",
+                "translation"
+            ],
+            "support": {
+                "source": "https://github.com/brain-appeal/JMSI18nRoutingBundle/tree/master"
+            },
+            "time": "2026-11-11T14:46:12+00:00"
         },
         {
             "name": "jms/translation-bundle",
@@ -13718,12 +13719,6 @@
     ],
     "aliases": [
         {
-            "package": "gjuric/i18n-routing-bundle",
-            "version": "dev-php-file-loader",
-            "alias": "3.2.99",
-            "alias_normalized": "3.2.99.0"
-        },
-        {
             "package": "gmo/iso-639",
             "version": "9999999-dev",
             "alias": "1.0",
@@ -13740,9 +13735,9 @@
     "stability-flags": {
         "armin/scssphp-bundle": 20,
         "dikastes/zotero-api": 20,
-        "gjuric/i18n-routing-bundle": 20,
         "gmo/iso-639": 20,
         "igdj/tei-edition-bundle": 20,
+        "jms/i18n-routing-bundle": 20,
         "jms/translation-bundle": 20,
         "textrazor/textrazor-php": 20,
         "vnn/wordpress-rest-api-client": 20
