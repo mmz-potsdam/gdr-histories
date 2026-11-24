@@ -1,9 +1,9 @@
-Front-end for ddr.juedische-geschichte-online.net
-=================================================
+Interview Portals of the MMZ
+============================
 
 License
 -------
-    Code for the Front-end of ddr.juedische-geschichte-online.net
+    Code for ddr.juedische-geschichte-online.net
     and erinnerung.juedische-geschichte-online.net
 
     (C) 2023-2026 Moses Mendelssohn Center for European-Jewish Studies (MMZ)
@@ -96,7 +96,7 @@ Start solr by
 
     ./solr/bin/solr start
 
-and then create the `gdr_de` / `adr_de` core
+and then create the `gdr_de` / `adr_de` core (according to `SITE_KEY`)
 
     ./solr/bin/solr create -c gdr_de
 
