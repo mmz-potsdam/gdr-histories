@@ -169,15 +169,15 @@
         ]
     },
     "symfony/form": {
-        "version": "7.3",
+        "version": "8.2",
         "recipe": {
             "repo": "github.com/symfony/recipes",
             "branch": "main",
-            "version": "7.2",
-            "ref": "7d86a6723f4a623f59e2bf966b6aad2fc461d36b"
+            "version": "8.2",
+            "ref": "3432a58fba173e2c80d9e86b50fdd9598fef1335"
         },
         "files": [
-            "./config/packages/csrf.yaml"
+            "config/packages/form.yaml"
         ]
     },
     "symfony/framework-bundle": {
