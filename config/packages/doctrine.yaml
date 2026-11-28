@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=../schema.json
 doctrine:
     dbal:
         url: '%env(resolve:DATABASE_URL)%'
@@ -15,8 +16,6 @@ doctrine:
         auto_mapping: true
         mappings:
             App:
-                type: attribute
-                is_bundle: false
                 dir: '%kernel.project_dir%/src/Entity'
                 prefix: 'App\Entity'
         dql:
@@ -40,16 +39,12 @@ when@prod:
     doctrine:
         orm:
             query_cache_driver:
-                type: pool
                 pool: doctrine.system_cache_pool
             result_cache_driver:
-                type: pool
                 pool: doctrine.result_cache_pool
 
-    framework:
-        cache:
-            pools:
-                doctrine.result_cache_pool:
-                    adapter: cache.app
-                doctrine.system_cache_pool:
-                    adapter: cache.system
+    cache:
+        pools:
+            doctrine.result_cache_pool: null
+            doctrine.system_cache_pool:
+                adapter: cache.system
