@@ -1,7 +1,6 @@
-framework:
-    default_locale: '%app.default_locale%'
-    translator:
-        default_path: '%kernel.project_dir%/translations'
-        fallbacks:
-            - en
-        providers:
+# yaml-language-server: $schema=../schema.json
+translation:
+    default_path: '%kernel.project_dir%/translations'
+    fallbacks:
+        - en
+    providers:
