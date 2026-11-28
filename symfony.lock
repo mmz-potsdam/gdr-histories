@@ -236,12 +236,12 @@
         ]
     },
     "symfony/security-bundle": {
-        "version": "7.4",
+        "version": "8.2",
         "recipe": {
             "repo": "github.com/symfony/recipes",
             "branch": "main",
-            "version": "7.4",
-            "ref": "02d47835088cd548c827e5d53b3c4b361bca3390"
+            "version": "8.2",
+            "ref": "c0af0228ae2d5825bbbca9f32a4c054f1c40e88d"
         },
         "files": [
             "config/packages/security.yaml",
