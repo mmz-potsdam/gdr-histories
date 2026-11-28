@@ -181,15 +181,16 @@
         ]
     },
     "symfony/framework-bundle": {
-        "version": "8.1",
+        "version": "8.2",
         "recipe": {
             "repo": "github.com/symfony/recipes",
             "branch": "main",
-            "version": "8.1",
-            "ref": "3eee55306efebbd99462341126bbd4cac7cd8ba7"
+            "version": "8.2",
+            "ref": "6dad798dd0f9536371957911281436501bdc0d8f"
         },
         "files": [
             ".editorconfig",
+            ".symfony.local.yaml",
             "AGENTS.md",
             "config/packages/cache.yaml",
             "config/packages/framework.yaml",
