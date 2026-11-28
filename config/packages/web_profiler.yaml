@@ -1,9 +1,13 @@
+# yaml-language-server: $schema=../schema.json
 when@dev:
     web_profiler:
         toolbar: true
 
     framework:
-        profiler: true
+        profiler:
+            excluded_paths:
+                - '^/\.well-known/'
+                - '^/favicon\.ico$'
 
 when@test:
     framework:
